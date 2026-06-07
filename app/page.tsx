@@ -278,7 +278,6 @@ export default function HomePage() {
           and gaming communities.
         </p>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[
               { label: "RPG Naming Guides", desc: "Character, world, and campaign naming for tabletop RPGs", href: "/blog", emoji: "🎲" },
               { label: "D&D Naming Guides", desc: "Dungeon Master tips for NPCs, kingdoms, and artifacts", href: "/blog", emoji: "🐉" },
