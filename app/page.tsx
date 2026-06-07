@@ -54,6 +54,36 @@ const popularCategories = [
   { label: "Elf Names", slug: "dark-elf-kingdom-name-generator" },
 ];
 
+const stats = [
+  { value: "4,500+", label: "Generators" },
+  { value: "20", label: "Themes" },
+  { value: "15", label: "Races" },
+  { value: "450K+", label: "Unique Names" },
+];
+
+const categoryEmojis: Record<string, string> = {
+  "Dark Names": "🌑",
+  "Dragon Names": "🐉",
+  "Kingdom Names": "👑",
+  "Demon Names": "👹",
+  "Angel Names": "😇",
+  "Clan Names": "⚔️",
+  "Empire Names": "🏛️",
+  "Vampire Names": "🧛",
+  "Guild Names": "🛡️",
+  "Orc Names": "👺",
+  "Undead Names": "💀",
+  "Holy Names": "✨",
+  "Fire Names": "🔥",
+  "Ice Names": "❄️",
+  "Storm Names": "⚡",
+  "Arcane Names": "🔮",
+  "Cursed Names": "🕯️",
+  "Phoenix Names": "🐦‍🔥",
+  "Dwarf Names": "⛏️",
+  "Elf Names": "🏹",
+};
+
 export default function HomePage() {
   return (
     <article>
@@ -81,6 +111,23 @@ export default function HomePage() {
           >
             Read Naming Guides →
           </Link>
+        </div>
+      </section>
+
+      {/* Stats Cards */}
+      <section className="mb-16">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {stats.map((stat) => (
+            <div
+              key={stat.label}
+              className="rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-gray-900/50 p-6 text-center transition hover:border-gray-600 hover:from-gray-800 hover:to-gray-800/50"
+            >
+              <div className="mb-1 text-4xl font-extrabold text-white">
+                {stat.value}
+              </div>
+              <div className="text-sm text-gray-400">{stat.label}</div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -177,8 +224,9 @@ export default function HomePage() {
             <Link
               key={cat.label}
               href={`/${cat.slug}`}
-              className="rounded-lg border border-gray-800 bg-gray-900/50 p-3 text-sm text-gray-300 transition hover:border-gray-600 hover:text-white"
+              className="flex items-center gap-2 rounded-lg border border-gray-800 bg-gray-900/50 p-3 text-sm text-gray-300 transition hover:border-gray-600 hover:text-white hover:bg-gray-800/50"
             >
+              <span className="text-lg">{categoryEmojis[cat.label] || "🎮"}</span>
               {cat.label}
             </Link>
           ))}
@@ -230,23 +278,25 @@ export default function HomePage() {
           and gaming communities.
         </p>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {[
-            { label: "RPG Naming Guides", href: "/blog" },
-            { label: "D&D Naming Guides", href: "/blog" },
-            { label: "Kingdom Naming Guides", href: "/blog" },
-            { label: "Clan Naming Guides", href: "/blog" },
-            { label: "Guild Naming Guides", href: "/blog" },
-            { label: "Roblox Naming Guides", href: "/blog" },
-          ].map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="rounded-xl border border-gray-800 bg-gray-900 p-5 text-center transition hover:border-gray-600 hover:bg-gray-800"
-            >
-              <span className="font-semibold text-white">{item.label}</span>
-              <p className="mt-1 text-xs text-gray-500">View guides →</p>
-            </Link>
-          ))}
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { label: "RPG Naming Guides", desc: "Character, world, and campaign naming for tabletop RPGs", href: "/blog", emoji: "🎲" },
+              { label: "D&D Naming Guides", desc: "Dungeon Master tips for NPCs, kingdoms, and artifacts", href: "/blog", emoji: "🐉" },
+              { label: "Kingdom Naming Guides", desc: "Create authentic, memorable kingdom names", href: "/blog", emoji: "👑" },
+              { label: "Clan Naming Guides", desc: "Powerful clan names for gaming, fantasy, and esports", href: "/blog", emoji: "⚔️" },
+              { label: "Guild Naming Guides", desc: "MMORPG guild names that attract members", href: "/blog", emoji: "🛡️" },
+              { label: "Roblox Naming Guides", desc: "Game and group names for Roblox platform", href: "/blog", emoji: "🎮" },
+            ].map((item) => (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="group rounded-xl border border-gray-800 bg-gray-900 p-5 transition hover:border-gray-600 hover:bg-gray-800"
+              >
+                <span className="text-2xl">{item.emoji}</span>
+                <h3 className="mt-3 font-semibold text-white group-hover:underline">{item.label}</h3>
+                <p className="mt-1 text-sm text-gray-400">{item.desc}</p>
+              </Link>
+            ))}
         </div>
       </section>
 
@@ -380,10 +430,13 @@ export default function HomePage() {
             <Link
               key={page.slug}
               href={`/${page.slug}`}
-              className="rounded-2xl border border-gray-800 bg-gray-900 p-5 transition hover:border-gray-600 hover:bg-gray-800"
+              className="group relative overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 p-5 transition-all duration-300 hover:border-gray-500 hover:shadow-lg hover:shadow-purple-900/20"
             >
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/0 via-indigo-900/0 to-purple-900/0 opacity-0 transition-opacity duration-500 group-hover:from-purple-900/20 group-hover:via-indigo-900/10 group-hover:to-purple-900/20 group-hover:opacity-100" />
+              <div className="relative z-10">
               <h3 className="mb-1 font-semibold text-white">{page.title}</h3>
               <p className="text-sm text-gray-500">{page.theme} · {page.race} · {page.context}</p>
+              </div>
             </Link>
           ))}
         </div>
@@ -393,6 +446,81 @@ export default function HomePage() {
           11. Latest Fantasy Naming Guides
           ======================================== */}
       <HomeBlogPreview />
+
+      {/* ========================================
+          Fantasy World Showcase
+          ======================================== */}
+      <section className="mb-16">
+        <h2 className="mb-6 text-3xl font-bold">Fantasy World Showcase</h2>
+        <p className="mb-6 leading-relaxed text-gray-400">
+          Explore our curated collection of fantasy world concepts. Each world comes with a
+          complete naming system, cultural backdrop, and visual inspiration.
+        </p>
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { title: "Eldergloom Realm", desc: "Dark elf kingdoms beneath eternal twilight", icon: "🌑", color: "from-purple-950 to-black" },
+            { title: "Drakthar Wastes", desc: "Dragon empires ruling volcanic badlands", icon: "🐉", color: "from-red-950 to-black" },
+            { title: "Celestial Spire", desc: "Angel alliances in floating crystal cities", icon: "😇", color: "from-blue-950 to-black" },
+            { title: "Frostveil Tundra", desc: "Ice-elf kingdoms in frozen northern lands", icon: "❄️", color: "from-cyan-950 to-black" },
+            { title: "Shadowmere Depths", desc: "Undead dominions beneath cursed earth", icon: "💀", color: "from-gray-950 to-black" },
+            { title: "Emberforge Citadel", desc: "Dwarf guilds mastering ancient forges", icon: "⛏️", color: "from-orange-950 to-black" },
+            { title: "Verdantwild Expanse", desc: "Elf clans guarding primordial forests", icon: "🏹", color: "from-green-950 to-black" },
+            { title: "Thunderpeak Hold", desc: "Orc tribes ruling storm-wracked peaks", icon: "👺", color: "from-yellow-950 to-black" },
+          ].map((world) => (
+            <div
+              key={world.title}
+              className={`group relative overflow-hidden rounded-2xl border border-gray-800 bg-gradient-to-b ${world.color} p-6 transition-all duration-300 hover:scale-[1.02] hover:border-gray-600 hover:shadow-xl`}
+            >
+              <div className="relative z-10">
+                <span className="mb-4 block text-5xl">{world.icon}</span>
+                <h3 className="mb-2 text-lg font-bold text-white group-hover:text-purple-300 transition-colors">
+                  {world.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-400">
+                  {world.desc}
+                </p>
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ========================================
+          Trending Searches
+          ======================================== */}
+      <section className="mb-16">
+        <h2 className="mb-6 text-3xl font-bold">Trending Searches</h2>
+        <p className="mb-6 leading-relaxed text-gray-400">
+          See what fantasy worldbuilders are searching for right now. Jump into the most
+          popular name generation trends across our community.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          {[
+            { label: "Dragon Kingdom Names", emoji: "🐉", slug: "fire-dragon-empire-name-generator" },
+            { label: "Dark Elf Clans", emoji: "🌑", slug: "dark-elf-kingdom-name-generator" },
+            { label: "Celestial Realms", emoji: "😇", slug: "celestial-angel-alliance-name-generator" },
+            { label: "Demon Legions", emoji: "👹", slug: "infernal-demon-legion-name-generator" },
+            { label: "Undead Nations", emoji: "💀", slug: "void-undead-nation-name-generator" },
+            { label: "Phoenix Dynasties", emoji: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
+            { label: "Arcane Orders", emoji: "🔮", slug: "arcane-elf-order-name-generator" },
+            { label: "Orc Tribes", emoji: "👺", slug: "storm-orc-tribe-name-generator" },
+            { label: "Dwarf Guilds", emoji: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
+            { label: "Vampire Clans", emoji: "🧛", slug: "shadow-vampire-clan-name-generator" },
+            { label: "Minecraft Names", emoji: "⛏️", slug: "minecraft-name-generator" },
+            { label: "Roblox Names", emoji: "🎮", slug: "roblox-name-generator" },
+          ].map((item) => (
+            <Link
+              key={item.label}
+              href={`/${item.slug}`}
+              className="inline-flex items-center gap-2 rounded-full border border-gray-700 bg-gray-900/50 px-4 py-2 text-sm text-gray-300 transition-all duration-300 hover:border-purple-500 hover:bg-gray-800 hover:text-white hover:shadow-md hover:shadow-purple-900/20"
+            >
+              <span>{item.emoji}</span>
+              {item.label}
+            </Link>
+          ))}
+        </div>
+      </section>
 
       {/* ========================================
           12. Fantasy Naming Resources

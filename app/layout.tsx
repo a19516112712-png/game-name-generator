@@ -25,56 +25,75 @@ export default function RootLayout({
         <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-8">
           {children}
         </main>
-        <footer className="border-t border-gray-800">
-          <div className="mx-auto max-w-7xl px-4 py-10">
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
-              <div className="lg:col-span-2">
-                <h3 className="mb-3 text-sm font-semibold text-white">
+        <footer className="border-t border-gray-800 bg-gray-950">
+          <div className="mx-auto max-w-7xl px-4 py-12">
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+              {/* Column 1: Brand */}
+              <div>
+                <h3 className="mb-4 text-sm font-semibold text-white">
                   Game Name Generator Hub
                 </h3>
-                <p className="text-sm leading-relaxed text-gray-500">
+                <p className="mb-4 text-sm leading-relaxed text-gray-500">
                   4,500+ free fantasy name generators for worldbuilders, RPG
-                  players, and writers.
+                  players, and writers. Create unique names with meanings and lore.
                 </p>
-              </div>
-              <div>
-                <h3 className="mb-3 text-sm font-semibold text-white">
-                  Explore
-                </h3>
-                <div className="flex flex-col gap-2 text-sm text-gray-400">
-                  <Link href="/search" className="hover:text-white">Generators</Link>
-                  <Link href="/blog" className="hover:text-white">Blog</Link>
-                  <Link href="/search?q=dragon" className="hover:text-white">Popular Searches</Link>
+                <div className="flex gap-3 text-gray-500">
+                  <span className="text-lg">🐉</span>
+                  <span className="text-lg">⚔️</span>
+                  <span className="text-lg">👑</span>
+                  <span className="text-lg">🛡️</span>
                 </div>
               </div>
+
+              {/* Column 2: Generators */}
               <div>
-                <h3 className="mb-3 text-sm font-semibold text-white">
+                <h3 className="mb-4 text-sm font-semibold text-white">
+                  Popular Generators
+                </h3>
+                <div className="flex flex-col gap-2 text-sm text-gray-400">
+                  <Link href="/dark-elf-kingdom-name-generator" className="hover:text-white transition-colors">Dark Elf Kingdom</Link>
+                  <Link href="/fire-dragon-empire-name-generator" className="hover:text-white transition-colors">Fire Dragon Empire</Link>
+                  <Link href="/holy-angel-realm-name-generator" className="hover:text-white transition-colors">Holy Angel Realm</Link>
+                  <Link href="/infernal-demon-legion-name-generator" className="hover:text-white transition-colors">Infernal Demon Legion</Link>
+                  <Link href="/shadow-vampire-clan-name-generator" className="hover:text-white transition-colors">Shadow Vampire Clan</Link>
+                  <Link href="/search" className="hover:text-white transition-colors font-medium">View All Generators →</Link>
+                </div>
+              </div>
+
+              {/* Column 3: Resources */}
+              <div>
+                <h3 className="mb-4 text-sm font-semibold text-white">
+                  Resources
+                </h3>
+                <div className="flex flex-col gap-2 text-sm text-gray-400">
+                  <Link href="/blog" className="hover:text-white transition-colors">Blog & Guides</Link>
+                  <Link href="/search" className="hover:text-white transition-colors">Search Generators</Link>
+                  <Link href="/about" className="hover:text-white transition-colors">About Us</Link>
+                  <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+                  <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                  <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+                  <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
+                </div>
+              </div>
+
+              {/* Column 4: Latest Articles */}
+              <div>
+                <h3 className="mb-4 text-sm font-semibold text-white">
                   Latest Articles
                 </h3>
                 <div className="flex flex-col gap-1.5 text-sm text-gray-400">
-                  {posts.slice(0, 5).map((post) => (
-                    <Link key={post.slug} href={`/blog/${post.slug}`} className="truncate hover:text-white">
+                  {posts.slice(0, 6).map((post) => (
+                    <Link key={post.slug} href={`/blog/${post.slug}`} className="truncate hover:text-white transition-colors">
                       {post.title}
                     </Link>
                   ))}
-                </div>
-              </div>
-              <div>
-                <h3 className="mb-3 text-sm font-semibold text-white">
-                  Legal
-                </h3>
-                <div className="flex flex-col gap-2 text-sm text-gray-400">
-                  <Link href="/about" className="hover:text-white">About</Link>
-                  <Link href="/contact" className="hover:text-white">Contact</Link>
-                  <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
-                  <Link href="/terms" className="hover:text-white">Terms of Service</Link>
+                  <Link href="/blog" className="mt-2 hover:text-white transition-colors font-medium">More Articles →</Link>
                 </div>
               </div>
             </div>
-            <p className="mt-8 text-center text-xs text-gray-600">
-              © {new Date().getFullYear()} Game Name Generator Hub. All names
-              are free for personal and commercial use.
-            </p>
+            <div className="mt-10 border-t border-gray-800 pt-6 text-center text-xs text-gray-600">
+              <p>© {new Date().getFullYear()} Game Name Generator Hub. All names are free for personal and commercial use.</p>
+            </div>
           </div>
         </footer>
       </body>
