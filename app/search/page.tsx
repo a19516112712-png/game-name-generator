@@ -179,6 +179,37 @@ export default async function SearchPage({ searchParams }: Props) {
         </div>
       )}
 
+      {/* Category Filter */}
+      <section className="mb-10">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-gray-500">
+          Browse by Category
+        </h2>
+        <div className="flex flex-wrap gap-2">
+          {[
+            { label: "Kingdom", slug: "dark-elf-kingdom-name-generator" },
+            { label: "Empire", slug: "fire-dragon-empire-name-generator" },
+            { label: "Clan", slug: "shadow-vampire-clan-name-generator" },
+            { label: "Guild", slug: "ancient-dwarf-guild-name-generator" },
+            { label: "Dragon", slug: "fire-dragon-empire-name-generator" },
+            { label: "Elf", slug: "dark-elf-kingdom-name-generator" },
+            { label: "Demon", slug: "infernal-demon-legion-name-generator" },
+            { label: "Angel", slug: "holy-angel-realm-name-generator" },
+            { label: "Orc", slug: "storm-orc-tribe-name-generator" },
+            { label: "Vampire", slug: "shadow-vampire-clan-name-generator" },
+            { label: "Undead", slug: "void-undead-nation-name-generator" },
+            { label: "Phoenix", slug: "crystal-phoenix-dynasty-name-generator" },
+          ].map((cat) => (
+            <Link
+              key={cat.label}
+              href={`/${cat.slug}`}
+              className="rounded-lg border border-gray-700 bg-gray-800/40 px-3.5 py-2 text-sm text-gray-400 transition hover:border-purple-500/50 hover:bg-gray-800 hover:text-white"
+            >
+              {cat.label}
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* Empty state */}
       {!query && (
         <div className="rounded-2xl border border-gray-800 bg-gray-900 p-8 text-center">
@@ -187,7 +218,8 @@ export default async function SearchPage({ searchParams }: Props) {
           </p>
           <p className="text-sm text-gray-500">
             Enter a keyword above to find name generators, intent pages, or
-            blog articles.
+            blog articles. Browse 4,500+ generators across 20 themes, 15 races,
+            and 15 contexts.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2">
             {["dragon", "elf", "minecraft", "kingdom", "guild", "demon", "angel", "fantasy"].map(

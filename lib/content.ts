@@ -95,6 +95,59 @@ const LORE_TEMPLATES: Array<(t: string, r: string, c: string, n: string) => stri
   (t, r, c, n) => `The ${r.toLowerCase()} oracle prophesied the rise of ${n} a thousand years before its founding. When ${t.toLowerCase()} omens aligned, the ${c.toLowerCase()} was established exactly as foretold.`,
   (t, r, c, n) => `${n} serves as the spiritual heart of the ${r.toLowerCase()} ${c.toLowerCase()}, where ${t.toLowerCase()} rituals are performed under the watchful eyes of ancient guardians.`,
 ];
+// ---- Name Meanings explainer ----
+const NAME_MEANINGS_INTRO: Array<(t: string, r: string, c: string) => string> = [
+  (t, r, c) => `Every name generated for the ${t} ${r} ${c} carries a unique meaning that reflects the deep connection between ${t.toLowerCase()} forces and ${r.toLowerCase()} culture. Understanding these meanings helps worldbuilders integrate names seamlessly into their settings.`,
+  (t, r, c) => `The meanings behind ${t} ${r} ${c} names are carefully crafted to reflect the interplay of ${t.toLowerCase()} energy and ${r.toLowerCase()} heritage. Each meaning provides a glimpse into the ${c.toLowerCase()}'s history, values, and place in the fantasy world.`,
+];
+
+// ---- Lore Ideas ----
+const LORE_IDEAS: Array<(t: string, r: string, c: string) => string> = [
+  (t, r, c) => `Consider how the ${t.toLowerCase()} nature of your ${r.toLowerCase()} ${c.toLowerCase()} shapes its founding myth. Was it born from a ${t.toLowerCase()} catastrophe, blessed by ${t.toLowerCase()} spirits, or forged through ${r.toLowerCase()} determination against ${t.toLowerCase()} forces?`,
+  (t, r, c) => `The political structure of a ${r.toLowerCase()} ${c.toLowerCase()} often reflects ${t.toLowerCase()} principles. A council of ${t.toLowerCase()}-touched elders, a single ${t.toLowerCase()}-blessed monarch, or a meritocracy based on ${t.toLowerCase()} mastery — each creates different narrative opportunities.`,
+  (t, r, c) => `Think about how neighboring ${c.toLowerCase()}s view your ${t} ${r} ${c}. Do they fear its ${t.toLowerCase()} power, seek alliances, or trade for ${t.toLowerCase()} resources? These external relationships add depth to your worldbuilding.`,
+  (t, r, c) => `The geography of a ${t} ${r} ${c} should complement its name. ${t.toLowerCase()}-themed landmarks, ${r.toLowerCase()} architectural styles, and ${t.toLowerCase()} environmental features create a vivid and consistent setting.`,
+];
+
+// ---- Naming Rules ----
+const NAMING_RULES: Array<(t: string, r: string, c: string) => string> = [
+  (t, r, c) => `Rule 1: The name must reflect the ${t} theme. Every ${r.toLowerCase()} ${c.toLowerCase()} name incorporates ${t.toLowerCase()} elements in its prefix or root word, establishing the ${c.toLowerCase()}'s magical or elemental alignment.`,
+  (t, r, c) => `Rule 2: Honor ${r} naming traditions. ${r} names follow specific phonetic patterns — certain consonant clusters, vowel preferences, and syllable structures that distinguish ${r.toLowerCase()} names from those of other races.`,
+  (t, r, c) => `Rule 3: Match the ${c} scale. Empire names should sound grand and sweeping; guild names should feel tight-knit and purposeful; clan names should evoke kinship and shared heritage.`,
+  (t, r, c) => `Rule 4: Maintain internal consistency. If you generate multiple ${r.toLowerCase()} ${c.toLowerCase()}s for the same world, ensure their names share linguistic DNA while remaining distinct enough to avoid confusion.`,
+  (t, r, c) => `Rule 5: Consider the name's evolution. Great names often have shortened forms, nicknames, or historical variants. A ${c.toLowerCase()} called "The ${t} ${r} ${c}" might be known colloquially as "The ${t}hold" by its inhabitants.`,
+];
+
+// ---- People Also Search (keyword generation) ----
+function generatePeopleAlsoSearch(theme: string, race: string, context: string): string[] {
+  const t = theme.toLowerCase();
+  const r = race.toLowerCase();
+  const c = context.toLowerCase();
+  
+  return [
+    `${t} ${r} ${c} name generator`,
+    `${r} ${c} names fantasy`,
+    `best ${t} ${c} names`,
+    `${r} name generator`,
+    `${c} name generator`,
+    `fantasy ${c} names`,
+    `${t} fantasy names`,
+    `${r} ${c} ideas`,
+    `cool ${c} names`,
+    `unique ${r} ${c} names`,
+    `${t} ${r} names for D&D`,
+    `${c} naming guide`,
+    `medieval ${c} names`,
+    `epic ${c} names`,
+    `${t} themed ${c} names`,
+    `${r} worldbuilding names`,
+    `fantasy ${r} ${c} generator`,
+    `${t} ${r} naming conventions`,
+    `RPG ${c} names`,
+    `legendary ${r} ${c} names`,
+  ];
+}
+
 
 // ---- FAQ question templates ----
 const FAQ_QUESTIONS: Array<(t: string, r: string, c: string) => string> = [
@@ -174,6 +227,10 @@ export interface FAQEntry {
 }
 
 export interface PageContent {
+  nameMeaningsIntro: string;
+  loreIdeas: string[];
+  namingRules: string[];
+  peopleAlsoSearch: string[];
   introduction: string;
   namingGuide: string;
   names: NameEntry[];
@@ -193,13 +250,13 @@ export function generateContent(theme: string, race: string, context: string): P
   const rng = mulberry32(seed);
 
   // --- Introduction ---
-  const introSentences = shuffle(INTRO_SENTENCES, rng).slice(0, 5);
+  const introSentences = shuffle(INTRO_SENTENCES, rng).slice(0, 8);
   const introduction = introSentences
     .map((s) => s(theme, race, context))
     .join(" ");
 
   // --- Naming Guide ---
-  const guideParts = shuffle(NAMING_GUIDE_PARTS, rng).slice(0, 5);
+  const guideParts = shuffle(NAMING_GUIDE_PARTS, rng).slice(0, 8);
   const namingGuide = guideParts
     .map((p) => fillTemplate(p, theme, race, context))
     .join("\n\n");
@@ -223,38 +280,38 @@ export function generateContent(theme: string, race: string, context: string): P
     lore: pick(LORE_TEMPLATES, rng)(theme, race, context, n.name),
   }));
 
-  // --- FAQ (6 questions) ---
+  // --- FAQ (8 questions) ---
   const faqIndices = shuffle(
     FAQ_QUESTIONS.map((_, i) => i),
     rng
-  ).slice(0, 6);
+  ).slice(0, 8);
   const faqs: FAQEntry[] = faqIndices.map((idx) => ({
     question: FAQ_QUESTIONS[idx](theme, race, context),
     answer: FAQ_ANSWERS[idx](theme, race, context),
   }));
 
-  // --- Related by Theme (5) ---
+  // --- Related by Theme (4) ---
   const byTheme = shuffle(
     pages.filter((p) => p.theme === theme && p.slug !== slug),
     rng
   )
-    .slice(0, 5)
+    .slice(0, 4)
     .map((p) => ({ slug: p.slug, title: p.title }));
 
-  // --- Related by Race (5) ---
+  // --- Related by Race (4) ---
   const byRace = shuffle(
     pages.filter((p) => p.race === race && p.slug !== slug),
     rng
   )
-    .slice(0, 5)
+    .slice(0, 4)
     .map((p) => ({ slug: p.slug, title: p.title }));
 
-  // --- Related by Context (5) ---
+  // --- Related by Context (4) ---
   const byContext = shuffle(
     pages.filter((p) => p.context === context && p.slug !== slug),
     rng
   )
-    .slice(0, 5)
+    .slice(0, 4)
     .map((p) => ({ slug: p.slug, title: p.title }));
 
   // --- Popular Generators (5) ---
@@ -267,7 +324,19 @@ export function generateContent(theme: string, race: string, context: string): P
     .slice(0, 5)
     .map((p) => ({ slug: p.slug, title: p.title }));
 
-  return { introduction, namingGuide, names, featured, faqs, related: { byTheme, byRace, byContext, popular } };
+    // --- Name Meanings Intro ---
+  const nameMeaningsIntro = NAME_MEANINGS_INTRO[Math.floor(rng() * NAME_MEANINGS_INTRO.length)](theme, race, context);
+
+  // --- Lore Ideas ---
+  const loreIdeas = shuffle(LORE_IDEAS, rng).slice(0, 4).map(fn => fn(theme, race, context));
+
+  // --- Naming Rules ---
+  const namingRules = NAMING_RULES.map(fn => fn(theme, race, context));
+
+  // --- People Also Search ---
+  const peopleAlsoSearch = generatePeopleAlsoSearch(theme, race, context);
+
+  return { nameMeaningsIntro, loreIdeas, namingRules, peopleAlsoSearch, introduction, namingGuide, names, featured, faqs, related: { byTheme, byRace, byContext, popular } };
 }
 
 function capitalize(s: string): string {
