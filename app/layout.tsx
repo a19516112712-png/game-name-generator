@@ -5,6 +5,7 @@ import posts from "@/data/blog-posts.json";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://toppicksbase.com"),
   title: {
     default: "Game Name Generator Hub — 4,500+ Fantasy Name Generators",
     template: "%s — Game Name Generator Hub",
