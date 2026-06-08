@@ -6,7 +6,7 @@ import intents from "@/data/intent-pages.json";
 // Category hub slugs
 const HUB_SLUGS = [
   "kingdom-names","clan-names","guild-names","dragon-names",
-  "demon-names","angel-names","vampire-names","orc-names","elf-names",
+  "demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names",
 ];
 
 // Landing page generation (same as build script)

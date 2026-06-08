@@ -23,6 +23,7 @@ const CATEGORIES: Record<string, {
   "angel-names": { name: "Angel", emoji: "😇", race: "Angel", context: "", description: "angel names for realms, alliances, orders, and celestial domains" },
   "vampire-names": { name: "Vampire", emoji: "🧛", race: "Vampire", context: "", description: "vampire names for clans, dynasties, courts, and gothic fantasy" },
   "orc-names": { name: "Orc", emoji: "👺", race: "Orc", context: "", description: "orc names for tribes, hordes, clans, and savage fantasy settings" },
+  "empire-names": { name: "Empire", emoji: "👑", context: "Empire", race: "", description: "empire names for fantasy worldbuilding, RPG campaigns, and creative writing" },
   "elf-names": { name: "Elf", emoji: "🏹", race: "Elf", context: "", description: "elf names for kingdoms, realms, orders, and high fantasy worlds" },
 };
 
