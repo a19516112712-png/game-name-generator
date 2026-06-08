@@ -33,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/privacy-policy`, changeFrequency: "yearly" as const, priority: 0.1 },
     { url: `${baseUrl}/terms`, changeFrequency: "yearly" as const, priority: 0.1 },
     { url: `${baseUrl}/disclaimer`, changeFrequency: "yearly" as const, priority: 0.1 },
+    { url: `${baseUrl}/generators`, changeFrequency: 'weekly' as const, priority: 0.7 },
     { url: `${baseUrl}/search`, changeFrequency: "weekly" as const, priority: 0.6 },
     { url: `${baseUrl}/blog`, changeFrequency: "weekly" as const, priority: 0.7 },
   ];
