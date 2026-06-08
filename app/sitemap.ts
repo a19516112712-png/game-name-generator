@@ -3,6 +3,26 @@ import pages from "@/data/pages.json";
 import posts from "@/data/blog-posts.json";
 import intents from "@/data/intent-pages.json";
 
+// Category hub slugs
+const HUB_SLUGS = [
+  "kingdom-names","clan-names","guild-names","dragon-names",
+  "demon-names","angel-names","vampire-names","orc-names","elf-names",
+];
+
+// Landing page generation (same as build script)
+const THEMES = ["dark","ancient","holy","fire","ice","shadow","crystal","arcane","infernal","celestial","golden","storm","blood","mystic","royal","eternal","frozen","savage","void","cursed"];
+const RACES = ["dragon","elf","dwarf","orc","vampire","demon","angel","undead","phoenix","titan","giant","werewolf","goblin","naga","human"];
+const CONTEXTS = ["kingdom","empire","clan","guild","realm","dynasty","order","tribe","legion","alliance","dominion","faction"];
+const ADJECTIVES = ["evil","medieval","epic","legendary","mythical","cool","unique","best","powerful","mystical","ancient","forgotten"];
+
+function generateLandingSlugs(): string[] {
+  const slugs = new Set<string>();
+  THEMES.forEach(t => CONTEXTS.forEach(c => slugs.add(`${t}-${c}-names`)));
+  RACES.forEach(r => CONTEXTS.forEach(c => slugs.add(`${r}-${c}-names`)));
+  ADJECTIVES.forEach(a => CONTEXTS.forEach(c => slugs.add(`${a}-${c}-names`)));
+  return [...slugs];
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://toppicksbase.com";
 
@@ -24,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: p.priority,
   }));
 
+  // Generator pages
   for (const page of pages) {
     routes.push({
       url: `${baseUrl}/${page.slug}`,
@@ -33,6 +54,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  // Landing pages
+  const landingSlugs = generateLandingSlugs();
+  for (const slug of landingSlugs) {
+    routes.push({
+      url: `${baseUrl}/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    });
+  }
+
+  // Category hubs
+  for (const slug of HUB_SLUGS) {
+    routes.push({
+      url: `${baseUrl}/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+  }
+
+  // Blog posts
   for (const post of posts) {
     routes.push({
       url: `${baseUrl}/blog/${post.slug}`,
@@ -42,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  // Blog categories
   const categorySlugs = ["fantasy","rpg","dnd","worldbuilding","clan","guild","kingdom","roblox"];
   for (const cat of categorySlugs) {
     routes.push({
@@ -52,6 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
+  // Intent pages
   for (const intent of intents) {
     routes.push({
       url: `${baseUrl}/${intent.slug}`,
