@@ -5,7 +5,7 @@ import posts from "@/data/blog-posts.json";
 import { JsonLd } from "@/components/json-ld";
 import AdPlaceholder from "@/components/ad-placeholder";
 
-const BASE_URL = "https://game-name-generator-hub.com";
+const BASE_URL = "https://toppicksbase.com";
 
 // Category definitions
 const CATEGORIES: Record<string, {

@@ -94,7 +94,7 @@ export default function PrivacyPage() {
           </h2>
           <p>
             If you have any questions about this Privacy Policy, please contact
-            us at privacy@game-name-generator-hub.com.
+            us at privacy@toppicksbase.com.
           </p>
         </section>
       </div>
@@ -102,11 +102,11 @@ export default function PrivacyPage() {
       <JsonLd data={webPageSchema(
         "Privacy Policy — Game Name Generator Hub",
         "Privacy Policy for Game Name Generator Hub. Learn how we handle your data.",
-        `https://game-name-generator-hub.com/privacy-policy`
+        `https://toppicksbase.com/privacy-policy`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Privacy Policy", url: `https://game-name-generator-hub.com/privacy-policy` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Privacy Policy", url: `https://toppicksbase.com/privacy-policy` }
       ])} />
     </article>
   );

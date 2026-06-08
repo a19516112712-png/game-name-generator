@@ -65,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cat = categoryData[slug];
   if (!cat) return { title: "Not Found" };
 
-  const url = `https://game-name-generator-hub.com/blog/category/${slug}`;
+  const url = `https://toppicksbase.com/blog/category/${slug}`;
 
   return {
     title: cat.title,
@@ -198,16 +198,16 @@ export default async function CategoryPage({ params }: Props) {
         data={webPageSchema(
           cat.title,
           cat.description,
-          `https://game-name-generator-hub.com/blog/category/${slug}`
+          `https://toppicksbase.com/blog/category/${slug}`
         )}
       />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", url: "https://game-name-generator-hub.com" },
-          { name: "Blog", url: "https://game-name-generator-hub.com/blog" },
+          { name: "Home", url: "https://toppicksbase.com" },
+          { name: "Blog", url: "https://toppicksbase.com/blog" },
           {
             name: `${slug.charAt(0).toUpperCase() + slug.slice(1)} Naming Guides`,
-            url: `https://game-name-generator-hub.com/blog/category/${slug}`,
+            url: `https://toppicksbase.com/blog/category/${slug}`,
           },
         ])}
       />

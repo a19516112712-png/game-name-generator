@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Generate unique fantasy names for kingdoms, empires, clans, guilds and more. 20 themes, 15 races, 15 contexts — 4,500+ free name generators with meanings and lore.",
 };
 
-const BASE_URL = "https://game-name-generator-hub.com";
+const BASE_URL = "https://toppicksbase.com";
 
 // ---- Featured generators (12) ----
 const featuredSlugs = [

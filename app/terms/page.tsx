@@ -90,7 +90,7 @@ export default function TermsPage() {
           </h2>
           <p>
             For questions about these Terms, contact us at
-            legal@game-name-generator-hub.com.
+            legal@toppicksbase.com.
           </p>
         </section>
       </div>
@@ -98,11 +98,11 @@ export default function TermsPage() {
       <JsonLd data={webPageSchema(
         "Terms of Service — Game Name Generator Hub",
         "Terms of Service for Game Name Generator Hub. Read our terms and conditions.",
-        `https://game-name-generator-hub.com/terms`
+        `https://toppicksbase.com/terms`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Terms of Service", url: `https://game-name-generator-hub.com/terms` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Terms of Service", url: `https://toppicksbase.com/terms` }
       ])} />
     </article>
   );

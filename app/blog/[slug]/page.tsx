@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) return { title: "Not Found" };
 
-  const url = `https://game-name-generator-hub.com/blog/${slug}`;
+  const url = `https://toppicksbase.com/blog/${slug}`;
 
   return {
     title: post.title,
@@ -130,17 +130,17 @@ export default async function BlogPostPage({ params }: Props) {
       <JsonLd data={webPageSchema(
         post.title,
         post.description,
-        `https://game-name-generator-hub.com/blog/${post.slug}`
+        `https://toppicksbase.com/blog/${post.slug}`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Blog", url: "https://game-name-generator-hub.com/blog" },
-        { name: post.title, url: `https://game-name-generator-hub.com/blog/${post.slug}` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Blog", url: "https://toppicksbase.com/blog" },
+        { name: post.title, url: `https://toppicksbase.com/blog/${post.slug}` }
       ])} />
       <JsonLd data={articleSchema(
         post.title,
         post.description,
-        `https://game-name-generator-hub.com/blog/${post.slug}`,
+        `https://toppicksbase.com/blog/${post.slug}`,
         post.date,
         post.category
       )} />

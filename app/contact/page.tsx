@@ -23,11 +23,11 @@ export default function ContactPage() {
         <h2 className="mb-4 text-xl font-semibold">Email Us</h2>
         <p className="text-gray-300">
           <strong className="text-white">General Inquiries:</strong>{" "}
-          hello@game-name-generator-hub.com
+          hello@toppicksbase.com
         </p>
         <p className="mt-2 text-gray-300">
           <strong className="text-white">Partnerships:</strong>{" "}
-          partners@game-name-generator-hub.com
+          partners@toppicksbase.com
         </p>
       </div>
 
@@ -42,11 +42,11 @@ export default function ContactPage() {
       <JsonLd data={webPageSchema(
         "Contact Us — Game Name Generator Hub",
         "Get in touch with Game Name Generator Hub. We welcome feedback, suggestions, and partnership inquiries.",
-        `https://game-name-generator-hub.com/contact`
+        `https://toppicksbase.com/contact`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Contact Us", url: `https://game-name-generator-hub.com/contact` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Contact Us", url: `https://toppicksbase.com/contact` }
       ])} />
     </article>
   );

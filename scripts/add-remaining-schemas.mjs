@@ -12,11 +12,11 @@ const intentSchemas = `
       <JsonLd data={webPageSchema(
         intent.title,
         intent.description,
-        \`https://game-name-generator-hub.com/\${intent.slug}\`
+        \`https://toppicksbase.com/\${intent.slug}\`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: intent.title, url: \`https://game-name-generator-hub.com/\${intent.slug}\` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: intent.title, url: \`https://toppicksbase.com/\${intent.slug}\` }
       ])} />
       <JsonLd data={faqSchema(faqs)} />`;
 
@@ -36,11 +36,11 @@ const blogIndexSchemas = `
       <JsonLd data={webPageSchema(
         "Blog — Game Name Generator Hub",
         "Read our blog for fantasy naming guides, RPG worldbuilding tips, gaming community advice, and creative inspiration.",
-        "https://game-name-generator-hub.com/blog"
+        "https://toppicksbase.com/blog"
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Blog", url: "https://game-name-generator-hub.com/blog" }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Blog", url: "https://toppicksbase.com/blog" }
       ])} />`;
 
 blogIndex = blogIndex.replace("    </article>", blogIndexSchemas + "\n    </article>");
@@ -76,11 +76,11 @@ for (const page of staticPages) {
       <JsonLd data={webPageSchema(
         "${titles[page]}",
         "${descs[page]}",
-        \`https://game-name-generator-hub.com/${page}\`
+        \`https://toppicksbase.com/${page}\`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "${titles[page].split(' — ')[0]}", url: \`https://game-name-generator-hub.com/${page}\` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "${titles[page].split(' — ')[0]}", url: \`https://toppicksbase.com/${page}\` }
       ])} />`;
 
   content = content.replace("    </article>", schemas + "\n    </article>");

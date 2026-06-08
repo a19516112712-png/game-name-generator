@@ -241,15 +241,15 @@ export default async function SearchPage({ searchParams }: Props) {
         data={webPageSchema(
           "Search — Game Name Generator Hub",
           "Search across 4,500+ name generators, intent pages, and blog articles.",
-          "https://game-name-generator-hub.com/search"
+          "https://toppicksbase.com/search"
         )}
       />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", url: "https://game-name-generator-hub.com" },
+          { name: "Home", url: "https://toppicksbase.com" },
           {
             name: "Search",
-            url: "https://game-name-generator-hub.com/search",
+            url: "https://toppicksbase.com/search",
           },
         ])}
       />

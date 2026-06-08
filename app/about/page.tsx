@@ -107,11 +107,11 @@ export default function AboutPage() {
       <JsonLd data={webPageSchema(
         "About Us — Game Name Generator Hub",
         "Learn about Game Name Generator Hub, the largest fantasy name generator with 4,500+ unique name generators.",
-        `https://game-name-generator-hub.com/about`
+        `https://toppicksbase.com/about`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "About Us", url: `https://game-name-generator-hub.com/about` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "About Us", url: `https://toppicksbase.com/about` }
       ])} />
     </article>
   );

@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `free ${page.context.toLowerCase()} name generator`,
   ].join(", ");
 
-  const url = `https://game-name-generator-hub.com/${page.slug}`;
+  const url = `https://toppicksbase.com/${page.slug}`;
 
   return {
     title,
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const BASE_URL = "https://game-name-generator-hub.com";
+const BASE_URL = "https://toppicksbase.com";
 
 export default async function GamePage({ params }: Props) {
   const { slug } = await params;

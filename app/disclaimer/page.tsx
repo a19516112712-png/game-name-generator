@@ -82,7 +82,7 @@ export default function DisclaimerPage() {
           </h2>
           <p>
             If you have questions about this disclaimer, please contact us at
-            legal@game-name-generator-hub.com.
+            legal@toppicksbase.com.
           </p>
         </section>
       </div>
@@ -90,11 +90,11 @@ export default function DisclaimerPage() {
       <JsonLd data={webPageSchema(
         "Disclaimer — Game Name Generator Hub",
         "Disclaimer for Game Name Generator Hub. Understand the limitations and scope of our name generation service.",
-        `https://game-name-generator-hub.com/disclaimer`
+        `https://toppicksbase.com/disclaimer`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Disclaimer", url: `https://game-name-generator-hub.com/disclaimer` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Disclaimer", url: `https://toppicksbase.com/disclaimer` }
       ])} />
     </article>
   );

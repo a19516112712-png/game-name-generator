@@ -11,7 +11,7 @@ slugPage = slugPage.replace(
 // Add base URL constant before the component
 slugPage = slugPage.replace(
   'export default async function GamePage',
-  'const BASE_URL = "https://game-name-generator-hub.com";\n\nexport default async function GamePage'
+  'const BASE_URL = "https://toppicksbase.com";\n\nexport default async function GamePage'
 );
 
 // Add schemas before closing </article>
@@ -43,17 +43,17 @@ const blogSchemas = `
       <JsonLd data={webPageSchema(
         post.title,
         post.description,
-        \`https://game-name-generator-hub.com/blog/\${post.slug}\`
+        \`https://toppicksbase.com/blog/\${post.slug}\`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: "Blog", url: "https://game-name-generator-hub.com/blog" },
-        { name: post.title, url: \`https://game-name-generator-hub.com/blog/\${post.slug}\` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: "Blog", url: "https://toppicksbase.com/blog" },
+        { name: post.title, url: \`https://toppicksbase.com/blog/\${post.slug}\` }
       ])} />
       <JsonLd data={articleSchema(
         post.title,
         post.description,
-        \`https://game-name-generator-hub.com/blog/\${post.slug}\`,
+        \`https://toppicksbase.com/blog/\${post.slug}\`,
         post.date,
         post.category
       )} />`;

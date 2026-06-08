@@ -4,7 +4,7 @@ import posts from "@/data/blog-posts.json";
 import intents from "@/data/intent-pages.json";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://game-name-generator-hub.com";
+  const baseUrl = "https://toppicksbase.com";
 
   const staticPages = [
     { url: baseUrl, changeFrequency: "daily" as const, priority: 1.0 },

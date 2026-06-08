@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://game-name-generator-hub.com/sitemap.xml",
+    sitemap: "https://toppicksbase.com/sitemap.xml",
   };
 }

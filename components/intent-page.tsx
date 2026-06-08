@@ -12,7 +12,7 @@ export function getIntentMetadata(slug: string): Metadata {
   const intent = getIntent(slug);
   if (!intent) return { title: "Not Found" };
 
-  const url = `https://game-name-generator-hub.com/${slug}`;
+  const url = `https://toppicksbase.com/${slug}`;
 
   return {
     title: intent.title,
@@ -161,11 +161,11 @@ export function IntentPageContent({ slug }: { slug: string }) {
       <JsonLd data={webPageSchema(
         intent.title,
         intent.description,
-        `https://game-name-generator-hub.com/${intent.slug}`
+        `https://toppicksbase.com/${intent.slug}`
       )} />
       <JsonLd data={breadcrumbSchema([
-        { name: "Home", url: "https://game-name-generator-hub.com" },
-        { name: intent.title, url: `https://game-name-generator-hub.com/${intent.slug}` }
+        { name: "Home", url: "https://toppicksbase.com" },
+        { name: intent.title, url: `https://toppicksbase.com/${intent.slug}` }
       ])} />
       <JsonLd data={faqSchema(faqs)} />
     </article>

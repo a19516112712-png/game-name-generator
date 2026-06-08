@@ -113,13 +113,13 @@ export default function BlogPage() {
         data={webPageSchema(
           "Blog — Game Name Generator Hub",
           "Read our blog for fantasy naming guides, RPG worldbuilding tips, gaming community advice.",
-          "https://game-name-generator-hub.com/blog"
+          "https://toppicksbase.com/blog"
         )}
       />
       <JsonLd
         data={breadcrumbSchema([
-          { name: "Home", url: "https://game-name-generator-hub.com" },
-          { name: "Blog", url: "https://game-name-generator-hub.com/blog" },
+          { name: "Home", url: "https://toppicksbase.com" },
+          { name: "Blog", url: "https://toppicksbase.com/blog" },
         ])}
       />
     </article>

@@ -1,4 +1,4 @@
-const BASE_URL = "https://game-name-generator-hub.com";
+const BASE_URL = "https://toppicksbase.com";
 const SITE_NAME = "Game Name Generator Hub";
 
 // ================================================================
