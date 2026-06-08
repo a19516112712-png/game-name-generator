@@ -7,7 +7,9 @@
     "build": "node scripts/generate-sitemaps.js && next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-pages": "tsx scripts/generate-pages.ts"
+    "generate-pages": "tsx scripts/generate-pages.ts",
+    "generate:daily": "node scripts/generate-daily.js",
+    "generate:report": "node scripts/generate-daily-report.js"
   },
   "dependencies": {
     "next": "^15.4.0",

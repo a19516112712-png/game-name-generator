@@ -1,0 +1,60 @@
+name: Daily SEO Content Generation
+
+on:
+  schedule:
+    # Beijing 08:00 = UTC 00:00
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Generate daily content
+        run: npm run generate:daily
+      
+      - name: Quality check
+        run: npm run build 2>&1 | tee build.log
+        continue-on-error: true
+      
+      - name: Generate report
+        run: node scripts/generate-daily-report.js
+        if: always()
+      
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            NEW=$(node -p "try{require('./DAILY_REPORT.json').newPages}catch(e){0}")
+            BLOG=$(node -p "try{require('./DAILY_REPORT.json').newBlogs}catch(e){0}")
+            TOTAL=$((NEW + BLOG))
+            git commit -m "daily: +${NEW} pages +${BLOG} blogs (${TOTAL} total) [skip ci]"
+            git push
+          fi
+      
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: daily-report
+          path: DAILY_REPORT.md
+          retention-days: 30
