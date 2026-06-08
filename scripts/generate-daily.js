@@ -27,54 +27,55 @@ function hash(str) {
 function pick(arr) { return arr[hash(TODAY + arr.length + Math.random().toString()) % arr.length]; }
 
 // ────────────────────────────────────────
-// 1. Generate 30 New Landing Pages
+// 1. Page Growth Limit Check
 // ────────────────────────────────────────
-const NEW_CONTEXTS = ['House', 'Castle', 'City', 'Village'];
-const NEW_RACES = ['Goblin', 'Pirate', 'Mage', 'Knight', 'Warrior'];
-const EXISTING_CONTEXTS = ['Kingdom', 'Empire', 'Clan', 'Guild', 'Realm', 'Dynasty', 'Order', 'Tribe', 'Legion', 'Alliance', 'Dominion', 'Faction'];
-const EXISTING_RACES = ['Dragon', 'Elf', 'Dwarf', 'Orc', 'Vampire', 'Demon', 'Angel', 'Undead', 'Phoenix', 'Titan'];
-const ADJECTIVES_POOL = [
-  'ancient', 'mystic', 'forgotten', 'eternal', 'cursed', 'blessed', 'fallen', 'risen',
-  'hidden', 'sacred', 'crimson', 'iron', 'silver', 'golden', 'shadow', 'storm',
-  'frost', 'ember', 'thunder', 'silent', 'fierce', 'noble', 'wild', 'grim',
-  'radiant', 'twilight', 'abyssal', 'celestial', 'infernal', 'primal',
-  'arcane', 'divine', 'mortal', 'spectral', 'runic', 'dread', 'hallow', 'verdant',
-  'obsidian', 'crystal', 'astral', 'nether', 'solar', 'lunar', 'chaos', 'order',
-  'winter', 'summer', 'autumn', 'spring', 'dawn', 'dusk', 'hollow', 'viridian'
+const TOTAL_PAGE_LIMIT = 10000;
+const appDirs = fs.readdirSync(path.join(__dirname, '..', 'app'))
+  .filter(d => fs.existsSync(path.join(__dirname, '..', 'app', d, 'page.tsx')));
+const currentTotal = appDirs.length;
+const targetNewPages = currentTotal >= TOTAL_PAGE_LIMIT ? 10 : 30;
+
+console.log(`📊 Total pages: ${currentTotal} (limit: ${TOTAL_PAGE_LIMIT})`);
+console.log(`📝 Target: ${targetNewPages} new pages today`);
+
+// ────────────────────────────────────────
+// 2. Generate New Landing Pages (Priority-Targeted)
+// ────────────────────────────────────────
+// Priority categories — from Search Console uncovered keywords
+const PRIORITY_CONTEXTS = ['Kingdom', 'Empire', 'Clan', 'Guild'];
+const PRIORITY_RACES = ['Dragon', 'Angel', 'Demon', 'Elf', 'Vampire'];
+const SECONDARY_CONTEXTS = ['Realm', 'Dynasty', 'Order', 'Tribe', 'Legion', 'Alliance', 'Dominion', 'Faction', 'House', 'Castle', 'City', 'Village'];
+const SECONDARY_RACES = ['Dwarf', 'Orc', 'Undead', 'Phoenix', 'Titan', 'Goblin', 'Pirate', 'Mage', 'Knight', 'Warrior'];
+
+// Quality adjectives — semantically rich, not random
+const QUALITY_ADJECTIVES = [
+  'ancient', 'dark', 'holy', 'sacred', 'cursed', 'blessed', 'fallen', 'risen',
+  'hidden', 'forgotten', 'eternal', 'crimson', 'iron', 'golden', 'silver',
+  'shadow', 'storm', 'frost', 'ember', 'thunder', 'silent', 'fierce', 'noble',
+  'wild', 'grim', 'radiant', 'twilight', 'abyssal', 'celestial', 'infernal',
+  'arcane', 'divine', 'spectral', 'runic', 'dread', 'hallow', 'verdant',
+  'obsidian', 'crystal', 'astral', 'nether', 'solar', 'lunar',
+  'winter', 'dawn', 'dusk', 'hollow', 'viridian', 'primal', 'chaos', 'order'
 ];
 
-console.log('📝 Generating 30 new landing pages...');
+console.log('📝 Generating new landing pages (priority-targeted)...');
 
-// Build list of existing slugs to avoid duplicates
-const existingDirs = fs.readdirSync(path.join(__dirname, '..', 'app'))
-  .filter(d => fs.existsSync(path.join(__dirname, '..', 'app', d, 'page.tsx')));
-
+const existingDirs = new Set(appDirs);
 let newPagesCreated = 0;
 
-// Combine contexts (new + existing) and races (new + existing) with fresh adjectives
-const allContexts = [...NEW_CONTEXTS, ...EXISTING_CONTEXTS];
-const allRaces = [...NEW_RACES, ...EXISTING_RACES];
-
-for (let i = 0; i < 100 && newPagesCreated < 30; i++) {
-  const adj = ADJECTIVES_POOL[(hash(TODAY + i) % ADJECTIVES_POOL.length)];
-  const context = allContexts[(hash(TODAY + i + 100) % allContexts.length)];
-  const race = allRaces[(hash(TODAY + i + 200) % allRaces.length)];
+// Phase 1: Priority combinations (adj + priority-context)
+for (let i = 0; i < QUALITY_ADJECTIVES.length && newPagesCreated < targetNewPages; i++) {
+  const adj = QUALITY_ADJECTIVES[i % QUALITY_ADJECTIVES.length];
+  const context = PRIORITY_CONTEXTS[i % PRIORITY_CONTEXTS.length];
+  const slug = `${adj}-${context.toLowerCase()}-names`;
   
-  // Alternate between race-context and adj-context patterns
-  const useRace = i % 3 === 0;
-  const slugBase = useRace ? `${race.toLowerCase()}-${context.toLowerCase()}` : `${adj}-${context.toLowerCase()}`;
-  const slug = slugBase + '-names';
+  if (existingDirs.has(slug)) continue;
   
-  if (existingDirs.includes(slug)) continue;
-  
-  const title = useRace
-    ? `${race} ${context} Names Generator`
-    : `${adj.charAt(0).toUpperCase() + adj.slice(1)} ${context} Names Generator`;
-  
+  const title = `${adj.charAt(0).toUpperCase() + adj.slice(1)} ${context} Names Generator`;
   const dir = path.join(__dirname, '..', 'app', slug);
   fs.mkdirSync(dir, { recursive: true });
-  
-  const pageContent = `import type { Metadata } from "next";
+  fs.writeFileSync(path.join(dir, 'page.tsx'),
+`import type { Metadata } from "next";
 import LandingPage, { getLandingMetadata } from "@/components/landing-page";
 
 export const metadata: Metadata = getLandingMetadata("${slug}");
@@ -82,19 +83,73 @@ export const metadata: Metadata = getLandingMetadata("${slug}");
 export default function Page() {
   return <LandingPage slug="${slug}" />;
 }
-`;
-  fs.writeFileSync(path.join(dir, 'page.tsx'), pageContent);
-  existingDirs.push(slug);
+`);
+  existingDirs.add(slug);
   newPagesCreated++;
-  
   REPORT.newKeywords.push(slug.replace(/-/g, ' '));
 }
 
+// Phase 2: Race + Priority-context combinations
+for (let i = 0; i < PRIORITY_RACES.length && newPagesCreated < targetNewPages; i++) {
+  const race = PRIORITY_RACES[i];
+  const context = PRIORITY_CONTEXTS[i % PRIORITY_CONTEXTS.length];
+  const slug = `${race.toLowerCase()}-${context.toLowerCase()}-names`;
+  
+  if (existingDirs.has(slug)) continue;
+  
+  const dir = path.join(__dirname, '..', 'app', slug);
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'page.tsx'),
+`import type { Metadata } from "next";
+import LandingPage, { getLandingMetadata } from "@/components/landing-page";
+
+export const metadata: Metadata = getLandingMetadata("${slug}");
+
+export default function Page() {
+  return <LandingPage slug="${slug}" />;
+}
+`);
+  existingDirs.add(slug);
+  newPagesCreated++;
+  REPORT.newKeywords.push(slug.replace(/-/g, ' '));
+}
+
+// Phase 3: Adj + secondary contexts (if still under target)
+if (newPagesCreated < targetNewPages) {
+  for (let i = 0; i < QUALITY_ADJECTIVES.length && newPagesCreated < targetNewPages; i++) {
+    const adj = QUALITY_ADJECTIVES[(i + 7) % QUALITY_ADJECTIVES.length];
+    const context = SECONDARY_CONTEXTS[i % SECONDARY_CONTEXTS.length];
+    const slug = `${adj}-${context.toLowerCase()}-names`;
+    
+    if (existingDirs.has(slug)) continue;
+    
+    const dir = path.join(__dirname, '..', 'app', slug);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, 'page.tsx'),
+`import type { Metadata } from "next";
+import LandingPage, { getLandingMetadata } from "@/components/landing-page";
+
+export const metadata: Metadata = getLandingMetadata("${slug}");
+
+export default function Page() {
+  return <LandingPage slug="${slug}" />;
+}
+`);
+    existingDirs.add(slug);
+    newPagesCreated++;
+    REPORT.newKeywords.push(slug.replace(/-/g, ' '));
+  }
+}
+
 REPORT.newPages = newPagesCreated;
+REPORT.totalPages = currentTotal + newPagesCreated;
 console.log(`   ✅ ${newPagesCreated} new landing pages created`);
+if (currentTotal >= TOTAL_PAGE_LIMIT) {
+  console.log('   ⚠️  Page limit reached — reduced to 10/day, focusing on quality');
+}
 
 // ────────────────────────────────────────
-// 2. Generate 5 SEO Blog Posts (EEAT style)
+// 3. Generate 5 SEO Blog Posts (EEAT style)// 2. Generate 5 SEO Blog Posts (EEAT style)
 // ────────────────────────────────────────
 console.log('📝 Generating 5 SEO blog posts...');
 
@@ -254,7 +309,7 @@ require('./generate-sitemaps.js');
 // 4. Save Report JSON
 // ────────────────────────────────────────
 const pages = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'pages.json'), 'utf8'));
-REPORT.totalPages = pages.length + fs.readdirSync(path.join(__dirname, '..', 'app'))
+REPORT.totalPages = appDirs.length;
   .filter(d => fs.existsSync(path.join(__dirname, '..', 'app', d, 'page.tsx'))).length;
 REPORT.totalBlogs = blogPosts.length;
 REPORT.jsonLdOk = true;

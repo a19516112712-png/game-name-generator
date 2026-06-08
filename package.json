@@ -9,7 +9,8 @@
     "lint": "next lint",
     "generate-pages": "tsx scripts/generate-pages.ts",
     "generate:daily": "node scripts/generate-daily.js",
-    "generate:report": "node scripts/generate-daily-report.js"
+    "generate:report": "node scripts/generate-daily-report.js",
+    "report:weekly": "node scripts/generate-weekly-report.js"
   },
   "dependencies": {
     "next": "^15.4.0",
