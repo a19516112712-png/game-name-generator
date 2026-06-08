@@ -1,0 +1,755 @@
+
+> game-site@0.1.0 build
+> node scripts/generate-sitemaps.js && next build
+
+✅ sitemap-generators-1.xml (900 URLs)
+✅ sitemap-generators-2.xml (900 URLs)
+✅ sitemap-generators-3.xml (900 URLs)
+✅ sitemap-generators-4.xml (900 URLs)
+✅ sitemap-generators-5.xml (900 URLs)
+✅ sitemap-generators-6.xml (20 URLs)
+✅ sitemap-landing.xml (562 URLs)
+✅ sitemap-blog.xml (133 URLs)
+✅ sitemap-static.xml (9 URLs)
+✅ sitemap.xml (sitemap index with 9 entries)
+
+📊 Total URLs across all sitemaps: 5224
+📁 Files generated in public/:
+   sitemap.xml (index)
+   sitemap-generators-1.xml
+   sitemap-generators-2.xml
+   sitemap-generators-3.xml
+   sitemap-generators-4.xml
+   sitemap-generators-5.xml
+   sitemap-generators-6.xml
+   sitemap-landing.xml
+   sitemap-blog.xml
+   sitemap-static.xml
+
+📄 SITEMAP_STRUCTURE_REPORT.md generated
+⚠ No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.5.19
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 42s
+   Linting and checking validity of types ...
+
+./app/generators/page.tsx
+248:43  Warning: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./app/page.tsx
+4:8  Warning: 'posts' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/category-hub.tsx
+75:9  Warning: 'themes' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+76:9  Warning: 'contexts' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+77:9  Warning: 'races' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+136:32  Warning: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
+147:32  Warning: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./components/landing-page.tsx
+4:8  Warning: 'posts' is defined but never used.  @typescript-eslint/no-unused-vars
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+   Generating static pages (0/5297) ...
+   Generating static pages (1324/5297) 
+   Generating static pages (2648/5297) 
+   Generating static pages (3972/5297) 
+ ✓ Generating static pages (5297/5297)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                         Size  First Load JS
+┌ ○ /                                            1.12 kB         107 kB
+├ ○ /_not-found                                     1 kB         103 kB
+├ ● /[slug]                                      1.87 kB         108 kB
+├   ├ /ancient-angel-alliance-name-generator
+├   ├ /ancient-angel-clan-name-generator
+├   ├ /ancient-angel-dominion-name-generator
+├   └ [+4497 more paths]
+├ ○ /about                                       1.87 kB         108 kB
+├ ○ /abyssal-guild-names                         1.87 kB         108 kB
+├ ○ /abyssal-house-names                         1.87 kB         108 kB
+├ ○ /ancient-alliance-names                      1.87 kB         108 kB
+├ ○ /ancient-clan-names                          1.87 kB         108 kB
+├ ○ /ancient-dominion-names                      1.87 kB         108 kB
+├ ○ /ancient-dynasty-names                       1.87 kB         108 kB
+├ ○ /ancient-empire-names                        1.87 kB         108 kB
+├ ○ /ancient-faction-names                       1.87 kB         108 kB
+├ ○ /ancient-guild-names                         1.87 kB         108 kB
+├ ○ /ancient-kingdom-names                       1.87 kB         108 kB
+├ ○ /ancient-legion-names                        1.87 kB         108 kB
+├ ○ /ancient-order-names                         1.87 kB         108 kB
+├ ○ /ancient-realm-names                         1.87 kB         108 kB
+├ ○ /ancient-tribe-names                         1.87 kB         108 kB
+├ ○ /angel                                         176 B         103 kB
+├ ○ /angel-alliance-names                        1.87 kB         108 kB
+├ ○ /angel-clan-names                            1.87 kB         108 kB
+├ ○ /angel-dominion-names                        1.87 kB         108 kB
+├ ○ /angel-dynasty-names                         1.87 kB         108 kB
+├ ○ /angel-empire-names                          1.87 kB         108 kB
+├ ○ /angel-faction-names                         1.87 kB         108 kB
+├ ○ /angel-guild-names                           1.87 kB         108 kB
+├ ○ /angel-kingdom-names                         1.87 kB         108 kB
+├ ○ /angel-legion-names                          1.87 kB         108 kB
+├ ○ /angel-name-generator                        1.87 kB         108 kB
+├ ○ /angel-names                                 1.87 kB         108 kB
+├ ○ /angel-order-names                           1.87 kB         108 kB
+├ ○ /angel-realm-names                           1.87 kB         108 kB
+├ ○ /angel-tribe-names                           1.87 kB         108 kB
+├ ○ /arcane-alliance-names                       1.87 kB         108 kB
+├ ○ /arcane-clan-names                           1.87 kB         108 kB
+├ ○ /arcane-dominion-names                       1.87 kB         108 kB
+├ ○ /arcane-dynasty-names                        1.87 kB         108 kB
+├ ○ /arcane-empire-names                         1.87 kB         108 kB
+├ ○ /arcane-faction-names                        1.87 kB         108 kB
+├ ○ /arcane-guild-names                          1.87 kB         108 kB
+├ ○ /arcane-kingdom-names                        1.87 kB         108 kB
+├ ○ /arcane-legion-names                         1.87 kB         108 kB
+├ ○ /arcane-order-names                          1.87 kB         108 kB
+├ ○ /arcane-realm-names                          1.87 kB         108 kB
+├ ○ /arcane-tribe-names                          1.87 kB         108 kB
+├ ○ /arcane-village-names                        1.87 kB         108 kB
+├ ○ /astral-guild-names                          1.87 kB         108 kB
+├ ○ /best-alliance-names                         1.87 kB         108 kB
+├ ○ /best-clan-names                             1.87 kB         108 kB
+├ ○ /best-dominion-names                         1.87 kB         108 kB
+├ ○ /best-dynasty-names                          1.87 kB         108 kB
+├ ○ /best-empire-names                           1.87 kB         108 kB
+├ ○ /best-faction-names                          1.87 kB         108 kB
+├ ○ /best-guild-names                            1.87 kB         108 kB
+├ ○ /best-kingdom-names                          1.87 kB         108 kB
+├ ○ /best-legion-names                           1.87 kB         108 kB
+├ ○ /best-order-names                            1.87 kB         108 kB
+├ ○ /best-realm-names                            1.87 kB         108 kB
+├ ○ /best-tribe-names                            1.87 kB         108 kB
+├ ○ /blessed-empire-names                        1.87 kB         108 kB
+├ ○ /blog                                        1.87 kB         108 kB
+├ ● /blog/[slug]                                 1.87 kB         108 kB
+├   ├ /blog/how-to-create-fantasy-kingdom-names
+├   ├ /blog/best-guild-name-ideas-for-rpg-games
+├   ├ /blog/dragon-name-generator-guide
+├   └ [+122 more paths]
+├ ● /blog/category/[slug]                        1.87 kB         108 kB
+├   ├ /blog/category/fantasy
+├   ├ /blog/category/rpg
+├   ├ /blog/category/dnd
+├   └ [+5 more paths]
+├ ○ /blood-alliance-names                        1.87 kB         108 kB
+├ ○ /blood-clan-names                            1.87 kB         108 kB
+├ ○ /blood-dominion-names                        1.87 kB         108 kB
+├ ○ /blood-dynasty-names                         1.87 kB         108 kB
+├ ○ /blood-empire-names                          1.87 kB         108 kB
+├ ○ /blood-faction-names                         1.87 kB         108 kB
+├ ○ /blood-guild-names                           1.87 kB         108 kB
+├ ○ /blood-kingdom-names                         1.87 kB         108 kB
+├ ○ /blood-legion-names                          1.87 kB         108 kB
+├ ○ /blood-order-names                           1.87 kB         108 kB
+├ ○ /blood-realm-names                           1.87 kB         108 kB
+├ ○ /blood-tribe-names                           1.87 kB         108 kB
+├ ○ /celestial-alliance-names                    1.87 kB         108 kB
+├ ○ /celestial-castle-names                      1.87 kB         108 kB
+├ ○ /celestial-clan-names                        1.87 kB         108 kB
+├ ○ /celestial-dominion-names                    1.87 kB         108 kB
+├ ○ /celestial-dynasty-names                     1.87 kB         108 kB
+├ ○ /celestial-empire-names                      1.87 kB         108 kB
+├ ○ /celestial-faction-names                     1.87 kB         108 kB
+├ ○ /celestial-guild-names                       1.87 kB         108 kB
+├ ○ /celestial-kingdom-names                     1.87 kB         108 kB
+├ ○ /celestial-legion-names                      1.87 kB         108 kB
+├ ○ /celestial-order-names                       1.87 kB         108 kB
+├ ○ /celestial-realm-names                       1.87 kB         108 kB
+├ ○ /celestial-tribe-names                       1.87 kB         108 kB
+├ ○ /chaos-empire-names                          1.87 kB         108 kB
+├ ○ /character-name-generator                    1.87 kB         108 kB
+├ ○ /clan                                          176 B         103 kB
+├ ○ /clan-name-generator                         1.87 kB         108 kB
+├ ○ /clan-names                                  1.87 kB         108 kB
+├ ○ /contact                                       176 B         103 kB
+├ ○ /continent-name-generator                    1.87 kB         108 kB
+├ ○ /cool-alliance-names                         1.87 kB         108 kB
+├ ○ /cool-clan-names                             1.87 kB         108 kB
+├ ○ /cool-dominion-names                         1.87 kB         108 kB
+├ ○ /cool-dynasty-names                          1.87 kB         108 kB
+├ ○ /cool-empire-names                           1.87 kB         108 kB
+├ ○ /cool-faction-names                          1.87 kB         108 kB
+├ ○ /cool-guild-names                            1.87 kB         108 kB
+├ ○ /cool-kingdom-names                          1.87 kB         108 kB
+├ ○ /cool-legion-names                           1.87 kB         108 kB
+├ ○ /cool-order-names                            1.87 kB         108 kB
+├ ○ /cool-realm-names                            1.87 kB         108 kB
+├ ○ /cool-tribe-names                            1.87 kB         108 kB
+├ ○ /crimson-guild-names                         1.87 kB         108 kB
+├ ○ /crimson-legion-names                        1.87 kB         108 kB
+├ ○ /crystal-alliance-names                      1.87 kB         108 kB
+├ ○ /crystal-clan-names                          1.87 kB         108 kB
+├ ○ /crystal-dominion-names                      1.87 kB         108 kB
+├ ○ /crystal-dynasty-names                       1.87 kB         108 kB
+├ ○ /crystal-empire-names                        1.87 kB         108 kB
+├ ○ /crystal-faction-names                       1.87 kB         108 kB
+├ ○ /crystal-guild-names                         1.87 kB         108 kB
+├ ○ /crystal-kingdom-names                       1.87 kB         108 kB
+├ ○ /crystal-legion-names                        1.87 kB         108 kB
+├ ○ /crystal-order-names                         1.87 kB         108 kB
+├ ○ /crystal-realm-names                         1.87 kB         108 kB
+├ ○ /crystal-tribe-names                         1.87 kB         108 kB
+├ ○ /cursed-alliance-names                       1.87 kB         108 kB
+├ ○ /cursed-clan-names                           1.87 kB         108 kB
+├ ○ /cursed-dominion-names                       1.87 kB         108 kB
+├ ○ /cursed-dynasty-names                        1.87 kB         108 kB
+├ ○ /cursed-empire-names                         1.87 kB         108 kB
+├ ○ /cursed-faction-names                        1.87 kB         108 kB
+├ ○ /cursed-guild-names                          1.87 kB         108 kB
+├ ○ /cursed-kingdom-names                        1.87 kB         108 kB
+├ ○ /cursed-legion-names                         1.87 kB         108 kB
+├ ○ /cursed-order-names                          1.87 kB         108 kB
+├ ○ /cursed-realm-names                          1.87 kB         108 kB
+├ ○ /cursed-tribe-names                          1.87 kB         108 kB
+├ ○ /dark-alliance-names                         1.87 kB         108 kB
+├ ○ /dark-clan-names                             1.87 kB         108 kB
+├ ○ /dark-dominion-names                         1.87 kB         108 kB
+├ ○ /dark-dynasty-names                          1.87 kB         108 kB
+├ ○ /dark-empire-names                           1.87 kB         108 kB
+├ ○ /dark-faction-names                          1.87 kB         108 kB
+├ ○ /dark-guild-names                            1.87 kB         108 kB
+├ ○ /dark-kingdom-names                          1.87 kB         108 kB
+├ ○ /dark-legion-names                           1.87 kB         108 kB
+├ ○ /dark-order-names                            1.87 kB         108 kB
+├ ○ /dark-realm-names                            1.87 kB         108 kB
+├ ○ /dark-tribe-names                            1.87 kB         108 kB
+├ ○ /dawn-kingdom-names                          1.87 kB         108 kB
+├ ○ /demon                                         176 B         103 kB
+├ ○ /demon-alliance-names                        1.87 kB         108 kB
+├ ○ /demon-clan-names                            1.87 kB         108 kB
+├ ○ /demon-dominion-names                        1.87 kB         108 kB
+├ ○ /demon-dynasty-names                         1.87 kB         108 kB
+├ ○ /demon-empire-names                          1.87 kB         108 kB
+├ ○ /demon-faction-names                         1.87 kB         108 kB
+├ ○ /demon-guild-names                           1.87 kB         108 kB
+├ ○ /demon-kingdom-names                         1.87 kB         108 kB
+├ ○ /demon-legion-names                          1.87 kB         108 kB
+├ ○ /demon-name-generator                        1.87 kB         108 kB
+├ ○ /demon-names                                 1.87 kB         108 kB
+├ ○ /demon-order-names                           1.87 kB         108 kB
+├ ○ /demon-realm-names                           1.87 kB         108 kB
+├ ○ /demon-tribe-names                           1.87 kB         108 kB
+├ ○ /disclaimer                                    176 B         103 kB
+├ ○ /divine-guild-names                          1.87 kB         108 kB
+├ ○ /divine-realm-names                          1.87 kB         108 kB
+├ ○ /dragon                                        176 B         103 kB
+├ ○ /dragon-alliance-names                       1.87 kB         108 kB
+├ ○ /dragon-clan-names                           1.87 kB         108 kB
+├ ○ /dragon-dominion-names                       1.87 kB         108 kB
+├ ○ /dragon-dynasty-names                        1.87 kB         108 kB
+├ ○ /dragon-empire-names                         1.87 kB         108 kB
+├ ○ /dragon-faction-names                        1.87 kB         108 kB
+├ ○ /dragon-guild-names                          1.87 kB         108 kB
+├ ○ /dragon-kingdom-names                        1.87 kB         108 kB
+├ ○ /dragon-legion-names                         1.87 kB         108 kB
+├ ○ /dragon-name-generator                       1.87 kB         108 kB
+├ ○ /dragon-names                                1.87 kB         108 kB
+├ ○ /dragon-order-names                          1.87 kB         108 kB
+├ ○ /dragon-realm-names                          1.87 kB         108 kB
+├ ○ /dragon-tribe-names                          1.87 kB         108 kB
+├ ○ /dread-clan-names                            1.87 kB         108 kB
+├ ○ /dusk-empire-names                           1.87 kB         108 kB
+├ ○ /dwarf-alliance-names                        1.87 kB         108 kB
+├ ○ /dwarf-clan-names                            1.87 kB         108 kB
+├ ○ /dwarf-dominion-names                        1.87 kB         108 kB
+├ ○ /dwarf-dynasty-names                         1.87 kB         108 kB
+├ ○ /dwarf-empire-names                          1.87 kB         108 kB
+├ ○ /dwarf-faction-names                         1.87 kB         108 kB
+├ ○ /dwarf-guild-names                           1.87 kB         108 kB
+├ ○ /dwarf-kingdom-names                         1.87 kB         108 kB
+├ ○ /dwarf-legion-names                          1.87 kB         108 kB
+├ ○ /dwarf-order-names                           1.87 kB         108 kB
+├ ○ /dwarf-realm-names                           1.87 kB         108 kB
+├ ○ /dwarf-tribe-names                           1.87 kB         108 kB
+├ ○ /elf-alliance-names                          1.87 kB         108 kB
+├ ○ /elf-clan-names                              1.87 kB         108 kB
+├ ○ /elf-dominion-names                          1.87 kB         108 kB
+├ ○ /elf-dynasty-names                           1.87 kB         108 kB
+├ ○ /elf-empire-names                            1.87 kB         108 kB
+├ ○ /elf-faction-names                           1.87 kB         108 kB
+├ ○ /elf-guild-names                             1.87 kB         108 kB
+├ ○ /elf-kingdom-names                           1.87 kB         108 kB
+├ ○ /elf-legion-names                            1.87 kB         108 kB
+├ ○ /elf-name-generator                          1.87 kB         108 kB
+├ ○ /elf-names                                   1.87 kB         108 kB
+├ ○ /elf-order-names                             1.87 kB         108 kB
+├ ○ /elf-realm-names                             1.87 kB         108 kB
+├ ○ /elf-tribe-names                             1.87 kB         108 kB
+├ ○ /ember-clan-names                            1.87 kB         108 kB
+├ ○ /ember-village-names                         1.87 kB         108 kB
+├ ○ /empire                                        176 B         103 kB
+├ ○ /empire-name-generator                       1.87 kB         108 kB
+├ ○ /empire-names                                1.87 kB         108 kB
+├ ○ /epic-alliance-names                         1.87 kB         108 kB
+├ ○ /epic-clan-names                             1.87 kB         108 kB
+├ ○ /epic-dominion-names                         1.87 kB         108 kB
+├ ○ /epic-dynasty-names                          1.87 kB         108 kB
+├ ○ /epic-empire-names                           1.87 kB         108 kB
+├ ○ /epic-faction-names                          1.87 kB         108 kB
+├ ○ /epic-guild-names                            1.87 kB         108 kB
+├ ○ /epic-kingdom-names                          1.87 kB         108 kB
+├ ○ /epic-legion-names                           1.87 kB         108 kB
+├ ○ /epic-order-names                            1.87 kB         108 kB
+├ ○ /epic-realm-names                            1.87 kB         108 kB
+├ ○ /epic-tribe-names                            1.87 kB         108 kB
+├ ○ /eternal-alliance-names                      1.87 kB         108 kB
+├ ○ /eternal-clan-names                          1.87 kB         108 kB
+├ ○ /eternal-dominion-names                      1.87 kB         108 kB
+├ ○ /eternal-dynasty-names                       1.87 kB         108 kB
+├ ○ /eternal-empire-names                        1.87 kB         108 kB
+├ ○ /eternal-faction-names                       1.87 kB         108 kB
+├ ○ /eternal-guild-names                         1.87 kB         108 kB
+├ ○ /eternal-kingdom-names                       1.87 kB         108 kB
+├ ○ /eternal-legion-names                        1.87 kB         108 kB
+├ ○ /eternal-order-names                         1.87 kB         108 kB
+├ ○ /eternal-realm-names                         1.87 kB         108 kB
+├ ○ /eternal-tribe-names                         1.87 kB         108 kB
+├ ○ /evil-alliance-names                         1.87 kB         108 kB
+├ ○ /evil-clan-names                             1.87 kB         108 kB
+├ ○ /evil-dominion-names                         1.87 kB         108 kB
+├ ○ /evil-dynasty-names                          1.87 kB         108 kB
+├ ○ /evil-empire-names                           1.87 kB         108 kB
+├ ○ /evil-faction-names                          1.87 kB         108 kB
+├ ○ /evil-guild-names                            1.87 kB         108 kB
+├ ○ /evil-kingdom-names                          1.87 kB         108 kB
+├ ○ /evil-legion-names                           1.87 kB         108 kB
+├ ○ /evil-order-names                            1.87 kB         108 kB
+├ ○ /evil-realm-names                            1.87 kB         108 kB
+├ ○ /evil-tribe-names                            1.87 kB         108 kB
+├ ○ /faction-name-generator                      1.87 kB         108 kB
+├ ○ /fallen-clan-names                           1.87 kB         108 kB
+├ ○ /fantasy-name-generator                      1.87 kB         108 kB
+├ ○ /fierce-empire-names                         1.87 kB         108 kB
+├ ○ /fierce-order-names                          1.87 kB         108 kB
+├ ○ /fire-alliance-names                         1.87 kB         108 kB
+├ ○ /fire-clan-names                             1.87 kB         108 kB
+├ ○ /fire-dominion-names                         1.87 kB         108 kB
+├ ○ /fire-dynasty-names                          1.87 kB         108 kB
+├ ○ /fire-empire-names                           1.87 kB         108 kB
+├ ○ /fire-faction-names                          1.87 kB         108 kB
+├ ○ /fire-guild-names                            1.87 kB         108 kB
+├ ○ /fire-kingdom-names                          1.87 kB         108 kB
+├ ○ /fire-legion-names                           1.87 kB         108 kB
+├ ○ /fire-order-names                            1.87 kB         108 kB
+├ ○ /fire-realm-names                            1.87 kB         108 kB
+├ ○ /fire-tribe-names                            1.87 kB         108 kB
+├ ○ /forgotten-alliance-names                    1.87 kB         108 kB
+├ ○ /forgotten-clan-names                        1.87 kB         108 kB
+├ ○ /forgotten-dominion-names                    1.87 kB         108 kB
+├ ○ /forgotten-dynasty-names                     1.87 kB         108 kB
+├ ○ /forgotten-empire-names                      1.87 kB         108 kB
+├ ○ /forgotten-faction-names                     1.87 kB         108 kB
+├ ○ /forgotten-guild-names                       1.87 kB         108 kB
+├ ○ /forgotten-kingdom-names                     1.87 kB         108 kB
+├ ○ /forgotten-legion-names                      1.87 kB         108 kB
+├ ○ /forgotten-order-names                       1.87 kB         108 kB
+├ ○ /forgotten-realm-names                       1.87 kB         108 kB
+├ ○ /forgotten-tribe-names                       1.87 kB         108 kB
+├ ○ /fortnite-name-generator                     1.87 kB         108 kB
+├ ○ /frost-city-names                            1.87 kB         108 kB
+├ ○ /frost-empire-names                          1.87 kB         108 kB
+├ ○ /frozen-alliance-names                       1.87 kB         108 kB
+├ ○ /frozen-clan-names                           1.87 kB         108 kB
+├ ○ /frozen-dominion-names                       1.87 kB         108 kB
+├ ○ /frozen-dynasty-names                        1.87 kB         108 kB
+├ ○ /frozen-empire-names                         1.87 kB         108 kB
+├ ○ /frozen-faction-names                        1.87 kB         108 kB
+├ ○ /frozen-guild-names                          1.87 kB         108 kB
+├ ○ /frozen-kingdom-names                        1.87 kB         108 kB
+├ ○ /frozen-legion-names                         1.87 kB         108 kB
+├ ○ /frozen-order-names                          1.87 kB         108 kB
+├ ○ /frozen-realm-names                          1.87 kB         108 kB
+├ ○ /frozen-tribe-names                          1.87 kB         108 kB
+├ ○ /generators                                  1.87 kB         108 kB
+├ ○ /giant-alliance-names                        1.87 kB         108 kB
+├ ○ /giant-clan-names                            1.87 kB         108 kB
+├ ○ /giant-dominion-names                        1.87 kB         108 kB
+├ ○ /giant-dynasty-names                         1.87 kB         108 kB
+├ ○ /giant-empire-names                          1.87 kB         108 kB
+├ ○ /giant-faction-names                         1.87 kB         108 kB
+├ ○ /giant-guild-names                           1.87 kB         108 kB
+├ ○ /giant-kingdom-names                         1.87 kB         108 kB
+├ ○ /giant-legion-names                          1.87 kB         108 kB
+├ ○ /giant-order-names                           1.87 kB         108 kB
+├ ○ /giant-realm-names                           1.87 kB         108 kB
+├ ○ /giant-tribe-names                           1.87 kB         108 kB
+├ ○ /goblin-alliance-names                       1.87 kB         108 kB
+├ ○ /goblin-clan-names                           1.87 kB         108 kB
+├ ○ /goblin-dominion-names                       1.87 kB         108 kB
+├ ○ /goblin-dynasty-names                        1.87 kB         108 kB
+├ ○ /goblin-empire-names                         1.87 kB         108 kB
+├ ○ /goblin-faction-names                        1.87 kB         108 kB
+├ ○ /goblin-guild-names                          1.87 kB         108 kB
+├ ○ /goblin-kingdom-names                        1.87 kB         108 kB
+├ ○ /goblin-legion-names                         1.87 kB         108 kB
+├ ○ /goblin-order-names                          1.87 kB         108 kB
+├ ○ /goblin-realm-names                          1.87 kB         108 kB
+├ ○ /goblin-tribe-names                          1.87 kB         108 kB
+├ ○ /golden-alliance-names                       1.87 kB         108 kB
+├ ○ /golden-clan-names                           1.87 kB         108 kB
+├ ○ /golden-dominion-names                       1.87 kB         108 kB
+├ ○ /golden-dynasty-names                        1.87 kB         108 kB
+├ ○ /golden-empire-names                         1.87 kB         108 kB
+├ ○ /golden-faction-names                        1.87 kB         108 kB
+├ ○ /golden-guild-names                          1.87 kB         108 kB
+├ ○ /golden-kingdom-names                        1.87 kB         108 kB
+├ ○ /golden-legion-names                         1.87 kB         108 kB
+├ ○ /golden-order-names                          1.87 kB         108 kB
+├ ○ /golden-realm-names                          1.87 kB         108 kB
+├ ○ /golden-tribe-names                          1.87 kB         108 kB
+├ ○ /grim-alliance-names                         1.87 kB         108 kB
+├ ○ /grim-kingdom-names                          1.87 kB         108 kB
+├ ○ /guild                                         176 B         103 kB
+├ ○ /guild-name-generator                        1.87 kB         108 kB
+├ ○ /guild-names                                 1.87 kB         108 kB
+├ ○ /hallow-guild-names                          1.87 kB         108 kB
+├ ○ /hidden-dynasty-names                        1.87 kB         108 kB
+├ ○ /hidden-kingdom-names                        1.87 kB         108 kB
+├ ○ /hollow-clan-names                           1.87 kB         108 kB
+├ ○ /holy-alliance-names                         1.87 kB         108 kB
+├ ○ /holy-clan-names                             1.87 kB         108 kB
+├ ○ /holy-dominion-names                         1.87 kB         108 kB
+├ ○ /holy-dynasty-names                          1.87 kB         108 kB
+├ ○ /holy-empire-names                           1.87 kB         108 kB
+├ ○ /holy-faction-names                          1.87 kB         108 kB
+├ ○ /holy-guild-names                            1.87 kB         108 kB
+├ ○ /holy-kingdom-names                          1.87 kB         108 kB
+├ ○ /holy-legion-names                           1.87 kB         108 kB
+├ ○ /holy-order-names                            1.87 kB         108 kB
+├ ○ /holy-realm-names                            1.87 kB         108 kB
+├ ○ /holy-tribe-names                            1.87 kB         108 kB
+├ ○ /human-alliance-names                        1.87 kB         108 kB
+├ ○ /human-clan-names                            1.87 kB         108 kB
+├ ○ /human-dominion-names                        1.87 kB         108 kB
+├ ○ /human-dynasty-names                         1.87 kB         108 kB
+├ ○ /human-empire-names                          1.87 kB         108 kB
+├ ○ /human-faction-names                         1.87 kB         108 kB
+├ ○ /human-guild-names                           1.87 kB         108 kB
+├ ○ /human-kingdom-names                         1.87 kB         108 kB
+├ ○ /human-legion-names                          1.87 kB         108 kB
+├ ○ /human-order-names                           1.87 kB         108 kB
+├ ○ /human-realm-names                           1.87 kB         108 kB
+├ ○ /human-tribe-names                           1.87 kB         108 kB
+├ ○ /ice-alliance-names                          1.87 kB         108 kB
+├ ○ /ice-clan-names                              1.87 kB         108 kB
+├ ○ /ice-dominion-names                          1.87 kB         108 kB
+├ ○ /ice-dynasty-names                           1.87 kB         108 kB
+├ ○ /ice-empire-names                            1.87 kB         108 kB
+├ ○ /ice-faction-names                           1.87 kB         108 kB
+├ ○ /ice-guild-names                             1.87 kB         108 kB
+├ ○ /ice-kingdom-names                           1.87 kB         108 kB
+├ ○ /ice-legion-names                            1.87 kB         108 kB
+├ ○ /ice-order-names                             1.87 kB         108 kB
+├ ○ /ice-realm-names                             1.87 kB         108 kB
+├ ○ /ice-tribe-names                             1.87 kB         108 kB
+├ ○ /infernal-alliance-names                     1.87 kB         108 kB
+├ ○ /infernal-city-names                         1.87 kB         108 kB
+├ ○ /infernal-clan-names                         1.87 kB         108 kB
+├ ○ /infernal-dominion-names                     1.87 kB         108 kB
+├ ○ /infernal-dynasty-names                      1.87 kB         108 kB
+├ ○ /infernal-empire-names                       1.87 kB         108 kB
+├ ○ /infernal-faction-names                      1.87 kB         108 kB
+├ ○ /infernal-guild-names                        1.87 kB         108 kB
+├ ○ /infernal-kingdom-names                      1.87 kB         108 kB
+├ ○ /infernal-legion-names                       1.87 kB         108 kB
+├ ○ /infernal-order-names                        1.87 kB         108 kB
+├ ○ /infernal-realm-names                        1.87 kB         108 kB
+├ ○ /infernal-tribe-names                        1.87 kB         108 kB
+├ ○ /iron-alliance-names                         1.87 kB         108 kB
+├ ○ /iron-kingdom-names                          1.87 kB         108 kB
+├ ○ /kingdom                                       176 B         103 kB
+├ ○ /kingdom-name-generator                      1.87 kB         108 kB
+├ ○ /kingdom-names                               1.87 kB         108 kB
+├ ○ /legendary-alliance-names                    1.87 kB         108 kB
+├ ○ /legendary-clan-names                        1.87 kB         108 kB
+├ ○ /legendary-dominion-names                    1.87 kB         108 kB
+├ ○ /legendary-dynasty-names                     1.87 kB         108 kB
+├ ○ /legendary-empire-names                      1.87 kB         108 kB
+├ ○ /legendary-faction-names                     1.87 kB         108 kB
+├ ○ /legendary-guild-names                       1.87 kB         108 kB
+├ ○ /legendary-kingdom-names                     1.87 kB         108 kB
+├ ○ /legendary-legion-names                      1.87 kB         108 kB
+├ ○ /legendary-order-names                       1.87 kB         108 kB
+├ ○ /legendary-realm-names                       1.87 kB         108 kB
+├ ○ /legendary-tribe-names                       1.87 kB         108 kB
+├ ○ /lunar-clan-names                            1.87 kB         108 kB
+├ ○ /medieval-alliance-names                     1.87 kB         108 kB
+├ ○ /medieval-clan-names                         1.87 kB         108 kB
+├ ○ /medieval-dominion-names                     1.87 kB         108 kB
+├ ○ /medieval-dynasty-names                      1.87 kB         108 kB
+├ ○ /medieval-empire-names                       1.87 kB         108 kB
+├ ○ /medieval-faction-names                      1.87 kB         108 kB
+├ ○ /medieval-guild-names                        1.87 kB         108 kB
+├ ○ /medieval-kingdom-names                      1.87 kB         108 kB
+├ ○ /medieval-legion-names                       1.87 kB         108 kB
+├ ○ /medieval-order-names                        1.87 kB         108 kB
+├ ○ /medieval-realm-names                        1.87 kB         108 kB
+├ ○ /medieval-tribe-names                        1.87 kB         108 kB
+├ ○ /minecraft-name-generator                    1.87 kB         108 kB
+├ ○ /mystic-alliance-names                       1.87 kB         108 kB
+├ ○ /mystic-clan-names                           1.87 kB         108 kB
+├ ○ /mystic-dominion-names                       1.87 kB         108 kB
+├ ○ /mystic-dynasty-names                        1.87 kB         108 kB
+├ ○ /mystic-empire-names                         1.87 kB         108 kB
+├ ○ /mystic-faction-names                        1.87 kB         108 kB
+├ ○ /mystic-guild-names                          1.87 kB         108 kB
+├ ○ /mystic-kingdom-names                        1.87 kB         108 kB
+├ ○ /mystic-legion-names                         1.87 kB         108 kB
+├ ○ /mystic-order-names                          1.87 kB         108 kB
+├ ○ /mystic-realm-names                          1.87 kB         108 kB
+├ ○ /mystic-tribe-names                          1.87 kB         108 kB
+├ ○ /mystical-alliance-names                     1.87 kB         108 kB
+├ ○ /mystical-clan-names                         1.87 kB         108 kB
+├ ○ /mystical-dominion-names                     1.87 kB         108 kB
+├ ○ /mystical-dynasty-names                      1.87 kB         108 kB
+├ ○ /mystical-empire-names                       1.87 kB         108 kB
+├ ○ /mystical-faction-names                      1.87 kB         108 kB
+├ ○ /mystical-guild-names                        1.87 kB         108 kB
+├ ○ /mystical-kingdom-names                      1.87 kB         108 kB
+├ ○ /mystical-legion-names                       1.87 kB         108 kB
+├ ○ /mystical-order-names                        1.87 kB         108 kB
+├ ○ /mystical-realm-names                        1.87 kB         108 kB
+├ ○ /mystical-tribe-names                        1.87 kB         108 kB
+├ ○ /mythical-alliance-names                     1.87 kB         108 kB
+├ ○ /mythical-clan-names                         1.87 kB         108 kB
+├ ○ /mythical-dominion-names                     1.87 kB         108 kB
+├ ○ /mythical-dynasty-names                      1.87 kB         108 kB
+├ ○ /mythical-empire-names                       1.87 kB         108 kB
+├ ○ /mythical-faction-names                      1.87 kB         108 kB
+├ ○ /mythical-guild-names                        1.87 kB         108 kB
+├ ○ /mythical-kingdom-names                      1.87 kB         108 kB
+├ ○ /mythical-legion-names                       1.87 kB         108 kB
+├ ○ /mythical-order-names                        1.87 kB         108 kB
+├ ○ /mythical-realm-names                        1.87 kB         108 kB
+├ ○ /mythical-tribe-names                        1.87 kB         108 kB
+├ ○ /naga-alliance-names                         1.87 kB         108 kB
+├ ○ /naga-clan-names                             1.87 kB         108 kB
+├ ○ /naga-dominion-names                         1.87 kB         108 kB
+├ ○ /naga-dynasty-names                          1.87 kB         108 kB
+├ ○ /naga-empire-names                           1.87 kB         108 kB
+├ ○ /naga-faction-names                          1.87 kB         108 kB
+├ ○ /naga-guild-names                            1.87 kB         108 kB
+├ ○ /naga-kingdom-names                          1.87 kB         108 kB
+├ ○ /naga-legion-names                           1.87 kB         108 kB
+├ ○ /naga-order-names                            1.87 kB         108 kB
+├ ○ /naga-realm-names                            1.87 kB         108 kB
+├ ○ /naga-tribe-names                            1.87 kB         108 kB
+├ ○ /nether-kingdom-names                        1.87 kB         108 kB
+├ ○ /noble-clan-names                            1.87 kB         108 kB
+├ ○ /noble-tribe-names                           1.87 kB         108 kB
+├ ○ /obsidian-empire-names                       1.87 kB         108 kB
+├ ○ /orc                                           176 B         103 kB
+├ ○ /orc-alliance-names                          1.87 kB         108 kB
+├ ○ /orc-clan-names                              1.87 kB         108 kB
+├ ○ /orc-dominion-names                          1.87 kB         108 kB
+├ ○ /orc-dynasty-names                           1.87 kB         108 kB
+├ ○ /orc-empire-names                            1.87 kB         108 kB
+├ ○ /orc-faction-names                           1.87 kB         108 kB
+├ ○ /orc-guild-names                             1.87 kB         108 kB
+├ ○ /orc-kingdom-names                           1.87 kB         108 kB
+├ ○ /orc-legion-names                            1.87 kB         108 kB
+├ ○ /orc-name-generator                          1.87 kB         108 kB
+├ ○ /orc-names                                   1.87 kB         108 kB
+├ ○ /orc-order-names                             1.87 kB         108 kB
+├ ○ /orc-realm-names                             1.87 kB         108 kB
+├ ○ /orc-tribe-names                             1.87 kB         108 kB
+├ ○ /order-clan-names                            1.87 kB         108 kB
+├ ○ /phoenix-alliance-names                      1.87 kB         108 kB
+├ ○ /phoenix-clan-names                          1.87 kB         108 kB
+├ ○ /phoenix-dominion-names                      1.87 kB         108 kB
+├ ○ /phoenix-dynasty-names                       1.87 kB         108 kB
+├ ○ /phoenix-empire-names                        1.87 kB         108 kB
+├ ○ /phoenix-faction-names                       1.87 kB         108 kB
+├ ○ /phoenix-guild-names                         1.87 kB         108 kB
+├ ○ /phoenix-kingdom-names                       1.87 kB         108 kB
+├ ○ /phoenix-legion-names                        1.87 kB         108 kB
+├ ○ /phoenix-order-names                         1.87 kB         108 kB
+├ ○ /phoenix-realm-names                         1.87 kB         108 kB
+├ ○ /phoenix-tribe-names                         1.87 kB         108 kB
+├ ○ /powerful-alliance-names                     1.87 kB         108 kB
+├ ○ /powerful-clan-names                         1.87 kB         108 kB
+├ ○ /powerful-dominion-names                     1.87 kB         108 kB
+├ ○ /powerful-dynasty-names                      1.87 kB         108 kB
+├ ○ /powerful-empire-names                       1.87 kB         108 kB
+├ ○ /powerful-faction-names                      1.87 kB         108 kB
+├ ○ /powerful-guild-names                        1.87 kB         108 kB
+├ ○ /powerful-kingdom-names                      1.87 kB         108 kB
+├ ○ /powerful-legion-names                       1.87 kB         108 kB
+├ ○ /powerful-order-names                        1.87 kB         108 kB
+├ ○ /powerful-realm-names                        1.87 kB         108 kB
+├ ○ /powerful-tribe-names                        1.87 kB         108 kB
+├ ○ /primal-kingdom-names                        1.87 kB         108 kB
+├ ○ /privacy-policy                                176 B         103 kB
+├ ○ /radiant-dominion-names                      1.87 kB         108 kB
+├ ○ /radiant-empire-names                        1.87 kB         108 kB
+├ ○ /realm-name-generator                        1.87 kB         108 kB
+├ ○ /risen-guild-names                           1.87 kB         108 kB
+├ ○ /risen-realm-names                           1.87 kB         108 kB
+├ ○ /roblox-name-generator                       1.87 kB         108 kB
+├ ○ /robots.txt                                    176 B         103 kB
+├ ○ /royal-alliance-names                        1.87 kB         108 kB
+├ ○ /royal-clan-names                            1.87 kB         108 kB
+├ ○ /royal-dominion-names                        1.87 kB         108 kB
+├ ○ /royal-dynasty-names                         1.87 kB         108 kB
+├ ○ /royal-empire-names                          1.87 kB         108 kB
+├ ○ /royal-faction-names                         1.87 kB         108 kB
+├ ○ /royal-guild-names                           1.87 kB         108 kB
+├ ○ /royal-kingdom-names                         1.87 kB         108 kB
+├ ○ /royal-legion-names                          1.87 kB         108 kB
+├ ○ /royal-order-names                           1.87 kB         108 kB
+├ ○ /royal-realm-names                           1.87 kB         108 kB
+├ ○ /royal-tribe-names                           1.87 kB         108 kB
+├ ○ /rpg-name-generator                          1.87 kB         108 kB
+├ ○ /runic-empire-names                          1.87 kB         108 kB
+├ ○ /sacred-guild-names                          1.87 kB         108 kB
+├ ○ /savage-alliance-names                       1.87 kB         108 kB
+├ ○ /savage-clan-names                           1.87 kB         108 kB
+├ ○ /savage-dominion-names                       1.87 kB         108 kB
+├ ○ /savage-dynasty-names                        1.87 kB         108 kB
+├ ○ /savage-empire-names                         1.87 kB         108 kB
+├ ○ /savage-faction-names                        1.87 kB         108 kB
+├ ○ /savage-guild-names                          1.87 kB         108 kB
+├ ○ /savage-kingdom-names                        1.87 kB         108 kB
+├ ○ /savage-legion-names                         1.87 kB         108 kB
+├ ○ /savage-order-names                          1.87 kB         108 kB
+├ ○ /savage-realm-names                          1.87 kB         108 kB
+├ ○ /savage-tribe-names                          1.87 kB         108 kB
+├ ƒ /search                                      1.87 kB         108 kB
+├ ○ /shadow-alliance-names                       1.87 kB         108 kB
+├ ○ /shadow-clan-names                           1.87 kB         108 kB
+├ ○ /shadow-dominion-names                       1.87 kB         108 kB
+├ ○ /shadow-dynasty-names                        1.87 kB         108 kB
+├ ○ /shadow-empire-names                         1.87 kB         108 kB
+├ ○ /shadow-faction-names                        1.87 kB         108 kB
+├ ○ /shadow-guild-names                          1.87 kB         108 kB
+├ ○ /shadow-house-names                          1.87 kB         108 kB
+├ ○ /shadow-kingdom-names                        1.87 kB         108 kB
+├ ○ /shadow-legion-names                         1.87 kB         108 kB
+├ ○ /shadow-order-names                          1.87 kB         108 kB
+├ ○ /shadow-realm-names                          1.87 kB         108 kB
+├ ○ /shadow-tribe-names                          1.87 kB         108 kB
+├ ○ /silent-dynasty-names                        1.87 kB         108 kB
+├ ○ /silent-kingdom-names                        1.87 kB         108 kB
+├ ○ /silver-clan-names                           1.87 kB         108 kB
+├ ○ /silver-faction-names                        1.87 kB         108 kB
+├ ○ /solar-empire-names                          1.87 kB         108 kB
+├ ○ /spectral-kingdom-names                      1.87 kB         108 kB
+├ ○ /storm-alliance-names                        1.87 kB         108 kB
+├ ○ /storm-castle-names                          1.87 kB         108 kB
+├ ○ /storm-clan-names                            1.87 kB         108 kB
+├ ○ /storm-dominion-names                        1.87 kB         108 kB
+├ ○ /storm-dynasty-names                         1.87 kB         108 kB
+├ ○ /storm-empire-names                          1.87 kB         108 kB
+├ ○ /storm-faction-names                         1.87 kB         108 kB
+├ ○ /storm-guild-names                           1.87 kB         108 kB
+├ ○ /storm-kingdom-names                         1.87 kB         108 kB
+├ ○ /storm-legion-names                          1.87 kB         108 kB
+├ ○ /storm-order-names                           1.87 kB         108 kB
+├ ○ /storm-realm-names                           1.87 kB         108 kB
+├ ○ /storm-tribe-names                           1.87 kB         108 kB
+├ ○ /terms                                         176 B         103 kB
+├ ○ /thunder-guild-names                         1.87 kB         108 kB
+├ ○ /thunder-realm-names                         1.87 kB         108 kB
+├ ○ /titan-alliance-names                        1.87 kB         108 kB
+├ ○ /titan-clan-names                            1.87 kB         108 kB
+├ ○ /titan-dominion-names                        1.87 kB         108 kB
+├ ○ /titan-dynasty-names                         1.87 kB         108 kB
+├ ○ /titan-empire-names                          1.87 kB         108 kB
+├ ○ /titan-faction-names                         1.87 kB         108 kB
+├ ○ /titan-guild-names                           1.87 kB         108 kB
+├ ○ /titan-kingdom-names                         1.87 kB         108 kB
+├ ○ /titan-legion-names                          1.87 kB         108 kB
+├ ○ /titan-order-names                           1.87 kB         108 kB
+├ ○ /titan-realm-names                           1.87 kB         108 kB
+├ ○ /titan-tribe-names                           1.87 kB         108 kB
+├ ○ /twilight-clan-names                         1.87 kB         108 kB
+├ ○ /twilight-faction-names                      1.87 kB         108 kB
+├ ○ /undead-alliance-names                       1.87 kB         108 kB
+├ ○ /undead-clan-names                           1.87 kB         108 kB
+├ ○ /undead-dominion-names                       1.87 kB         108 kB
+├ ○ /undead-dynasty-names                        1.87 kB         108 kB
+├ ○ /undead-empire-names                         1.87 kB         108 kB
+├ ○ /undead-faction-names                        1.87 kB         108 kB
+├ ○ /undead-guild-names                          1.87 kB         108 kB
+├ ○ /undead-kingdom-names                        1.87 kB         108 kB
+├ ○ /undead-legion-names                         1.87 kB         108 kB
+├ ○ /undead-order-names                          1.87 kB         108 kB
+├ ○ /undead-realm-names                          1.87 kB         108 kB
+├ ○ /undead-tribe-names                          1.87 kB         108 kB
+├ ○ /unique-alliance-names                       1.87 kB         108 kB
+├ ○ /unique-clan-names                           1.87 kB         108 kB
+├ ○ /unique-dominion-names                       1.87 kB         108 kB
+├ ○ /unique-dynasty-names                        1.87 kB         108 kB
+├ ○ /unique-empire-names                         1.87 kB         108 kB
+├ ○ /unique-faction-names                        1.87 kB         108 kB
+├ ○ /unique-guild-names                          1.87 kB         108 kB
+├ ○ /unique-kingdom-names                        1.87 kB         108 kB
+├ ○ /unique-legion-names                         1.87 kB         108 kB
+├ ○ /unique-order-names                          1.87 kB         108 kB
+├ ○ /unique-realm-names                          1.87 kB         108 kB
+├ ○ /unique-tribe-names                          1.87 kB         108 kB
+├ ○ /valorant-name-generator                     1.87 kB         108 kB
+├ ○ /vampire                                       176 B         103 kB
+├ ○ /vampire-alliance-names                      1.87 kB         108 kB
+├ ○ /vampire-clan-names                          1.87 kB         108 kB
+├ ○ /vampire-dominion-names                      1.87 kB         108 kB
+├ ○ /vampire-dynasty-names                       1.87 kB         108 kB
+├ ○ /vampire-empire-names                        1.87 kB         108 kB
+├ ○ /vampire-faction-names                       1.87 kB         108 kB
+├ ○ /vampire-guild-names                         1.87 kB         108 kB
+├ ○ /vampire-kingdom-names                       1.87 kB         108 kB
+├ ○ /vampire-legion-names                        1.87 kB         108 kB
+├ ○ /vampire-names                               1.87 kB         108 kB
+├ ○ /vampire-order-names                         1.87 kB         108 kB
+├ ○ /vampire-realm-names                         1.87 kB         108 kB
+├ ○ /vampire-tribe-names                         1.87 kB         108 kB
+├ ○ /verdant-kingdom-names                       1.87 kB         108 kB
+├ ○ /viridian-guild-names                        1.87 kB         108 kB
+├ ○ /void-alliance-names                         1.87 kB         108 kB
+├ ○ /void-clan-names                             1.87 kB         108 kB
+├ ○ /void-dominion-names                         1.87 kB         108 kB
+├ ○ /void-dynasty-names                          1.87 kB         108 kB
+├ ○ /void-empire-names                           1.87 kB         108 kB
+├ ○ /void-faction-names                          1.87 kB         108 kB
+├ ○ /void-guild-names                            1.87 kB         108 kB
+├ ○ /void-kingdom-names                          1.87 kB         108 kB
+├ ○ /void-legion-names                           1.87 kB         108 kB
+├ ○ /void-order-names                            1.87 kB         108 kB
+├ ○ /void-realm-names                            1.87 kB         108 kB
+├ ○ /void-tribe-names                            1.87 kB         108 kB
+├ ○ /werewolf-alliance-names                     1.87 kB         108 kB
+├ ○ /werewolf-clan-names                         1.87 kB         108 kB
+├ ○ /werewolf-dominion-names                     1.87 kB         108 kB
+├ ○ /werewolf-dynasty-names                      1.87 kB         108 kB
+├ ○ /werewolf-empire-names                       1.87 kB         108 kB
+├ ○ /werewolf-faction-names                      1.87 kB         108 kB
+├ ○ /werewolf-guild-names                        1.87 kB         108 kB
+├ ○ /werewolf-kingdom-names                      1.87 kB         108 kB
+├ ○ /werewolf-legion-names                       1.87 kB         108 kB
+├ ○ /werewolf-order-names                        1.87 kB         108 kB
+├ ○ /werewolf-realm-names                        1.87 kB         108 kB
+├ ○ /werewolf-tribe-names                        1.87 kB         108 kB
+├ ○ /wild-guild-names                            1.87 kB         108 kB
+├ ○ /wild-legion-names                           1.87 kB         108 kB
+├ ○ /winter-guild-names                          1.87 kB         108 kB
+└ ○ /world-name-generator                        1.87 kB         108 kB
++ First Load JS shared by all                     102 kB
+  ├ chunks/31255-640d21a02c272b49.js             46.2 kB
+  ├ chunks/4bd1b696-741ff92a1798b49d.js          54.2 kB
+  └ other shared chunks (total)                  1.93 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
