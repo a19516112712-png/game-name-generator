@@ -308,8 +308,7 @@ require('./generate-sitemaps.js');
 // ────────────────────────────────────────
 // 4. Save Report JSON
 // ────────────────────────────────────────
-const pages = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'pages.json'), 'utf8'));
-REPORT.totalPages = appDirs.length;
+REPORT.totalPages = appDirs
   .filter(d => fs.existsSync(path.join(__dirname, '..', 'app', d, 'page.tsx'))).length;
 REPORT.totalBlogs = blogPosts.length;
 REPORT.jsonLdOk = true;
