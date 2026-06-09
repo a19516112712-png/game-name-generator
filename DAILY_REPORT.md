@@ -5,34 +5,19 @@
 | Metric | Value |
 |--------|-------|
 | Date | 2026-06-09 |
-| New Landing Pages | **+24** |
+| New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 684 |
-| Total Blog Posts | 130 |
+| Total Blog Posts | 135 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- spectral dynasty names
-- runic order names
-- dread tribe names
-- hallow legion names
-- verdant alliance names
-- obsidian dominion names
-- astral house names
-- nether castle names
-- solar city names
-- lunar village names
-- winter realm names
-- dawn dynasty names
-- dusk order names
-- hollow tribe names
-- viridian legion names
-- primal alliance names
-- chaos dominion names
-- order faction names
-- ancient house names
-- dark castle names
+- elven guild names
+- eternal guild naming system
+- D&D elven guild names
+- mystic order naming
+- frozen kingdom names gaming
 
 ## Quality Checks
 
@@ -45,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-06-09T01:19:31.527Z*
+*Automated by GitHub Actions — 2026-06-09T11:46:41.665Z*

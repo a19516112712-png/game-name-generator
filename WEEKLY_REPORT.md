@@ -1,7 +1,7 @@
 # Weekly SEO Report
 
 **Week of**: 2026-06-09
-**Generated**: 2026-06-09T01:19:31.705Z
+**Generated**: 2026-06-09T11:46:41.845Z
 
 ---
 
@@ -10,12 +10,12 @@
 | Metric | Value |
 |--------|-------|
 | **Total Pages** | **684** |
-| **Total Blogs** | **130** |
+| **Total Blogs** | **135** |
 | Generator Pages | 4,500 |
 | Landing Pages | 636 |
 | Category Hubs | 10 |
 | Intent Pages | 20 |
-| Blog Posts | 130 |
+| Blog Posts | 135 |
 | Growth Limit | ✅ Normal (30/day) |
 
 ## 📈 Weekly Growth
@@ -48,11 +48,11 @@
 | Elf Names | 10 |
 | Orc Names | 10 |
 | Vampire Names | 10 |
-| Gaming | 7 |
-| Worldbuilding | 6 |
-| Naming Guides | 6 |
-| D&D Naming | 4 |
-| Fantasy Worldbuilding | 4 |
+| Gaming | 8 |
+| Worldbuilding | 7 |
+| Naming Guides | 7 |
+| D&D Naming | 5 |
+| Fantasy Worldbuilding | 5 |
 | Roblox Names | 1 |
 
 ## 🎯 Quality Indicators
