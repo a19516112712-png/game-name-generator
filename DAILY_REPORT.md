@@ -1,38 +1,38 @@
-# Daily SEO Report — 2026-06-08
+# Daily SEO Report — 2026-06-09
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-06-08 |
-| New Landing Pages | **+30** |
+| Date | 2026-06-09 |
+| New Landing Pages | **+24** |
 | New Blog Posts | **+5** |
-| Total App Pages | 660 |
-| Total Blog Posts | 125 |
+| Total App Pages | 684 |
+| Total Blog Posts | 130 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- winter guild names
-- dawn kingdom names
-- dusk empire names
-- hollow clan names
-- viridian guild names
-- primal kingdom names
-- chaos empire names
-- order clan names
-- risen realm names
-- hidden dynasty names
-- crimson legion names
-- iron alliance names
-- silver faction names
-- shadow house names
-- storm castle names
-- frost city names
-- ember village names
-- thunder realm names
-- silent dynasty names
-- fierce order names
+- spectral dynasty names
+- runic order names
+- dread tribe names
+- hallow legion names
+- verdant alliance names
+- obsidian dominion names
+- astral house names
+- nether castle names
+- solar city names
+- lunar village names
+- winter realm names
+- dawn dynasty names
+- dusk order names
+- hollow tribe names
+- viridian legion names
+- primal alliance names
+- chaos dominion names
+- order faction names
+- ancient house names
+- dark castle names
 
 ## Quality Checks
 
@@ -45,4 +45,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-06-08T15:39:49.220Z*
+*Automated by GitHub Actions — 2026-06-09T01:19:31.527Z*
