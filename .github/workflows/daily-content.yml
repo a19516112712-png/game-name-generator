@@ -2,8 +2,8 @@ name: Daily SEO Content Generation
 
 on:
   schedule:
-    # Beijing 08:00 = UTC 00:00
-    - cron: '0 0 * * *'
+    # Beijing 08:15 = UTC 00:15
+    - cron: '15 0 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,6 +13,17 @@ jobs:
       contents: write
     
     steps:
+      - name: 🚀 Daily generation started
+        run: echo "Daily generation started at $(date -u)"
+
+      - name: 🔍 Debug info
+        run: |
+          echo "UTC time:       $(date -u)"
+          echo "Beijing time:   $(TZ='Asia/Shanghai' date)"
+          echo "Current branch: ${{ github.ref_name }}"
+          echo "GitHub Actor:   ${{ github.actor }}"
+          echo "Trigger:        ${{ github.event_name }}"
+      
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -51,9 +62,13 @@ jobs:
             NEW=$(node -p "try{require('./DAILY_REPORT.json').newPages}catch(e){0}")
             BLOG=$(node -p "try{require('./DAILY_REPORT.json').newBlogs}catch(e){0}")
             TOTAL=$((NEW + BLOG))
-            git commit -m "daily: +${NEW} pages +${BLOG} blogs (${TOTAL} total) [skip ci]"
+            git commit -m "daily: +${NEW} pages +${BLOG} blogs (${TOTAL} total)"
             git push
           fi
+      
+      - name: ✅ Daily generation completed
+        if: always()
+        run: echo "Daily generation completed at $(date -u)"
       
       - uses: actions/upload-artifact@v4
         if: always()
