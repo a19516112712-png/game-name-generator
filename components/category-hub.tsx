@@ -25,6 +25,7 @@ const CATEGORIES: Record<string, {
   "orc-names": { name: "Orc", emoji: "👺", race: "Orc", context: "", description: "orc names for tribes, hordes, clans, and savage fantasy settings" },
   "empire-names": { name: "Empire", emoji: "👑", context: "Empire", race: "", description: "empire names for fantasy worldbuilding, RPG campaigns, and creative writing" },
   "elf-names": { name: "Elf", emoji: "🏹", race: "Elf", context: "", description: "elf names for kingdoms, realms, orders, and high fantasy worlds" },
+  "character-name-generator": { name: "Character", emoji: "🧑", context: "Character", race: "", description: "character names for RPGs, fantasy worlds, anime, gaming, and creative writing" },
 };
 
 export function getCategoryMetadata(slug: string): Metadata {
@@ -54,6 +55,7 @@ function getTopGenerators(slug: string) {
   if (cat.race) {
     filtered = pages.filter(p => p.race === cat.race);
   }
+  if (filtered.length === 0) return pages.slice(0, 12);
   return filtered.slice(0, 12);
 }
 

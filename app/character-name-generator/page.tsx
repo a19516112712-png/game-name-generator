@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { getIntentMetadata, IntentPageContent } from "@/components/intent-page";
+import { getCategoryMetadata, CategoryHubContent } from "@/components/category-hub";
 
-export const metadata: Metadata = getIntentMetadata("character-name-generator");
+export const metadata: Metadata = getCategoryMetadata("character-name-generator");
 
 export default function Page() {
-  return <IntentPageContent slug="character-name-generator" />;
+  return <CategoryHubContent slug="character-name-generator" />;
 }

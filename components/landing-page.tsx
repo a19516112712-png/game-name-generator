@@ -8,15 +8,30 @@ import AdPlaceholder from "@/components/ad-placeholder";
 const BASE_URL = "https://toppicksbase.com";
 
 // Parse slug like "dark-kingdom-names" -> { modifier: "dark", context: "kingdom" }
+// Parse slug like "dark-kingdom-names" -> { modifier: "dark", context: "kingdom" }
+// Also handles "female-character-name-generator" -> { modifier: "female", context: "character" }
 function parseSlug(slug: string) {
-  const parts = slug.split("-");
-  const namesIndex = parts.indexOf("names");
-  if (namesIndex === -1) return null;
-  const modifier = parts.slice(0, namesIndex - 1).join(" ");
-  const context = parts[namesIndex - 1] || "";
-  const title = modifier.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ") + " " +
-    context.charAt(0).toUpperCase() + context.slice(1) + " Names";
-  return { modifier, context, title };
+  // Pattern 1: X-Y-names (e.g., dark-kingdom-names)
+  const namesMatch = slug.match(/^(.+)-(\w+)-names$/);
+  if (namesMatch) {
+    const modifier = namesMatch[1].replace(/-/g, " ");
+    const context = namesMatch[2];
+    const title = modifier.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ") + " " +
+      context.charAt(0).toUpperCase() + context.slice(1) + " Names";
+    return { modifier, context, title };
+  }
+  
+  // Pattern 2: X-Y-name-generator (e.g., female-character-name-generator)
+  const genMatch = slug.match(/^(.+)-(\w+)-name-generator$/);
+  if (genMatch) {
+    const modifier = genMatch[1].replace(/-/g, " ");
+    const context = genMatch[2];
+    const title = modifier.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ") + " " +
+      context.charAt(0).toUpperCase() + context.slice(1) + " Names";
+    return { modifier, context, title };
+  }
+  
+  return null;
 }
 
 export function getLandingMetadata(slug: string): Metadata {
@@ -44,9 +59,15 @@ export default function LandingPage({ slug }: { slug: string }) {
   const contextLower = context.toLowerCase();
 
   // Find related generators
-  const related = pages
+  let related = pages
     .filter(p => p.context?.toLowerCase() === contextLower || p.slug.includes(contextLower))
     .slice(0, 8);
+  if (related.length < 4) {
+    related = pages.filter(p => p.slug.includes(contextLower)).slice(0, 12);
+  }
+  if (related.length === 0) {
+    related = pages.slice(0, 8);
+  }
 
   const faqs: { question: string; answer: string }[] = [
     {

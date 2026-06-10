@@ -24,8 +24,13 @@ function generateLandingSlugs() {
   return [...slugs];
 }
 
-const HUB_SLUGS = ["kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
+const HUB_SLUGS = ["character-name-generator","kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
 const landingSlugs = generateLandingSlugs();
+
+// Character name generator landing pages
+const CHARACTER_MODIFIERS = ["male","female","non-binary","fantasy","sci-fi","medieval","anime","manga","rpg","dnd","mmorpg","cyberpunk","steampunk","elf","dwarf","orc","dragon","demon","angel","vampire","undead","werewolf","goblin","fairy","human","alien","robot","giant","naga","wizard","warrior","rogue","healer","mage","knight","archer","paladin","cleric","necromancer","hunter","assassin","bard","druid","monk","ranger","sorcerer","warlock","barbarian","samurai","badass","cool","unique","evil","heroic","dark","mysterious","legendary","epic","funny","dark-elf","high-elf","wood-elf","blood-elf","chaotic","lawful","neutral","male-fantasy","female-fantasy","female-elf","male-elf","female-orc","male-orc","female-dwarf","male-dwarf","female-vampire","male-vampire","pirate","ninja","viking","greek","norse","japanese","chinese","celtic","egyptian","space","post-apocalyptic","wild-west","gothic","fairy-tale","mythology","superhero","villain","sidekick","dragonborn","tiefling","halfling","gnome","female-wizard","male-wizard","female-warrior","male-warrior","female-rogue","male-rogue","female-mage","male-mage","female-knight","male-knight","female-archer","male-archer"];
+const characterSlugs = CHARACTER_MODIFIERS.map(m => `${m}-character-name-generator`);
+landingSlugs.push(...characterSlugs);
 
 // Sitemap XML helper
 function urlEntry(url, changefreq = 'weekly', priority = '0.7') {

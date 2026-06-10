@@ -62,6 +62,7 @@ const popularCategories = [
   { label: "Elf Names", icon: "🏹", slug: "dark-elf-kingdom-name-generator" },
   { label: "Orc Names", icon: "👺", slug: "storm-orc-tribe-name-generator" },
   { label: "Clan Names", icon: "⚔️", slug: "shadow-vampire-clan-name-generator" },
+  { label: "Character Names", icon: "🧑", slug: "male-character-name-generator" },
   { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
   { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
   { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
@@ -125,6 +126,18 @@ const trendingSearches = [
   { label: "Gothic Vampire Names", slug: "shadow-vampire-clan-name-generator" },
   { label: "Norse Dwarf Names", slug: "ancient-dwarf-guild-name-generator" },
   { label: "Demonic Legion Names", slug: "infernal-demon-legion-name-generator" },
+  { label: "Character Name Generator", slug: "character-name-generator" },
+  { label: "Fantasy Character Names", slug: "fantasy-character-name-generator" },
+  { label: "Anime Character Names", slug: "anime-character-name-generator" },
+  { label: "DnD Character Names", slug: "dnd-character-name-generator" },
+  { label: "RPG Character Names", slug: "rpg-character-name-generator" },
+  { label: "Female Character Names", slug: "female-character-name-generator" },
+  { label: "Male Character Names", slug: "male-character-name-generator" },
+  { label: "Elf Character Names", slug: "elf-character-name-generator" },
+  { label: "Badass Character Names", slug: "badass-character-name-generator" },
+  { label: "Wizard Character Names", slug: "wizard-character-name-generator" },
+  { label: "Vampire Character Names", slug: "vampire-character-name-generator" },
+  { label: "Warrior Character Names", slug: "warrior-character-name-generator" },
 ];
 
 // ---- People Also Search (20) ----
