@@ -4,6 +4,7 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://toppicksbase.com/about" },
   title: "About Us — Game Name Generator Hub",
   description:
     "Learn about Game Name Generator Hub, the largest fantasy name generator with 4,500+ unique name generators for worldbuilders, RPG players, and writers.",

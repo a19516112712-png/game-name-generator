@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/json-ld";
 import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://toppicksbase.com/blog" },
   title: "Fantasy Naming Blog | Game Name Generator Hub",
   description:
     "Guides, tutorials, and inspiration for fantasy worldbuilding, RPG character names, clan names, guild names, kingdom names, and more. 15+ in-depth articles.",

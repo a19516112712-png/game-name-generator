@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/json-ld";
 import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://toppicksbase.com/search" },
   title: "Search — Game Name Generator Hub",
   description:
     "Search across 4,500+ name generators, intent pages, and blog articles. Find the perfect fantasy name generator for your needs.",
