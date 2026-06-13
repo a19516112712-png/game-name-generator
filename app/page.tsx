@@ -63,6 +63,7 @@ const popularCategories = [
   { label: "Orc Names", icon: "👺", slug: "storm-orc-tribe-name-generator" },
   { label: "Clan Names", icon: "⚔️", slug: "shadow-vampire-clan-name-generator" },
   { label: "Character Names", icon: "🧑", slug: "male-character-name-generator" },
+  { label: "City Names", icon: "🏙️", slug: "medieval-city-names" },
   { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
   { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
   { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
@@ -138,6 +139,16 @@ const trendingSearches = [
   { label: "Wizard Character Names", slug: "wizard-character-name-generator" },
   { label: "Vampire Character Names", slug: "vampire-character-name-generator" },
   { label: "Warrior Character Names", slug: "warrior-character-name-generator" },
+  { label: "City Name Generator", slug: "fantasy-city-names" },
+  { label: "Fantasy City Names", slug: "fantasy-city-names" },
+  { label: "Medieval City Names", slug: "medieval-city-names" },
+  { label: "Elven City Names", slug: "elven-city-names" },
+  { label: "Dwarven City Names", slug: "dwarven-city-names" },
+  { label: "Dark Fantasy City Names", slug: "dark-fantasy-city-names" },
+  { label: "Floating City Names", slug: "floating-city-names" },
+  { label: "D&D City Names", slug: "dnd-city-names" },
+  { label: "Skyrim City Names", slug: "skyrim-city-names" },
+  { label: "Steampunk City Names", slug: "steampunk-city-names" },
 ];
 
 // ---- People Also Search (20) ----
