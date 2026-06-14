@@ -64,6 +64,7 @@ const popularCategories = [
   { label: "Clan Names", icon: "⚔️", slug: "shadow-vampire-clan-name-generator" },
   { label: "Character Names", icon: "🧑", slug: "male-character-name-generator" },
   { label: "City Names", icon: "🏙️", slug: "medieval-city-names" },
+  { label: "Dungeon Names", icon: "🏚️", slug: "dark-dungeon-names" },
   { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
   { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
   { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
@@ -149,6 +150,11 @@ const trendingSearches = [
   { label: "D&D City Names", slug: "dnd-city-names" },
   { label: "Skyrim City Names", slug: "skyrim-city-names" },
   { label: "Steampunk City Names", slug: "steampunk-city-names" },
+  { label: "Dungeon Name Generator", slug: "dungeon-names" },
+  { label: "D&D Dungeon Names", slug: "dnd-dungeon-names" },
+  { label: "Dark Dungeon Names", slug: "dark-dungeon-names" },
+  { label: "Cursed Dungeon Names", slug: "cursed-dungeon-names" },
+  { label: "Dragon Dungeon Names", slug: "dragon-dungeon-names" },
 ];
 
 // ---- People Also Search (20) ----

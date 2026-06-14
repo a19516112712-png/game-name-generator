@@ -9,6 +9,7 @@ const links = [
   { href: "/search", label: "Generators" },
   { href: "/character-name-generator", label: "Characters" },
   { href: "/fantasy-city-names", label: "Cities" },
+  { href: "/dungeon-names", label: "Dungeons" },
   { href: "/blog", label: "Blog" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },

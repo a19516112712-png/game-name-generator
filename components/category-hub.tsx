@@ -26,6 +26,7 @@ const CATEGORIES: Record<string, {
   "empire-names": { name: "Empire", emoji: "👑", context: "Empire", race: "", description: "empire names for fantasy worldbuilding, RPG campaigns, and creative writing" },
   "elf-names": { name: "Elf", emoji: "🏹", race: "Elf", context: "", description: "elf names for kingdoms, realms, orders, and high fantasy worlds" },
   "fantasy-city-names": { name: "Fantasy City", emoji: "🏙️", context: "City", race: "", description: "fantasy city names for worldbuilding, RPG campaigns, D&D settings, and creative writing" },
+  "dungeon-names": { name: "Dungeon", emoji: "🏚️", context: "Dungeon", race: "", description: "dungeon names for D&D campaigns, RPG adventures, fantasy worldbuilding, and tabletop gaming" },
   "character-name-generator": { name: "Character", emoji: "🧑", context: "Character", race: "", description: "character names for RPGs, fantasy worlds, anime, gaming, and creative writing" },
 };
 

@@ -24,7 +24,7 @@ function generateLandingSlugs() {
   return [...slugs];
 }
 
-const HUB_SLUGS = ["fantasy-city-names","character-name-generator","kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
+const HUB_SLUGS = ["dungeon-names","fantasy-city-names","character-name-generator","kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
 const landingSlugs = generateLandingSlugs();
 
 // Character name generator landing pages
@@ -34,6 +34,11 @@ const characterSlugs = CHARACTER_MODIFIERS.map(m => `${m}-character-name-generat
 // City name generator landing pages
 const CITY_MODIFIERS = ["medieval","ancient","futuristic","steampunk","cyberpunk","modern","victorian","renaissance","post-apocalyptic","dystopian","fantasy","dark-fantasy","high-fantasy","epic-fantasy","urban-fantasy","elven","dwarven","orcish","dragon","angelic","demonic","vampire","undead","goblin","fairy","capital","port","fortress","walled","floating","underground","coastal","desert","jungle","mountain","forest","island","river","frozen","volcanic","sky","hidden","lost","ruined","abandoned","cursed","blessed","holy","sacred","rpg","dnd","dungeons-and-dragons","pathfinder","world-of-warcraft","skyrim","elder-scrolls","final-fantasy","magic","arcane","mystical","legendary","mythical","epic","dark","golden","silver","iron","crystal","shadow","storm","ember","frost","thunder","twilight","dawn","elven-forest","dwarven-mountain","orcish-desert","dark-elven","high-elven","dark-dwarven","norse","greek","roman","japanese","chinese","egyptian","celtic","arabian","aztec","small","large","grand","imperial","royal","noble","merchant","mining","fishing","trading","wizard","mage","necromancer","pirate","underdark","elemental","clockwork","enclave","haven","sanctuary","citadel"];
 const citySlugs = CITY_MODIFIERS.map(m => `${m}-city-names`);
+
+// Dungeon name generator landing pages
+const DUNGEON_MODIFIERS = ["ancient","dark","cursed","forgotten","hidden","lost","abandoned","crystal","shadow","frozen","volcanic","underwater","floating","underground","infernal","celestial","arcane","haunted","crimson","dragon","lich","vampire","demon","undead","goblin","orc","dwarven","elven","giant","beholder","mind-flayer","drow","dnd","pathfinder","osr","fantasy","rpg","dark-fantasy","epic","legendary","mythical","deadly","heroic","chaotic","elemental","fire","ice","storm","poison","acid","necrotic","radiant","psychic","divine","abyssal","nether","void","crypt","tomb","catacomb","cavern","mine","prison","temple","ruins","fortress","labyrinth","maze","keep","sanctuary","vault","sewer","cistern","library","laboratory","one-shot","level-1","level-5","level-10","level-20","beginner","expert","master","sandbox","megadungeon","desert","jungle","swamp","mountain","coastal","arctic","forest","underdark","astral","ethereal","shadowfell","feywild","norse","greek","egyptian","lovecraftian","gothic","steampunk","clockwork","biomechanical","alien","eldritch"];
+const dungeonSlugs = DUNGEON_MODIFIERS.map(m => `${m}-dungeon-names`);
+landingSlugs.push(...dungeonSlugs);
 landingSlugs.push(...citySlugs);
 landingSlugs.push(...characterSlugs);
 

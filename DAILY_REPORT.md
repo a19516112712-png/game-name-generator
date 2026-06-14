@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-06-18
+# Daily SEO Report — 2026-06-14
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-06-18 |
+| Date | 2026-06-14 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
-| Total App Pages | 885 |
-| Total Blog Posts | 175 |
+| Total App Pages | 987 |
+| Total Blog Posts | 155 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- infernal house names
-- dwarven dynasty naming system
-- D&D infernal house names
-- arcane circle naming
-- orcish tribe names gaming
+- mystic order names
+- shadow dominion naming system
+- D&D eternal guild names
+- elven guild naming
+- vampire court names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-06-18T12:37:55.847Z*
+*Automated by GitHub Actions — 2026-06-14T00:16:47.332Z*
