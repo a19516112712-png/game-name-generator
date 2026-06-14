@@ -1,7 +1,7 @@
 # Weekly SEO Report
 
-**Week of**: 2026-06-12
-**Generated**: 2026-06-12T12:38:58.194Z
+**Week of**: 2026-06-14
+**Generated**: 2026-06-14T11:13:13.203Z
 
 ---
 
@@ -9,13 +9,13 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Pages** | **684** |
-| **Total Blogs** | **150** |
+| **Total Pages** | **885** |
+| **Total Blogs** | **155** |
 | Generator Pages | 4,500 |
-| Landing Pages | 636 |
+| Landing Pages | 736 |
 | Category Hubs | 10 |
 | Intent Pages | 20 |
-| Blog Posts | 150 |
+| Blog Posts | 155 |
 | Growth Limit | ✅ Normal (30/day) |
 
 ## 📈 Weekly Growth
@@ -30,29 +30,29 @@
 
 | Metric | Value |
 |--------|-------|
-| Unique Keywords | 634 |
+| Unique Keywords | 713 |
 | Priority Categories | Kingdom, Empire, Clan, Guild, Dragon, Angel, Demon, Elf, Vampire |
 | Page Limit | 10,000 |
-| Pages Until Limit | 9,316 |
+| Pages Until Limit | 9,115 |
 
 ## 📝 Blog Distribution
 
 | Category | Posts |
 |----------|-------|
 | Kingdom Names | 20 |
-| Gaming | 11 |
+| Gaming | 12 |
+| Worldbuilding | 11 |
+| Naming Guides | 11 |
 | Clan Names | 11 |
 | Guild Names | 11 |
-| Worldbuilding | 10 |
-| Naming Guides | 10 |
 | Dragon Names | 10 |
 | Demon Names | 10 |
 | Angel Names | 10 |
 | Elf Names | 10 |
 | Orc Names | 10 |
 | Vampire Names | 10 |
-| D&D Naming | 8 |
-| Fantasy Worldbuilding | 8 |
+| D&D Naming | 9 |
+| Fantasy Worldbuilding | 9 |
 | Roblox Names | 1 |
 
 ## 🎯 Quality Indicators
@@ -67,4 +67,4 @@
 | Growth limit active | ⏳ |
 
 ---
-*Automated weekly report — 2026-06-12*
+*Automated weekly report — 2026-06-14*
