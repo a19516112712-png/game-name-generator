@@ -11,6 +11,7 @@ const links = [
   { href: "/fantasy-city-names", label: "Cities" },
   { href: "/dungeon-names", label: "Dungeons" },
   { href: "/npc-names", label: "NPCs" },
+  { href: "/monster-names", label: "Monsters" },
   { href: "/blog", label: "Blog" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },

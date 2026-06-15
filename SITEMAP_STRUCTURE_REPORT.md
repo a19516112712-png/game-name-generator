@@ -2,7 +2,7 @@
 
 **Date**: 2026-06-15
 **Base URL**: https://toppicksbase.com
-**Total URLs**: 5591
+**Total URLs**: 5597
 **Architecture**: Sitemap Index → 8 sub-sitemaps
 
 ---
@@ -23,8 +23,8 @@
 | `sitemap-generators-4.xml` | 900 | Generators 2701-3600 |
 | `sitemap-generators-5.xml` | 900 | Generators 3601-4500 |
 | `sitemap-generators-6.xml` | 20 | Generators 4501-4520 |
-| `sitemap-landing.xml` | 894 | Landing pages (880) + Category hubs (14) |
-| `sitemap-blog.xml` | 168 | Blog posts (160) + Categories (8) |
+| `sitemap-landing.xml` | 895 | Landing pages (880) + Category hubs (15) |
+| `sitemap-blog.xml` | 173 | Blog posts (165) + Categories (8) |
 | `sitemap-static.xml` | 9 | Homepage, generators, about, contact, etc. |
 
 ## Vercel Compatibility

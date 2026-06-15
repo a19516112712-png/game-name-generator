@@ -24,7 +24,7 @@ function generateLandingSlugs() {
   return [...slugs];
 }
 
-const HUB_SLUGS = ["npc-names","dungeon-names","fantasy-city-names","character-name-generator","kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
+const HUB_SLUGS = ["monster-names","npc-names","dungeon-names","fantasy-city-names","character-name-generator","kingdom-names","clan-names","guild-names","dragon-names","demon-names","angel-names","vampire-names","orc-names","elf-names","empire-names"];
 const landingSlugs = generateLandingSlugs();
 
 // Character name generator landing pages
