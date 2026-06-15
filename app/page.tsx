@@ -65,6 +65,7 @@ const popularCategories = [
   { label: "Character Names", icon: "🧑", slug: "male-character-name-generator" },
   { label: "City Names", icon: "🏙️", slug: "medieval-city-names" },
   { label: "Dungeon Names", icon: "🏚️", slug: "dark-dungeon-names" },
+  { label: "NPC Names", icon: "🎭", slug: "fantasy-npc-names" },
   { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
   { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
   { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
@@ -155,6 +156,11 @@ const trendingSearches = [
   { label: "Dark Dungeon Names", slug: "dark-dungeon-names" },
   { label: "Cursed Dungeon Names", slug: "cursed-dungeon-names" },
   { label: "Dragon Dungeon Names", slug: "dragon-dungeon-names" },
+  { label: "NPC Name Generator", slug: "npc-names" },
+  { label: "D&D NPC Names", slug: "dnd-npc-names" },
+  { label: "Fantasy NPC Names", slug: "fantasy-npc-names" },
+  { label: "Elf NPC Names", slug: "elf-npc-names" },
+  { label: "Merchant NPC Names", slug: "merchant-npc-names" },
 ];
 
 // ---- People Also Search (20) ----
