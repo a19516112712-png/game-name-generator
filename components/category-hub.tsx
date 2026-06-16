@@ -27,6 +27,7 @@ const CATEGORIES: Record<string, {
   "elf-names": { name: "Elf", emoji: "🏹", race: "Elf", context: "", description: "elf names for kingdoms, realms, orders, and high fantasy worlds" },
   "npc-names": { name: "NPC", emoji: "🎭", context: "NPC", race: "", description: "NPC names for D&D, RPG campaigns, video games, and tabletop adventures" },
   "monster-names": { name: "Monster", emoji: "👾", context: "Monster", race: "", description: "monster names for D&D, RPG bestiaries, fantasy worldbuilding, and creature design" },
+  "creature-names": { name: "Creature", emoji: "🐉", context: "Creature", race: "", description: "fantasy creature names for RPG bestiaries, D&D campaigns, worldbuilding, and mythological settings" },
   "fantasy-city-names": { name: "Fantasy City", emoji: "🏙️", context: "City", race: "", description: "fantasy city names for worldbuilding, RPG campaigns, D&D settings, and creative writing" },
   "dungeon-names": { name: "Dungeon", emoji: "🏚️", context: "Dungeon", race: "", description: "dungeon names for D&D campaigns, RPG adventures, fantasy worldbuilding, and tabletop gaming" },
   "character-name-generator": { name: "Character", emoji: "🧑", context: "Character", race: "", description: "character names for RPGs, fantasy worlds, anime, gaming, and creative writing" },
