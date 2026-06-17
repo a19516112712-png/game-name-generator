@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-06-16
+# Daily SEO Report — 2026-06-17
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-06-16 |
+| Date | 2026-06-17 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 885 |
-| Total Blog Posts | 165 |
+| Total Blog Posts | 170 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- shadow dominion names
-- mystic order naming system
-- D&D crystal empire names
-- dark empire naming
-- angelic realm names gaming
+- dragon clan names
+- vampire court naming system
+- D&D frozen kingdom names
+- fantasy kingdom naming
+- demonic legion names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-06-16T18:24:20.422Z*
+*Automated by GitHub Actions — 2026-06-17T13:06:45.108Z*
