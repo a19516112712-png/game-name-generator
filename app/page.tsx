@@ -68,6 +68,7 @@ const popularCategories = [
   { label: "NPC Names", icon: "🎭", slug: "fantasy-npc-names" },
   { label: "Monster Names", icon: "👾", slug: "fantasy-monster-names" },
   { label: "Creature Names", icon: "🐉", slug: "fantasy-creature-names" },
+  { label: "Ship Names", icon: "🚢", slug: "pirate-ship-names" },
   { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
   { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
   { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
@@ -173,6 +174,11 @@ const trendingSearches = [
   { label: "Mythical Creature Names", slug: "mythical-creature-names" },
   { label: "Dragon Creature Names", slug: "dragon-creature-names" },
   { label: "D&D Creature Names", slug: "dnd-creature-names" },
+  { label: "Ship Name Generator", slug: "ship-names" },
+  { label: "Pirate Ship Names", slug: "pirate-ship-names" },
+  { label: "Fantasy Ship Names", slug: "fantasy-ship-names" },
+  { label: "Viking Ship Names", slug: "viking-ship-names" },
+  { label: "Ghost Ship Names", slug: "ghost-ship-names" },
 ];
 
 // ---- People Also Search (20) ----

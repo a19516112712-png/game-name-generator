@@ -13,6 +13,7 @@ const links = [
   { href: "/npc-names", label: "NPCs" },
   { href: "/monster-names", label: "Monsters" },
   { href: "/creature-names", label: "Creatures" },
+  { href: "/ship-names", label: "Ships" },
   { href: "/blog", label: "Blog" },
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
