@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/navbar";
@@ -6,6 +7,9 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://toppicksbase.com"),
+  other: {
+    "google-adsense-account": "ca-pub-6710458178434465",
+  },
   title: {
     default: "Game Name Generator Hub — 4,500+ Fantasy Name Generators",
     template: "%s — Game Name Generator Hub",
@@ -22,6 +26,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex min-h-screen flex-col bg-gray-950 text-white antialiased">
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6710458178434465"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         <Navbar />
         <main className="mx-auto w-full max-w-7xl flex-1 px-4 py-8">
           {children}
