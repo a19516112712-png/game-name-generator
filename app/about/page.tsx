@@ -14,6 +14,7 @@ export default function AboutPage() {
   return (
     <article className="mx-auto max-w-3xl">
       <h1 className="mb-6 text-4xl font-extrabold">About Game Name Generator Hub</h1>
+      <p className="mb-8 text-sm text-gray-500">Last Updated: June 19, 2026</p>
 
       <section className="mb-8 space-y-4 leading-relaxed text-gray-300">
         <p>

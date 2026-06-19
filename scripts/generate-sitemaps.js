@@ -100,6 +100,8 @@ console.log(`✅ sitemap-blog.xml (${blogEntries.length} URLs)`);
 // ========================================
 const staticEntries = [
   urlEntry(BASE_URL, 'daily', '1.0'),
+  urlEntry(`${BASE_URL}/faq`, "monthly", "0.6"),
+  urlEntry(`${BASE_URL}/cookie-policy`, "yearly", "0.3"),
   urlEntry(`${BASE_URL}/generators`, 'weekly', '0.7'),
   urlEntry(`${BASE_URL}/about`, 'monthly', '0.5'),
   urlEntry(`${BASE_URL}/contact`, 'monthly', '0.3'),

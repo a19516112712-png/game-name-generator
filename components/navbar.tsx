@@ -18,6 +18,7 @@ const links = [
   { href: "/search", label: "Search" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
+  { href: "/faq", label: "FAQ" },
 ];
 
 export default function Navbar() {

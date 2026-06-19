@@ -12,6 +12,7 @@ export default function DisclaimerPage() {
   return (
     <article className="mx-auto max-w-3xl">
       <h1 className="mb-6 text-4xl font-extrabold">Disclaimer</h1>
+      <p className="mb-8 text-sm text-gray-500">Last Updated: June 19, 2026</p>
       <p className="mb-4 text-sm text-gray-500">Last updated: June 2026</p>
 
       <div className="space-y-8 leading-relaxed text-gray-300">
