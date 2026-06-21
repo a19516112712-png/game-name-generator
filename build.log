@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (897 URLs)
-✅ sitemap-blog.xml (193 URLs)
+✅ sitemap-blog.xml (198 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5621
+📊 Total URLs across all sitemaps: 5626
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 92s
+ ✓ Compiled successfully in 84s
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -57,11 +57,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/5894) ...
-   Generating static pages (1473/5894) 
-   Generating static pages (2946/5894) 
-   Generating static pages (4420/5894) 
- ✓ Generating static pages (5894/5894)
+   Generating static pages (0/5899) ...
+   Generating static pages (1474/5899) 
+   Generating static pages (2949/5899) 
+   Generating static pages (4424/5899) 
+ ✓ Generating static pages (5899/5899)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -181,7 +181,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+182 more paths]
+├   └ [+187 more paths]
 ├ ● /blog/category/[slug]                        3.23 kB         109 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
