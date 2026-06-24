@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (897 URLs)
-✅ sitemap-blog.xml (208 URLs)
+✅ sitemap-blog.xml (213 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5636
+📊 Total URLs across all sitemaps: 5641
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -57,11 +57,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/5909) ...
-   Generating static pages (1477/5909) 
-   Generating static pages (2954/5909) 
-   Generating static pages (4431/5909) 
- ✓ Generating static pages (5909/5909)
+   Generating static pages (0/5914) ...
+   Generating static pages (1478/5914) 
+   Generating static pages (2956/5914) 
+   Generating static pages (4435/5914) 
+ ✓ Generating static pages (5914/5914)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -181,7 +181,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+197 more paths]
+├   └ [+202 more paths]
 ├ ● /blog/category/[slug]                        3.23 kB         109 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
