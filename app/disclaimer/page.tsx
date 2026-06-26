@@ -4,6 +4,9 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Disclaimer — Game Name Generator Hub",
+  alternates: { canonical: "https://toppicksbase.com/disclaimer" },
+  openGraph: { title: "Disclaimer — Game Name Generator Hub", type: "website" },
+  twitter: { title: "Disclaimer — Game Name Generator Hub" },
   description:
     "Disclaimer for Game Name Generator Hub. Understand the limitations and scope of our name generation service.",
 };

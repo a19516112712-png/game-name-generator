@@ -79,9 +79,9 @@ export default async function BlogPostPage({ params }: Props) {
         </span>
         <span>{post.date}</span>
         <span>·</span>
-        <span>By TopPicksBase Editorial Team</span>
+        <span>By {post.author || "TopPicksBase Editorial Team"}</span>
         <span>·</span>
-        <span>Updated {post.date}</span>
+        <span>Updated {post.lastUpdated || post.date}</span>
         <span>·</span>
         <span>{post.readTime}</span>
       </div>

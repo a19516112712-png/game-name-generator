@@ -15,7 +15,24 @@ export const metadata: Metadata = {
     template: "%s — Game Name Generator Hub",
   },
   description:
-    "Generate unique fantasy names for kingdoms, empires, clans, guilds and more. 20 themes × 15 races × 15 contexts — 4,500+ free name generators.",
+    "Generate unique fantasy names for kingdoms, empires, clans, guilds and more. 20 themes × 15 races × 15 contexts — 4,500+ free name generators with meanings and lore.",
+  keywords:
+    "fantasy name generator, game name generator, kingdom name generator, clan name generator, guild name generator, dragon name generator, free name generator",
+  robots: { index: true, follow: true },
+  openGraph: {
+    title: "Game Name Generator Hub — 4,500+ Free Fantasy Name Generators",
+    description:
+      "Generate unique fantasy names for kingdoms, empires, clans, guilds and more. 20 themes × 15 races × 15 contexts — 4,500+ free name generators with meanings and lore.",
+    url: "https://toppicksbase.com",
+    type: "website",
+    siteName: "Game Name Generator Hub",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Game Name Generator Hub — 4,500+ Free Fantasy Name Generators",
+    description:
+      "Generate unique fantasy names for kingdoms, empires, clans, guilds and more. The internet's largest collection of free fantasy name generators.",
+  },
 };
 
 export default function RootLayout({

@@ -4,6 +4,9 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — Game Name Generator Hub",
+  alternates: { canonical: "https://toppicksbase.com/privacy-policy" },
+  openGraph: { title: "Privacy Policy — Game Name Generator Hub", type: "website" },
+  twitter: { title: "Privacy Policy — Game Name Generator Hub" },
   description:
     "Privacy Policy for Game Name Generator Hub. Learn how we handle your data.",
 };

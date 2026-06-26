@@ -4,6 +4,9 @@ import { webPageSchema, breadcrumbSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "Terms of Service — Game Name Generator Hub",
+  alternates: { canonical: "https://toppicksbase.com/terms" },
+  openGraph: { title: "Terms of Service — Game Name Generator Hub", type: "website" },
+  twitter: { title: "Terms of Service — Game Name Generator Hub" },
   description:
     "Terms of Service for Game Name Generator Hub. Read our terms and conditions.",
 };
