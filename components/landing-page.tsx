@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import pages from "@/data/pages.json";
-import posts from "@/data/blog-posts.json";
 import { JsonLd } from "@/components/json-ld";
 import AdPlaceholder from "@/components/ad-placeholder";
 

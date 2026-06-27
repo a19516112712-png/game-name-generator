@@ -112,6 +112,33 @@ const CATEGORIES: Record<string, {
     rpgUsage: "Character names are the most personal creative decision in RPGs. Players spend hours choosing the perfect name for their character because the name carries their identity through months or years of gameplay. A great character name enhances roleplay, while a name that doesn't fit can subtly undermine immersion session after session." },
 };
 
+// Related category hubs for cross-linking
+const RELATED_HUBS: Record<string, string[]> = {
+  "kingdom-names": ["empire-names", "clan-names", "guild-names", "faction-names", "fantasy-city-names", "elf-names"],
+  "clan-names": ["guild-names", "faction-names", "kingdom-names", "empire-names", "orc-names"],
+  "guild-names": ["clan-names", "faction-names", "kingdom-names", "empire-names", "tavern-names"],
+  "dragon-names": ["monster-names", "creature-names", "kingdom-names", "empire-names", "wizard-names"],
+  "demon-names": ["angel-names", "vampire-names", "monster-names", "creature-names", "dungeon-names"],
+  "angel-names": ["demon-names", "elf-names", "kingdom-names", "empire-names", "wizard-names"],
+  "vampire-names": ["demon-names", "elf-names", "kingdom-names", "empire-names", "dungeon-names"],
+  "orc-names": ["elf-names", "monster-names", "clan-names", "faction-names", "knight-names"],
+  "empire-names": ["kingdom-names", "fantasy-city-names", "faction-names", "clan-names", "guild-names", "dragon-names"],
+  "elf-names": ["orc-names", "angel-names", "kingdom-names", "wizard-names", "forest-names", "character-name-generator"],
+  "npc-names": ["character-name-generator", "tavern-names", "fantasy-city-names", "knight-names", "wizard-names", "monster-names"],
+  "monster-names": ["creature-names", "dragon-names", "demon-names", "dungeon-names", "npc-names"],
+  "creature-names": ["monster-names", "dragon-names", "forest-names", "dungeon-names", "ship-names"],
+  "ship-names": ["pirate-names", "tavern-names", "fantasy-city-names", "faction-names"],
+  "tavern-names": ["fantasy-city-names", "npc-names", "pirate-names", "ship-names", "faction-names"],
+  "faction-names": ["clan-names", "guild-names", "kingdom-names", "empire-names", "knight-names", "pirate-names"],
+  "wizard-names": ["knight-names", "elf-names", "npc-names", "character-name-generator", "dragon-names"],
+  "knight-names": ["wizard-names", "empire-names", "faction-names", "npc-names", "character-name-generator", "pirate-names"],
+  "pirate-names": ["ship-names", "tavern-names", "faction-names", "knight-names", "fantasy-city-names"],
+  "forest-names": ["elf-names", "creature-names", "fantasy-city-names", "dungeon-names", "monster-names"],
+  "fantasy-city-names": ["kingdom-names", "empire-names", "tavern-names", "forest-names", "dungeon-names", "ship-names"],
+  "dungeon-names": ["monster-names", "creature-names", "forest-names", "fantasy-city-names", "demon-names", "npc-names"],
+  "character-name-generator": ["npc-names", "wizard-names", "knight-names", "pirate-names", "elf-names"],
+};
+
 export function getCategoryMetadata(slug: string): Metadata {
   const cat = CATEGORIES[slug];
   if (!cat) return { title: "Not Found" };
@@ -158,9 +185,7 @@ function getRelatedPosts(slug: string) {
 function getPeopleAlsoSearch(slug: string): string[] {
   const cat = CATEGORIES[slug];
   const n = cat.name.toLowerCase();
-  const themes = ["Dark", "Ancient", "Holy", "Fire", "Ice", "Shadow", "Crystal", "Arcane", "Infernal", "Celestial", "Golden", "Storm", "Blood", "Mystic", "Royal"];
-  const contexts = ["Kingdom", "Empire", "Clan", "Guild", "Realm", "Dynasty", "Order", "Tribe", "Legion", "Alliance"];
-  const races = ["Elf", "Dwarf", "Orc", "Vampire", "Undead", "Phoenix", "Titan", "Giant", "Werewolf", "Dragon"];
+
   
   const terms = [
     `${n} name generator`,
@@ -206,6 +231,7 @@ export function CategoryHubContent({ slug }: { slug: string }) {
   const nameLower = name.toLowerCase();
   const topGens = getTopGenerators(slug);
   const relatedPosts = getRelatedPosts(slug);
+  const relatedHubs = RELATED_HUBS[slug] || [];
   const peopleAlsoSearch = getPeopleAlsoSearch(slug);
 
   const faqs = FAQS.map(f => ({
@@ -219,7 +245,7 @@ export function CategoryHubContent({ slug }: { slug: string }) {
     "name": `${name} Names — Free ${name} Name Generator Hub`,
     "description": `Browse our collection of ${nameLower} name generators. Generate unique ${nameLower} names for fantasy, gaming, and RPG.`,
     "url": `${BASE_URL}/${slug}`,
-    "hasPart": topGens.map((p, i) => ({
+    "hasPart": topGens.map((p) => ({
       "@type": "WebPage",
       "name": p.title,
       "url": `${BASE_URL}/${p.slug}`,
@@ -230,7 +256,7 @@ export function CategoryHubContent({ slug }: { slug: string }) {
     "name": `${name} Names — Free ${name} Name Generator Hub`,
     "description": `Browse our collection of ${nameLower} name generators. Generate unique ${nameLower} names for fantasy, gaming, and RPG.`,
     "url": `${BASE_URL}/${slug}`,
-    "hasPart": topGens.map((p, i) => ({
+    "hasPart": topGens.map((p) => ({
       "@type": "WebPage",
       "name": p.title,
       "url": `${BASE_URL}/${p.slug}`,
@@ -463,7 +489,31 @@ export function CategoryHubContent({ slug }: { slug: string }) {
         </section>
       )}
 
-      {/* Schemas */}
+      
+      {/* Related Categories */}
+      {relatedHubs.length > 0 && (
+        <section className="border-t border-gray-800 pt-12 mb-12">
+          <h2 className="mb-5 text-2xl font-bold">Related Name Categories</h2>
+          <div className="flex flex-wrap gap-3">
+            {relatedHubs.map((hubSlug) => {
+              const hubCat = CATEGORIES[hubSlug];
+              if (!hubCat) return null;
+              return (
+                <Link
+                  key={hubSlug}
+                  href={`/${hubSlug}`}
+                  className="inline-flex items-center gap-2 rounded-lg border border-gray-700 bg-gray-800/40 px-4 py-2 text-sm text-gray-300 transition hover:border-gray-500 hover:bg-gray-800 hover:text-white"
+                >
+                  <span>{hubCat.emoji}</span>
+                  <span>{hubCat.name} Names</span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+{/* Schemas */}
       <JsonLd data={{
         "@context": "https://schema.org",
         "@type": "WebPage",
