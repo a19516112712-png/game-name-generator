@@ -46,13 +46,28 @@ Always test your name by imagining how players will talk about your server. "Joi
     namePrefixes: ["block","craft","mine","pixel","cube","world","realm","land","build","dig","cave","nether","ender","diamond","emerald","creeper","zombie","skeleton","hero","adventure"],
     nameSuffixes: ["craft","ville","town","world","land","topia","haven","realm","zone","hub","nation","kingdom","empire","quest","saga"],
     meaningTemplates: [
-      (n) => n + ' — a name that resonates with power and mystery.',
-      (n) => n + ' — a legendary name from the ancient archives.',
-      (n) => n + ' — a name that echoes through the ages.'
+      (n, rng) => n + ' — ' + pick(['a name that resonates with power and mystery.',
+        'a legendary name from the ancient archives.',
+        'a name that echoes through the ages.',
+        'a name whispered in tales of old.',
+        'a name that carries the weight of destiny.',
+        'a name forged in the fires of legend.'], rng),
+      (n, rng) => n + ' — ' + pick(['a name known across distant lands.',
+        'a name spoken with reverence by those who know its power.',
+        'a name that shines like a beacon in the darkness.',
+        'a name that has inspired generations.',
+        'a name that defies the passage of time.',
+        'a name of mythic proportions.'], rng),
+      (n, rng) => n + ' — ' + pick(['a name imbued with ancient magic.',
+        'a name that opens doors to forgotten realms.',
+        'a name that resonates with cosmic energy.',
+        'a name blessed by forces beyond mortal understanding.',
+        'a name that bridges worlds.',
+        'a name worthy of song and saga.'], rng),
     ],
     loreTemplates: [
-      (n) => `Founded during the great Minecraft resurgence, ${n} quickly became known as one of the most welcoming communities in the blocky universe. Players from around the world gather here to share their builds, compete in custom minigames, and explore vast procedurally generated landscapes together.`,
-      (n) => `${n} started as a small private server among friends and grew into a thriving community. The founding players built the spawn area together — a massive castle that still stands as a monument to their collaborative spirit. Today, new players spawn in that same castle, continuing the tradition.`
+      (n, rng) => `Founded during the great Minecraft resurgence, ${n} quickly became known as one of the most welcoming communities in the blocky universe. Players from around the world gather here to share their builds, compete in custom minigames, and explore vast procedurally generated landscapes together.`,
+      (n, rng) => `${n} started as a small private server among friends and grew into a thriving community. The founding players built the spawn area together — a massive castle that still stands as a monument to their collaborative spirit. Today, new players spawn in that same castle, continuing the tradition.`
     ],
     faqQuestions: [
       "How do I choose the best Minecraft server name?",
@@ -95,12 +110,35 @@ Game names on Roblox should be descriptive and enticing. Players browsing millio
     namePrefixes: ["block","pixel","craft","build","quest","adventure","hero","legend","epic","ultra","mega","super","star","dream","magic","shadow","crystal","golden","phantom","nova"],
     nameSuffixes: ["studios","games","interactive","creations","productions","digital","world","simulator","tycoon","obby","roleplay","rp","adventures","legends","heroes"],
     meaningTemplates: [
-      (n) => `A Roblox ${"development studio"} for ${"creative builders"}.`,
-      (n) => `Where Roblox players ${"build amazing worlds"}.`
+      (n, rng) => pick([
+        `A Roblox ${pick(['development studio','gaming group','creative collective','building community'], rng)} for ${pick(['creative builders','adventure seekers','imaginative players','rising developers'], rng)}.`,
+        `Where Roblox players ${pick(['build amazing worlds','create unforgettable experiences','design epic adventures','craft immersive games'], rng)}.`,
+        `${pick(['Home to','The hub for','The gathering place of','The community of'], rng)} ${pick(['passionate Roblox creators','dedicated game developers','imaginative world builders','talented young designers'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['thriving','growing','dynamic','vibrant'], rng)} Roblox ${pick(['community','group','studio','collective'], rng)} known for ${pick(['innovation and creativity','groundbreaking game design','unforgettable player experiences','exceptional world building'], rng)}.`,
+        `One of the ${pick(['most respected','most creative','most welcoming','fastest-growing'], rng)} names on the Roblox platform, ${pick(['attracting players worldwide','uniting builders and dreamers','pushing creative boundaries','setting new standards'], rng)}.`,
+        `${pick(['A beacon for','An inspiration to','A home for','A launchpad for'], rng)} ${pick(['the next generation','future game developers','creative minds','ambitious Roblox builders'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['legendary','iconic','beloved','trailblazing'], rng)} presence in the Roblox ${pick(['universe','community','ecosystem','platform'], rng)}.`,
+        `Where ${pick(['imagination meets code','creativity finds a home','dreams become playable worlds','players become creators'], rng)}.`,
+        `${pick(['Redefining','Elevating','Transforming','Shaping'], rng)} what it means to be a Roblox ${pick(['developer','creator','builder','innovator'], rng)}.`,
+      ], rng),
     ],
     loreTemplates: [
-      (n) => `${n} was founded by a group of passionate Roblox developers who wanted to create experiences that players would remember. Their first game, a humble obby course, attracted a small but dedicated following. Word spread, the community grew, and today ${n} is one of the most respected names on the platform.`,
-      (n) => `Starting with nothing but a vision and a basic Roblox Studio project, the creators of ${n} spent months perfecting their first game. The launch exceeded all expectations, and the group has been growing ever since, expanding into new game genres and building a community of dedicated players.`
+      (n, rng) => pick([
+        `${n} was founded by a group of passionate Roblox developers who wanted to create experiences that players would remember. Their first game, a humble obby course, attracted a small but dedicated following. Word spread, the community grew, and today ${n} is one of the most respected names on the platform.`,
+        `The origins of ${n} trace back to a single Roblox Studio session that stretched into the early hours of the morning. The founder, fueled by curiosity and a vision, built the first prototype of what would become ${n}'s flagship experience. That prototype is still playable today — preserved as a reminder of how far they have come.`,
+        `${n} began during a Roblox game jam, where its founders had 48 hours to create something memorable. They won first place, and the prize money became the seed funding for what is now one of the platform's most innovative development groups.`,
+        `Unlike many Roblox groups that chase trends, ${n} carved its own path. The founders deliberately chose an underserved genre and poured their passion into perfecting it. That gamble paid off, and ${n} is now synonymous with quality and originality on the platform.`,
+      ], rng),
+      (n, rng) => pick([
+        `Starting with nothing but a vision and a basic Roblox Studio project, the creators of ${n} spent months perfecting their first game. The launch exceeded all expectations, and the group has been growing ever since, expanding into new game genres and building a community of dedicated players.`,
+        `The first public release from ${n} was not an instant success. It had bugs, balance issues, and a player count that rarely broke double digits. But the team kept iterating, kept listening to feedback, and kept improving. That persistence transformed ${n} from an obscure project into a platform sensation.`,
+        `${n} weathered the challenges that sink most Roblox groups — creative burnout, team disputes, and algorithm changes. What saved them was an unwavering commitment to their community. Players stuck with ${n} through the rough patches because they felt genuinely valued.`,
+        `Behind ${n}'s polished games and impressive player counts lies years of behind-the-scenes work. Late-night scripting sessions, heated design debates, and countless scrapped prototypes all contributed to the ${n} that players know and love today.`,
+      ], rng),
     ],
     faqQuestions: [
       "How do I choose a good Roblox group name?",
@@ -145,12 +183,36 @@ Many successful guilds use a multi-word structure with a formal feel: "Order of 
     namePrefixes: ["shadow","crimson","iron","storm","dawn","frost","arcane","divine","golden","silver","ebon","sacred","ancient","eternal","celestial","phantom","dragon","phoenix","griffin","wyrm"],
     nameSuffixes: ["vanguard","order","covenant","legion","syndicate","collective","alliance","circle","sanctum","council","company","brigade","regiment","watch","guard"],
     meaningTemplates: [
-      (n) => `A ${"hardcore raiding"} guild for ${"dedicated adventurers"}.`,
-      (n) => `Where ${"heroes unite"}.`
+      (n, rng) => pick([
+        `A ${pick(['hardcore raiding','competitive','legendary','top-tier'], rng)} guild for ${pick(['dedicated adventurers','serious gamers','elite players','committed raiders'], rng)}.`,
+        `Where ${pick(['heroes unite','legends are forged','champions rise','adventurers gather'], rng)}.`,
+        `${pick(['Home of','The gathering of','Sanctuary for','The banner of'], rng)} ${pick(['the realms finest','battle-hardened veterans','rising champions','gallant defenders'], rng)}.`,
+        `A ${pick(['renowned','storied','venerable','distinguished'], rng)} guild ${pick(['spanning multiple servers','commanding respect across the realm','known for flawless execution','feared by rival guilds'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['tight-knit','welcoming','fiercely loyal','proud'], rng)} community of ${pick(['players','adventurers','warriors','champions'], rng)}.`,
+        `${pick(['Forged in','Tempered by','United through','Bound by'], rng)} ${pick(['countless battles','shared struggle','unbreakable camaraderie','a common purpose'], rng)}.`,
+        `One of the ${pick(['most respected','most enduring','most decorated','most welcoming'], rng)} guilds in ${pick(['the realm','the server','MMO history','competitive gaming'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A guild ${pick(['built on trust','founded on honor','driven by passion','defined by excellence'], rng)}.`,
+        `Where ${pick(['every player matters','skill meets camaraderie','newcomers become veterans','strategy and friendship intertwine'], rng)}.`,
+        `${pick(['Raising the banner','Setting the standard','Leading the charge','Forging the future'], rng)} of ${pick(['guild gameplay','cooperative gaming','MMO community','raid progression'], rng)}.`,
+      ], rng),
     ],
     loreTemplates: [
-      (n) => `Founded by a group of friends who met in a pickup raid that went surprisingly well, ${n} has grown into one of the most respected guilds on their server. Their reputation for skilled play combined with a positive, supportive culture attracts members from across the gaming community.`,
-      (n) => `The founders of ${n} believed that great gaming experiences are built on friendship and mutual respect. They created a guild where skill matters less than attitude, and where every member — from the newest recruit to the most veteran raider — is valued equally.`
+      (n, rng) => pick([
+        `Founded by a group of friends who met in a pickup raid that went surprisingly well, ${n} has grown into one of the most respected guilds on their server. Their reputation for skilled play combined with a positive, supportive culture attracts members from across the gaming community.`,
+        `${n} began in the unlikeliest of places — a failing raid group that was about to disband. Instead of walking away, the remaining members rebuilt from scratch, recruiting players who valued teamwork over individual glory. That decision transformed ${n} into a powerhouse.`,
+        `The guild charter of ${n} was signed in a voice chat that lasted until dawn. The founding members debated every clause — loot distribution, recruitment standards, even the guild colors. That attention to detail became ${n}'s hallmark, and decades later, the original charter still guides the guild.`,
+        `${n} was not the first guild its founders created. They had been through failed guilds, toxic leadership, and server collapses. ${n} was born from those lessons — a deliberate attempt to build the guild they had always wanted to join but never found.`,
+      ], rng),
+      (n, rng) => pick([
+        `The founders of ${n} believed that great gaming experiences are built on friendship and mutual respect. They created a guild where skill matters less than attitude, and where every member — from the newest recruit to the most veteran raider — is valued equally.`,
+        `When rival guilds mocked ${n} for being 'too soft' and 'not hardcore enough,' the founders held their ground. They knew that kind, supportive guilds last while toxic ones implode. ${n} outlasted every one of its critics, proving that positive culture is a competitive advantage.`,
+        `${n} runs on a simple rule: no shouting, no blaming, no gatekeeping. New raiders are taught, not shamed. Mistakes are analyzed, not punished. This culture has made ${n} a sanctuary for players burned out by toxic gaming communities.`,
+        `The guild hall of ${n} is not just a virtual space — it is a gathering place where friendships are forged, where celebrations mark every first kill, and where guildmates who have never met in person share their lives through Discord. The bonds formed here transcend the game itself.`,
+      ], rng),
     ],
     faqQuestions: [
       "What makes a great guild name?",
@@ -195,12 +257,36 @@ A strong clan tag is just as important as the full clan name. In most competitiv
     namePrefixes: ["shadow","phantom","iron","storm","blade","frost","nova","apex","zenith","omega","alpha","sigma","ghost","reaper","sentinel","titan","savage","fury","rage","void"],
     nameSuffixes: ["esports","gaming","squad","team","clan","elite","academy","united","rising","dominion"],
     meaningTemplates: [
-      (n) => `A ${"competitive FPS"} clan known for ${"precision teamwork"}.`,
-      (n) => `Where ${"champions are made"}.`
+      (n, rng) => pick([
+        `A ${pick(['competitive FPS','elite esports','professional gaming','dominant'], rng)} clan known for ${pick(['precision teamwork','flawless coordination','relentless aggression','tactical brilliance'], rng)}.`,
+        `Where ${pick(['champions are made','legends are born','skill meets strategy','the best come to compete'], rng)}.`,
+        `${pick(['Forged in','Tempered by','Hardened through','Sharpened by'], rng)} ${pick(['the fires of competition','countless tournament battles','years of rivalry','intense scrimmages'], rng)}.`,
+        `A ${pick(['feared','respected','legendary','unstoppable'], rng)} force in ${pick(['the competitive scene','esports tournaments','ranked play','the gaming world'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['tight-knit','ruthlessly efficient','highly disciplined','perfectly synchronized'], rng)} team of ${pick(['elite competitors','dedicated grinders','tactical minds','natural talents'], rng)}.`,
+        `${pick(['Known across','Respected throughout','Feared by','Admired by'], rng)} ${pick(['the competitive circuit','rival organizations','every opponent','the entire esports community'], rng)}.`,
+        `${pick(['Setting the standard for','Raising the bar of','Redefining','Pioneering new approaches to'], rng)} ${pick(['competitive play','team coordination','esports professionalism','clan culture'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A clan ${pick(['built on honor','founded in victory','driven by ambition','defined by resilience'], rng)}.`,
+        `Where ${pick(['every match matters','individuals become a unit','weaknesses become strengths','practice makes champions'], rng)}.`,
+        `${pick(['Carrying the banner of','Defending the legacy of','Writing the next chapter of','Expanding the empire of'], rng)} ${pick(['competitive excellence','gaming greatness','clan pride','esports achievement'], rng)}.`,
+      ], rng),
     ],
     loreTemplates: [
-      (n) => `${n} began as a group of five friends who dominated their local LAN tournaments. Their aggressive, coordinated playstyle caught the attention of the competitive community, and soon players were asking to trial. Today, ${n} fields multiple rosters across several competitive titles.`,
-      (n) => `The founding members of ${n} shared a simple philosophy: individual skill wins rounds, but teamwork wins championships. They built their clan around this principle, recruiting players not just for mechanical ability but for their capacity to work within a coordinated team structure.`
+      (n, rng) => pick([
+        `${n} began as a group of five friends who dominated their local LAN tournaments. Their aggressive, coordinated playstyle caught the attention of the competitive community, and soon players were asking to trial. Today, ${n} fields multiple rosters across several competitive titles.`,
+        `Before ${n} became a name in esports, it was just a group of friends in a basement, running scrimmages on borrowed computers. They had no sponsors, no coach, and no expectations — just an obsessive drive to improve. That hunger propelled ${n} from obscurity to the international stage.`,
+        `${n} was born from a rivalry. The founders had been on opposite sides of a bitter tournament finals, but after the match, they discovered they shared a vision for how a clan should operate. They merged their squads, and ${n} was the result — stronger than either team had been alone.`,
+        `The first tournament ${n} entered, they lost in the opening round. Some teams would have disbanded, but the founders of ${n} were not like other teams. They studied their defeat, identified their weaknesses, and returned six months later to win the same tournament without dropping a single match.`,
+      ], rng),
+      (n, rng) => pick([
+        `The founding members of ${n} shared a simple philosophy: individual skill wins rounds, but teamwork wins championships. They built their clan around this principle, recruiting players not just for mechanical ability but for their capacity to work within a coordinated team structure.`,
+        `${n} has a recruitment process unlike any other clan. Candidates play not solo but alongside existing members, because ${n} values synergy over statistics. A player with slightly worse aim but perfect comms will always beat a lone wolf at ${n} tryouts.`,
+        `When ${n} lost three of its star players to a rival organization, pundits declared the clan finished. Instead, ${n} rebuilt around younger, hungrier talent and returned stronger than ever. The experience taught them that no individual is bigger than the clan.`,
+        `The ${n} clan house — a shared apartment where core members live and practice together — has become legendary in esports circles. The walls are covered in tournament medals, signed jerseys, and photos from LAN events spanning a decade of competitive history.`,
+      ], rng),
     ],
     faqQuestions: [
       "How do I create a memorable clan name?",
@@ -245,12 +331,36 @@ Symbolic kingdom names use metaphors and symbols. "The Lion Kingdom" suggests co
     namePrefixes: ["iron","golden","crystal","shadow","silver","ebon","crimson","azure","emerald","onyx","ivory","jade","amber","ruby","sapphire","diamond","pearl","opal","bronze","platinum"],
     nameSuffixes: ["kingdom","realm","dominion","empire","sovereign","monarchy","dynasty","throne","crown","keep","citadel","bastion","fortress","stronghold","shire"],
     meaningTemplates: [
-      (n) => `A ${"prosperous"} kingdom where ${"honor rules supreme"}.`,
-      (n) => `The ${"ancestral home"} of ${"noble warriors"}.`
+      (n, rng) => pick([
+        `A ${pick(['prosperous','majestic','ancient','golden'], rng)} kingdom where ${pick(['honor rules supreme','justice prevails','wisdom governs','courage defines'], rng)}.`,
+        `The ${pick(['ancestral home','sacred birthplace','ancient seat','legendary stronghold'], rng)} of ${pick(['noble warriors','wise rulers','fearless knights','visionary kings'], rng)}.`,
+        `${pick(['Shining beacon of','Last bastion of','Eternal guardian of','Proud symbol of'], rng)} ${pick(['hope and valor','ancient traditions','unbroken lineage','royal heritage'], rng)}.`,
+        `A ${pick(['realm','land','kingdom','dominion'], rng)} ${pick(['blessed by the gods','steeped in legend','forged in war','cradled by history'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['flourishing','thriving','proud','enduring'], rng)} kingdom ${pick(['stretching from sea to mountain','spanning fertile valleys and ancient forests','whose borders have never been breached','where prosperity flows like river water'], rng)}.`,
+        `${pick(['Home to','Sanctuary of','Birthplace of','Stronghold of'], rng)} ${pick(['generations of rulers','countless heroes','legendary artisans','wise scholars'], rng)}.`,
+        `Where ${pick(['the crown never tarnishes','loyalty runs deeper than blood','every citizen bears the kingdom mark','the royal banner never falls'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A kingdom ${pick(['carved from wilderness','built on the bones of giants','risen from the sea','hewn from living stone'], rng)}.`,
+        `${pick(['Renowned for','Celebrated for','Feared for','Beloved for'], rng)} its ${pick(['unconquerable spirit','legendary hospitality','timeless beauty','formidable armies'], rng)}.`,
+        `A ${pick(['name','realm','dynasty','legacy'], rng)} that ${pick(['echoes through the ages','inspires songs and sagas','commands respect across borders','shines undimmed by time'], rng)}.`,
+      ], rng),
     ],
     loreTemplates: [
-      (n) => `Founded in the aftermath of the great war that reshaped the continent, ${n} rose from the ashes of the old world. Its first king united the scattered tribes under a single banner, and for centuries the kingdom has stood as a beacon of stability in a chaotic world.`,
-      (n) => `Legend speaks of ${n} as the last remnant of an ancient, forgotten civilization. Its towering spires and winding streets hold secrets that scholars have spent lifetimes trying to unravel. The current dynasty traces its lineage back to the kingdom's mythical founders.`
+      (n, rng) => pick([
+        `Founded in the aftermath of the great war that reshaped the continent, ${n} rose from the ashes of the old world. Its first king united the scattered tribes under a single banner, and for centuries the kingdom has stood as a beacon of stability in a chaotic world.`,
+        `${n} was not conquered — it was chosen. The first settlers found this land after a prophetic dream led them across deserts, mountains, and seas. When they arrived, they found a valley so beautiful they wept. That valley became the heart of ${n}, and the dream that guided them became its founding myth.`,
+        `The founding of ${n} was an act of defiance. The old empire had forbidden settlement in the highlands, but the founders of ${n} refused to bow. They fought a guerilla war against imperial forces, and when the empire finally collapsed under its own weight, ${n} was already there — independent, proud, and ready to claim its destiny.`,
+        `Three sisters — a warrior, a scholar, and a diplomat — founded ${n} after their homeland was destroyed by a volcanic eruption. Each brought a unique strength: the warrior built the army, the scholar wrote the laws, and the diplomat forged the alliances. Together, they created a kingdom greater than the one they lost.`,
+      ], rng),
+      (n, rng) => pick([
+        `Legend speaks of ${n} as the last remnant of an ancient, forgotten civilization. Its towering spires and winding streets hold secrets that scholars have spent lifetimes trying to unravel. The current dynasty traces its lineage back to the kingdom's mythical founders.`,
+        `Beneath the throne room of ${n} lies a chamber that predates the kingdom itself. Carvings on its walls tell of a civilization that ruled this land ten thousand years before ${n} raised its first stone. The royal family guards this chamber fiercely, for it holds knowledge that could reshape the understanding of history.`,
+        `Every monarch of ${n} must, before coronation, spend a night alone in the Whispering Cavern beneath the palace. What they hear — or claim to hear — shapes their reign. Some emerge with visions of prosperity. Others emerge pale and silent, keeping whatever they witnessed locked in their hearts until death.`,
+        `${n} has never fallen to invaders. Besieged a hundred times, blockaded, starved, bombarded — and yet its walls have never been breached. Some attribute this to military genius. Others whisper of a pact made by the first king, sealed with forces older than any mortal kingdom.`,
+      ], rng),
     ],
     faqQuestions: [
       "What makes a kingdom name sound authentic?",
@@ -295,12 +405,36 @@ Elemental dragons benefit from names that reference their element. Fire dragons 
     namePrefixes: ["dragon","wyrm","drake","serpent","wing","scale","claw","fang","fire","flame","frost","storm","shadow","thunder","ember","blaze","ice","void","star","sky"],
     nameSuffixes: ["fire","wing","claw","scale","fang","breath","heart","soul","eye","tail","crest","horn","flame","storm","frost","shadow","light","night","dawn","dusk"],
     meaningTemplates: [
-      (n) => `A ${"fire-breathing terror"} that ${"terrorizes the northern kingdoms"}.`,
-      (n) => `A ${"majestic"} dragon known throughout the realm for ${"its unmatched power"}.`
+      (n, rng) => pick([
+        `A ${pick(['fire-breathing terror','winged nightmare','scaled leviathan','primordial fury'], rng)} that ${pick(['terrorizes the northern kingdoms','haunts the volcanic wastelands','commands the storm-wracked skies','rules the shattered peaks'], rng)}.`,
+        `A ${pick(['majestic','awe-inspiring','magnificent','breathtaking'], rng)} dragon known throughout the realm for ${pick(['its unmatched power','its ancient wisdom','its fearsome majesty','its legendary wrath'], rng)}.`,
+        `${pick(['Keeper of','Guardian of','Watcher over','Sovereign of'], rng)} ${pick(['forgotten treasures','primordial secrets','the last wild places','ancient covenants'], rng)}.`,
+        `The ${pick(['scourge of','terror of','bane of','shadow over'], rng)} ${pick(['a dozen kingdoms','the mortal realms','the civilized world','those who dare trespass'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A ${pick(['cunning','patient','calculating','inscrutable'], rng)} dragon whose ${pick(['schemes span centuries','influence reaches beyond mortal comprehension','name is spoken only in whispers','hoard includes not gold but knowledge'], rng)}.`,
+        `${pick(['Born in','Hatched during','Awakened from','Forged in'], rng)} ${pick(['the age of myth','a time before mortal memory','the primordial dawn','an era of gods and monsters'], rng)}.`,
+        `A dragon of ${pick(['unparalleled beauty','terrifying magnificence','heart-stopping grandeur','the kind that makes warriors drop their swords in awe'], rng)}.`,
+      ], rng),
+      (n, rng) => pick([
+        `A dragon ${pick(['whose roar splits mountains','whose wings eclipse the sun','whose breath reshapes continents','whose gaze stops time'], rng)}.`,
+        `${pick(['Worshipped as a god','Feared as a demon','Revered as a spirit','Remembered as a legend'], rng)} by ${pick(['mortal kingdoms','ancient cults','primitive tribes','fallen civilizations'], rng)}.`,
+        `The ${pick(['last','first','oldest','youngest'], rng)} of ${pick(['its kind','its bloodline','the great drakes','the celestial brood'], rng)}.`,
+      ], rng),
     ],
     loreTemplates: [
-      (n) => `Among the oldest of dragonkind, ${n} has witnessed the rise and fall of a dozen civilizations. Its lair, hidden deep within the volcanic mountains, contains treasures accumulated over ten thousand years. Few have seen the dragon and lived to tell the tale.`,
-      (n) => `Unlike its more destructive kin, ${n} chose a different path. It serves as a guardian of ancient knowledge, its vast library carved into a mountain containing texts from civilizations long lost to time. Scholars who prove their worth may consult the dragon's collection.`
+      (n, rng) => pick([
+        `Among the oldest of dragonkind, ${n} has witnessed the rise and fall of a dozen civilizations. Its lair, hidden deep within the volcanic mountains, contains treasures accumulated over ten thousand years. Few have seen the dragon and lived to tell the tale.`,
+        `${n} remembers when the world was younger — when mountains were mere hills and oceans had not yet filled their basins. It has watched species evolve, empires crumble, and magic itself change its fundamental nature. The dragon's memory is a library that no mortal institution can match.`,
+        `The lair of ${n} is not merely a cave — it is a fortress carved from obsidian, guarded by wards older than written language. The dragon's treasure hoard is legendary, but those who know the truth say the gold is merely decoration. The real treasure is the dragon's collection of artifacts from civilizations now lost to time.`,
+        `${n} was already ancient when the first human kingdoms raised their walls. Generations of heroes have sought its lair, and generations of heroes have failed to return. The dragon does not kill intruders — it simply watches them, and in that watching, they understand their insignificance and depart forever changed.`,
+      ], rng),
+      (n, rng) => pick([
+        `Unlike its more destructive kin, ${n} chose a different path. It serves as a guardian of ancient knowledge, its vast library carved into a mountain containing texts from civilizations long lost to time. Scholars who prove their worth may consult the dragon's collection.`,
+        `${n} does not hoard gold. It hoards stories. Travelers who reach its mountain sanctuary may trade a tale they have never told anyone for a tale from the dragon's own collection. Some say ${n} knows every story ever told — and a few that have never been.`,
+        `The scholar-dragon ${n} maintains a network of informants across every kingdom — not spies, but storytellers, historians, and poets who send their works to the dragon's mountain library. In return, they receive insights from the dragon's millennia of accumulated wisdom.`,
+        `Kings and queens have traveled to ${n}'s mountain seeking counsel. The dragon does not give advice — it asks questions. Those who answer honestly leave with clarity they could not find in any throne room. Those who lie find themselves walking back down the mountain with no memory of the conversation.`,
+      ], rng),
     ],
     faqQuestions: [
       "How do I create an authentic dragon name?",
@@ -371,14 +505,41 @@ for (const ri of remainingIntents) {
     nameSuffixes: shuffle(["forge","hold","haven","reach","vale","gard","stone","keep","watch","crest","spire","peak","gate","tower","wall"],rng),
     
     meaningTemplates: [
-      (n) => n + ' — a name that resonates with power and mystery.',
-      (n) => n + ' — a legendary name from the ancient archives.',
-      (n) => n + ' — a name that echoes through the ages.'
+      (n, rng) => n + ' — ' + pick(['a name that resonates with power and mystery.',
+        'a legendary name from the ancient archives.',
+        'a name that echoes through the ages.',
+        'a name whispered in tales of old.',
+        'a name that carries the weight of destiny.',
+        'a name forged in the fires of legend.'], rng),
+      (n, rng) => n + ' — ' + pick(['a name known across distant lands.',
+        'a name spoken with reverence by those who know its power.',
+        'a name that shines like a beacon in the darkness.',
+        'a name that has inspired generations.',
+        'a name that defies the passage of time.',
+        'a name of mythic proportions.'], rng),
+      (n, rng) => n + ' — ' + pick(['a name imbued with ancient magic.',
+        'a name that opens doors to forgotten realms.',
+        'a name that resonates with cosmic energy.',
+        'a name blessed by forces beyond mortal understanding.',
+        'a name that bridges worlds.',
+        'a name worthy of song and saga.'], rng),
     ],
     
     loreTemplates: [
-      (n) => `The origins of ${n} are shrouded in mystery and legend. Ancient texts speak of its founding during a time of great upheaval, when the old order crumbled and something new arose from the chaos. Today, ${n} stands as a testament to the resilience and creativity of its people.`,
-      (n) => `According to the oldest chronicles, ${n} was established by a group of visionaries who saw potential where others saw only wilderness. Through determination, ingenuity, and more than a little luck, they built something that would endure for generations and inspire countless others.`
+      (n, rng) => pick([
+        `The origins of ${n} are shrouded in mystery and legend. Ancient texts speak of its founding during a time of great upheaval, when the old order crumbled and something new arose from the chaos. Today, ${n} stands as a testament to the resilience and creativity of its people.`,
+        `According to the oldest chronicles, ${n} was established by a group of visionaries who saw potential where others saw only wilderness. Through determination, ingenuity, and more than a little luck, they built something that would endure for generations and inspire countless others.`,
+        `In the age before recorded history, ${n} emerged from the mists of legend. Scholars debate its true origins, but all agree that its founding marked a turning point in the destiny of the realm. The name ${n} has survived empires, wars, and cataclysms, growing only stronger with each passing century.`,
+        `The first stones of ${n} were laid by wanderers who had traveled across vast and unforgiving lands. They chose this site because the earth itself seemed to hum with latent power. That power still pulses beneath ${n} today, drawing seekers, scholars, and adventurers from every corner of the world.`,
+        `Long before ${n} became the name known throughout the land, it was merely a dream shared by a handful of unlikely allies. They came from different worlds, spoke different tongues, and worshipped different gods — but they shared a vision of something greater than any of them alone.`,
+      ], rng),
+      (n, rng) => pick([
+        `The story of ${n} is one of improbable triumph. Founded with nothing but courage and conviction, it rose from obscurity to become one of the most celebrated names in the realm. Each generation has added its own chapter to the ${n} legend, and the story continues to unfold.`,
+        `${n} was not built in a day, nor a year, nor even a lifetime. It is the work of centuries — each stone laid by hands long since turned to dust, each tradition born from the struggles of ancestors whose names are now forgotten. And yet, ${n} endures, a living monument to the collective will of its people.`,
+        `The founding of ${n} is commemorated each year with a festival of lights and song. Elders recount the tale of the first settlers who braved the wilderness, fought off marauders, and built a community from nothing. Children grow up hearing these stories, learning that ${n} was born from courage.`,
+        `Not all who seek ${n} find it. Some say the place itself chooses who may enter — that the ancient wards laid down by the founders still hold, admitting only those whose hearts are true. Whether magic or mere legend, the stories persist, and ${n} retains an air of mystery unmatched by any other realm.`,
+        `The archives of ${n} contain records stretching back millennia. The earliest scrolls speak of a pact made between the founders and forces that predate human memory. What exactly was promised, and to whom, remains a secret guarded by the keepers of ${n}'s deepest traditions.`,
+      ], rng),
     ],
     
     faqQuestions: [
@@ -413,14 +574,14 @@ for (const intent of intents) {
     const p1 = pick(intent.namePrefixes, rng);
     const p2 = pick(intent.nameSuffixes, rng);
     const name = cap(p1) + cap(p2);
-    const meaning = pick(intent.meaningTemplates, rng)(name);
+    const meaning = pick(intent.meaningTemplates, rng)(name, rng);
     names.push({ name, meaning });
   }
 
   // 20 Featured
   const featured = names.slice(0, 20).map(n => ({
     ...n,
-    lore: pick(intent.loreTemplates, rng)(n.name)
+    lore: pick(intent.loreTemplates, rng)(n.name, rng)
   }));
 
   // 6 FAQ
