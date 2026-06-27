@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (223 URLs)
+✅ sitemap-blog.xml (228 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5657
+📊 Total URLs across all sitemaps: 5662
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 2.0min
+ ✓ Compiled successfully in 119s
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -45,23 +45,13 @@ https://nextjs.org/telemetry
 ./app/page.tsx
 4:8  Warning: 'posts' is defined but never used.  @typescript-eslint/no-unused-vars
 
-./components/category-hub.tsx
-161:9  Warning: 'themes' is assigned a value but never used.  @typescript-eslint/no-unused-vars
-162:9  Warning: 'contexts' is assigned a value but never used.  @typescript-eslint/no-unused-vars
-163:9  Warning: 'races' is assigned a value but never used.  @typescript-eslint/no-unused-vars
-222:32  Warning: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
-233:32  Warning: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
-
-./components/landing-page.tsx
-4:8  Warning: 'posts' is defined but never used.  @typescript-eslint/no-unused-vars
-
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/6208) ...
-   Generating static pages (1552/6208) 
-   Generating static pages (3104/6208) 
-   Generating static pages (4656/6208) 
- ✓ Generating static pages (6208/6208)
+   Generating static pages (0/6213) ...
+   Generating static pages (1553/6213) 
+   Generating static pages (3106/6213) 
+   Generating static pages (4659/6213) 
+ ✓ Generating static pages (6213/6213)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -199,7 +189,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+212 more paths]
+├   └ [+217 more paths]
 ├ ● /blog/category/[slug]                        3.93 kB         110 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
