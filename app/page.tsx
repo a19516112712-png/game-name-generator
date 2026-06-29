@@ -49,42 +49,31 @@ const featuredPages = featuredSlugs
   .map((slug) => pages.find((p) => p.slug === slug))
   .filter(Boolean) as typeof pages;
 
-// ---- Popular Categories ----
+// ---- Popular Categories (deduped, pointing to hub pages) ----
 const popularCategories = [
-  { label: "Kingdom Names", icon: "🏰", slug: "dark-elf-kingdom-name-generator" },
-  { label: "Guild Names", icon: "🛡️", slug: "ancient-dwarf-guild-name-generator" },
-  { label: "Dragon Names", icon: "🐉", slug: "fire-dragon-empire-name-generator" },
-  { label: "Empire Names", icon: "👑", slug: "fire-dragon-empire-name-generator" },
-  { label: "Demon Names", icon: "👹", slug: "infernal-demon-legion-name-generator" },
-  { label: "Angel Names", icon: "😇", slug: "holy-angel-realm-name-generator" },
-  { label: "Wizard Names", icon: "🧙", slug: "arcane-elf-order-name-generator" },
-  { label: "Knight Names", icon: "⚔️", slug: "fantasy-knight-names" },
-  { label: "Pirate Names", icon: "🏴‍☠️", slug: "fantasy-pirate-names" },
-  { label: "Vampire Names", icon: "🧛", slug: "shadow-vampire-clan-name-generator" },
-  { label: "Elf Names", icon: "🏹", slug: "dark-elf-kingdom-name-generator" },
-  { label: "Orc Names", icon: "👺", slug: "storm-orc-tribe-name-generator" },
-  { label: "Clan Names", icon: "⚔️", slug: "shadow-vampire-clan-name-generator" },
-  { label: "Character Names", icon: "🧑", slug: "male-character-name-generator" },
-  { label: "City Names", icon: "🏙️", slug: "medieval-city-names" },
-  { label: "Dungeon Names", icon: "🏚️", slug: "dark-dungeon-names" },
-  { label: "NPC Names", icon: "🎭", slug: "fantasy-npc-names" },
-  { label: "Monster Names", icon: "👾", slug: "fantasy-monster-names" },
-  { label: "Creature Names", icon: "🐉", slug: "fantasy-creature-names" },
-  { label: "Ship Names", icon: "🚢", slug: "pirate-ship-names" },
-  { label: "Tavern Names", icon: "🍺", slug: "fantasy-tavern-names" },
-  { label: "Faction Names", icon: "⚜️", slug: "fantasy-faction-names" },
-  { label: "Wizard Names", icon: "🧙", slug: "arcane-wizard-names" },
-  { label: "Knight Names", icon: "⚔️", slug: "fantasy-knight-names" },
-  { label: "Pirate Names", icon: "🏴‍☠️", slug: "fantasy-pirate-names" },
-  { label: "Undead Names", icon: "💀", slug: "void-undead-nation-name-generator" },
-  { label: "Phoenix Names", icon: "🐦‍🔥", slug: "crystal-phoenix-dynasty-name-generator" },
-  { label: "Dwarf Names", icon: "⛏️", slug: "ancient-dwarf-guild-name-generator" },
-  { label: "Ice Names", icon: "❄️", slug: "ice-dwarf-kingdom-name-generator" },
-  { label: "Storm Names", icon: "⚡", slug: "storm-orc-tribe-name-generator" },
-  { label: "Fire Names", icon: "🔥", slug: "fire-dragon-empire-name-generator" },
-  { label: "Holy Names", icon: "✨", slug: "holy-angel-realm-name-generator" },
-  { label: "Arcane Names", icon: "🔮", slug: "arcane-elf-order-name-generator" },
-  { label: "Shadow Names", icon: "🌑", slug: "shadow-vampire-clan-name-generator" },
+  { label: "Kingdom Names", icon: "🏰", slug: "kingdom-names" },
+  { label: "Empire Names", icon: "👑", slug: "empire-names" },
+  { label: "Clan Names", icon: "⚔️", slug: "clan-names" },
+  { label: "Guild Names", icon: "🛡️", slug: "guild-names" },
+  { label: "Dragon Names", icon: "🐉", slug: "dragon-names" },
+  { label: "Demon Names", icon: "👹", slug: "demon-names" },
+  { label: "Angel Names", icon: "😇", slug: "angel-names" },
+  { label: "Elf Names", icon: "🏹", slug: "elf-names" },
+  { label: "Orc Names", icon: "👺", slug: "orc-names" },
+  { label: "Vampire Names", icon: "🧛", slug: "vampire-names" },
+  { label: "Character Names", icon: "🧑", slug: "character-name-generator" },
+  { label: "City Names", icon: "🏙️", slug: "fantasy-city-names" },
+  { label: "Dungeon Names", icon: "🏚️", slug: "dungeon-names" },
+  { label: "NPC Names", icon: "🎭", slug: "npc-names" },
+  { label: "Monster Names", icon: "👾", slug: "monster-names" },
+  { label: "Creature Names", icon: "🐉", slug: "creature-names" },
+  { label: "Ship Names", icon: "🚢", slug: "ship-names" },
+  { label: "Tavern Names", icon: "🍺", slug: "tavern-names" },
+  { label: "Faction Names", icon: "⚜️", slug: "faction-names" },
+  { label: "Wizard Names", icon: "🧙", slug: "wizard-names" },
+  { label: "Knight Names", icon: "⚔️", slug: "knight-names" },
+  { label: "Pirate Names", icon: "🏴‍☠️", slug: "pirate-names" },
+  { label: "Forest Names", icon: "🌲", slug: "forest-names" },
 ];
 
 // ---- Trending Searches (50) ----
@@ -305,7 +294,7 @@ export default function HomePage() {
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
-            href="/search"
+            href="/generators"
             className="rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 px-6 py-3 font-semibold text-white transition hover:from-purple-500 hover:to-indigo-500 hover:shadow-lg hover:shadow-purple-900/30"
           >
             Explore All Generators →
@@ -794,10 +783,10 @@ export default function HomePage() {
             Try Fire Dragon Empire →
           </Link>
           <Link
-            href="/search"
+            href="/generators"
             className="rounded-xl border border-gray-700 px-6 py-3 font-semibold text-white transition hover:border-gray-500 hover:bg-gray-800"
           >
-            Search All Generators →
+            Browse All Generators →
           </Link>
         </div>
       </section>
