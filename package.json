@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/generate-sitemaps.js && next build",
+    "postbuild": "node scripts/submit-indexnow.mjs",
     "start": "next start",
     "lint": "next lint",
     "generate-pages": "tsx scripts/generate-pages.ts",
