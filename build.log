@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (233 URLs)
+✅ sitemap-blog.xml (238 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5667
+📊 Total URLs across all sitemaps: 5672
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 120s
+ ✓ Compiled successfully in 2.0min
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -47,11 +47,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/6218) ...
-   Generating static pages (1554/6218) 
-   Generating static pages (3108/6218) 
-   Generating static pages (4663/6218) 
- ✓ Generating static pages (6218/6218)
+   Generating static pages (0/6223) ...
+   Generating static pages (1555/6223) 
+   Generating static pages (3111/6223) 
+   Generating static pages (4667/6223) 
+ ✓ Generating static pages (6223/6223)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -189,7 +189,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+222 more paths]
+├   └ [+227 more paths]
 ├ ● /blog/category/[slug]                        3.93 kB         110 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
@@ -1564,3 +1564,47 @@ Route (app)                                         Size  First Load JS
 ●  (SSG)      prerendered as static HTML (uses generateStaticParams)
 ƒ  (Dynamic)  server-rendered on demand
 
+
+> game-site@0.1.0 postbuild
+> node scripts/submit-indexnow.mjs
+
+[IndexNow] Starting bulk URL submission...
+[IndexNow] Host: toppicksbase.com
+[IndexNow] Key:  b3e947f6d28a415eb9c84730b2026d3b
+[IndexNow] Dir:  /home/runner/work/game-name-generator/game-name-generator/public
+
+[IndexNow] Found 10 sitemap files:
+  - sitemap-blog.xml
+  - sitemap-generators-1.xml
+  - sitemap-generators-2.xml
+  - sitemap-generators-3.xml
+  - sitemap-generators-4.xml
+  - sitemap-generators-5.xml
+  - sitemap-generators-6.xml
+  - sitemap-landing.xml
+  - sitemap-static.xml
+  - sitemap.xml
+
+[IndexNow] sitemap-blog.xml                      238 total |   238 for toppicksbase.com
+[IndexNow] sitemap-generators-1.xml              900 total |   900 for toppicksbase.com
+[IndexNow] sitemap-generators-2.xml              900 total |   900 for toppicksbase.com
+[IndexNow] sitemap-generators-3.xml              900 total |   900 for toppicksbase.com
+[IndexNow] sitemap-generators-4.xml              900 total |   900 for toppicksbase.com
+[IndexNow] sitemap-generators-5.xml              900 total |   900 for toppicksbase.com
+[IndexNow] sitemap-generators-6.xml               20 total |    20 for toppicksbase.com
+[IndexNow] sitemap-landing.xml                   903 total |   903 for toppicksbase.com
+[IndexNow] sitemap-static.xml                     11 total |    11 for toppicksbase.com
+[IndexNow] sitemap.xml                             9 total |     9 for toppicksbase.com
+
+[IndexNow] Total unique URLs to submit: 5679
+[IndexNow] Batching into 1 request(s) (max 10000 per batch)
+
+[IndexNow] ⚠️  Batch 1/1 (5679 URLs) — HTTP 403 ({"errorCode":"SiteVerificationNotCompleted","message":"Site Verification is not completed. Please wait for some time for the verification to complete and try again.","details":null})
+
+============================================================
+[IndexNow] Submission complete.
+[IndexNow] ✅ Succeeded: 0 batch(es)
+[IndexNow] ⚠️  Failed:    1 batch(es)
+[IndexNow] 📊 URLs sent: 0
+[IndexNow] 💡 First deploy? Key verification takes ~24h. 403s are expected.
+============================================================
