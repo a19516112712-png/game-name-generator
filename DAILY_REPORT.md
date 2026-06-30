@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-06-29
+# Daily SEO Report — 2026-06-30
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-06-29 |
+| Date | 2026-06-30 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
-| Total App Pages | 1481 |
-| Total Blog Posts | 230 |
+| Total App Pages | 1482 |
+| Total Blog Posts | 235 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- demonic legion names
-- crystal empire naming system
-- D&D dark empire names
-- dwarven dynasty naming
-- celestial faction names gaming
+- dwarven dynasty names
+- infernal house naming system
+- D&D arcane circle names
+- demonic legion naming
+- ancient alliance names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-06-29T05:04:09.499Z*
+*Automated by GitHub Actions — 2026-06-30T04:38:34.022Z*

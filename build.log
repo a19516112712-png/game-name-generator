@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (238 URLs)
+✅ sitemap-blog.xml (243 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5672
+📊 Total URLs across all sitemaps: 5677
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 2.0min
+ ✓ Compiled successfully in 119s
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -47,11 +47,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/6223) ...
-   Generating static pages (1555/6223) 
-   Generating static pages (3111/6223) 
-   Generating static pages (4667/6223) 
- ✓ Generating static pages (6223/6223)
+   Generating static pages (0/6229) ...
+   Generating static pages (1557/6229) 
+   Generating static pages (3114/6229) 
+   Generating static pages (4671/6229) 
+ ✓ Generating static pages (6229/6229)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -103,7 +103,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /ancient-tavern-names                        3.93 kB         110 kB
 ├ ○ /ancient-tribe-names                         3.93 kB         110 kB
 ├ ○ /ancient-wizard-names                        3.93 kB         110 kB
-├ ○ /angel                                         207 B         103 kB
+├ ○ /angel                                         210 B         103 kB
 ├ ○ /angel-alliance-names                        3.93 kB         110 kB
 ├ ○ /angel-character-name-generator              3.93 kB         110 kB
 ├ ○ /angel-clan-names                            3.93 kB         110 kB
@@ -189,7 +189,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+227 more paths]
+├   └ [+232 more paths]
 ├ ● /blog/category/[slug]                        3.93 kB         110 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
@@ -255,7 +255,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /chronomancer-wizard-names                   3.93 kB         110 kB
 ├ ○ /cistern-dungeon-names                       3.93 kB         110 kB
 ├ ○ /city-npc-names                              3.93 kB         110 kB
-├ ○ /clan                                          207 B         103 kB
+├ ○ /clan                                          210 B         103 kB
 ├ ○ /clan-name-generator                         3.93 kB         110 kB
 ├ ○ /clan-names                                  3.93 kB         110 kB
 ├ ○ /cleric-character-name-generator             3.93 kB         110 kB
@@ -282,7 +282,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /cool-tribe-names                            3.93 kB         110 kB
 ├ ○ /corsair-pirate-names                        3.93 kB         110 kB
 ├ ○ /cozy-tavern-names                           3.93 kB         110 kB
-├ ○ /creature                                      207 B         103 kB
+├ ○ /creature                                      210 B         103 kB
 ├ ○ /creature-names                              3.93 kB         110 kB
 ├ ○ /crimson-dungeon-names                       3.93 kB         110 kB
 ├ ○ /crimson-faction-names                       3.93 kB         110 kB
@@ -376,7 +376,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /deadly-dungeon-names                        3.93 kB         110 kB
 ├ ○ /deep-forest-names                           3.93 kB         110 kB
 ├ ○ /deer-forest-names                           3.93 kB         110 kB
-├ ○ /demon                                         207 B         103 kB
+├ ○ /demon                                         210 B         103 kB
 ├ ○ /demon-alliance-names                        3.93 kB         110 kB
 ├ ○ /demon-character-name-generator              3.93 kB         110 kB
 ├ ○ /demon-clan-names                            3.93 kB         110 kB
@@ -401,7 +401,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /desert-dungeon-names                        3.93 kB         110 kB
 ├ ○ /desert-monster-names                        3.93 kB         110 kB
 ├ ○ /desert-tavern-names                         3.93 kB         110 kB
-├ ○ /disclaimer                                    207 B         103 kB
+├ ○ /disclaimer                                    210 B         103 kB
 ├ ○ /divine-dungeon-names                        3.93 kB         110 kB
 ├ ○ /divine-guild-names                          3.93 kB         110 kB
 ├ ○ /divine-realm-names                          3.93 kB         110 kB
@@ -418,7 +418,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /dnd-pirate-names                            3.93 kB         110 kB
 ├ ○ /dnd-tavern-names                            3.93 kB         110 kB
 ├ ○ /dnd-wizard-names                            3.93 kB         110 kB
-├ ○ /dragon                                        207 B         103 kB
+├ ○ /dragon                                        210 B         103 kB
 ├ ○ /dragon-age-wizard-names                     3.93 kB         110 kB
 ├ ○ /dragon-alliance-names                       3.93 kB         110 kB
 ├ ○ /dragon-character-name-generator             3.93 kB         110 kB
@@ -457,7 +457,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /druid-forest-names                          3.93 kB         110 kB
 ├ ○ /druid-npc-names                             3.93 kB         110 kB
 ├ ○ /dryad-creature-names                        3.93 kB         110 kB
-├ ○ /dungeon                                       207 B         103 kB
+├ ○ /dungeon                                       210 B         103 kB
 ├ ○ /dungeon-names                               3.93 kB         110 kB
 ├ ○ /dungeons-and-dragons-city-names             3.93 kB         110 kB
 ├ ○ /dusk-empire-names                           3.93 kB         110 kB
@@ -501,7 +501,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /elemental-dungeon-names                     3.93 kB         110 kB
 ├ ○ /elemental-monster-names                     3.93 kB         110 kB
 ├ ○ /elemental-wizard-names                      3.93 kB         110 kB
-├ ○ /elf                                           207 B         103 kB
+├ ○ /elf                                           210 B         103 kB
 ├ ○ /elf-alliance-names                          3.93 kB         110 kB
 ├ ○ /elf-character-name-generator                3.93 kB         110 kB
 ├ ○ /elf-clan-names                              3.93 kB         110 kB
@@ -535,7 +535,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /ember-tavern-names                          3.93 kB         110 kB
 ├ ○ /ember-village-names                         3.93 kB         110 kB
 ├ ○ /emerald-forest-names                        3.93 kB         110 kB
-├ ○ /empire                                        207 B         103 kB
+├ ○ /empire                                        210 B         103 kB
 ├ ○ /empire-name-generator                       3.93 kB         110 kB
 ├ ○ /empire-names                                3.93 kB         110 kB
 ├ ○ /enchanted-creature-names                    3.93 kB         110 kB
@@ -591,7 +591,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /evil-wizard-names                           3.93 kB         110 kB
 ├ ○ /expert-dungeon-names                        3.93 kB         110 kB
 ├ ○ /explorer-ship-names                         3.93 kB         110 kB
-├ ○ /faction                                       207 B         103 kB
+├ ○ /faction                                       210 B         103 kB
 ├ ○ /faction-name-generator                      3.93 kB         110 kB
 ├ ○ /faction-names                               3.93 kB         110 kB
 ├ ○ /fairy-character-name-generator              3.93 kB         110 kB
@@ -778,7 +778,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /guard-npc-names                             3.93 kB         110 kB
 ├ ○ /guardian-forest-names                       3.93 kB         110 kB
 ├ ○ /guardian-knight-names                       3.93 kB         110 kB
-├ ○ /guild                                         207 B         103 kB
+├ ○ /guild                                         210 B         103 kB
 ├ ○ /guild-faction-names                         3.93 kB         110 kB
 ├ ○ /guild-name-generator                        3.93 kB         110 kB
 ├ ○ /guild-names                                 3.93 kB         110 kB
@@ -889,11 +889,11 @@ Route (app)                                         Size  First Load JS
 ├ ○ /jungle-city-names                           3.93 kB         110 kB
 ├ ○ /jungle-dungeon-names                        3.93 kB         110 kB
 ├ ○ /keep-dungeon-names                          3.93 kB         110 kB
-├ ○ /kingdom                                       207 B         103 kB
+├ ○ /kingdom                                       210 B         103 kB
 ├ ○ /kingdom-name-generator                      3.93 kB         110 kB
 ├ ○ /kingdom-names                               3.93 kB         110 kB
 ├ ○ /kingdom-npc-names                           3.93 kB         110 kB
-├ ○ /knight                                        207 B         103 kB
+├ ○ /knight                                        210 B         103 kB
 ├ ○ /knight-character-name-generator             3.93 kB         110 kB
 ├ ○ /knight-names                                3.93 kB         110 kB
 ├ ○ /knight-tavern-names                         3.93 kB         110 kB
@@ -1003,7 +1003,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /modern-city-names                           3.93 kB         110 kB
 ├ ○ /monk-character-name-generator               3.93 kB         110 kB
 ├ ○ /monk-npc-names                              3.93 kB         110 kB
-├ ○ /monster                                       207 B         103 kB
+├ ○ /monster                                       210 B         103 kB
 ├ ○ /monster-names                               3.93 kB         110 kB
 ├ ○ /moonlit-forest-names                        3.93 kB         110 kB
 ├ ○ /mountain-city-names                         3.93 kB         110 kB
@@ -1102,7 +1102,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /norse-city-names                            3.93 kB         110 kB
 ├ ○ /norse-creature-names                        3.93 kB         110 kB
 ├ ○ /norse-dungeon-names                         3.93 kB         110 kB
-├ ○ /npc                                           207 B         103 kB
+├ ○ /npc                                           210 B         103 kB
 ├ ○ /npc-names                                   3.93 kB         110 kB
 ├ ○ /nymph-creature-names                        3.93 kB         110 kB
 ├ ○ /oath-knight-names                           3.93 kB         110 kB
@@ -1111,7 +1111,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /ocean-pirate-names                          3.93 kB         110 kB
 ├ ○ /ogre-monster-names                          3.93 kB         110 kB
 ├ ○ /one-shot-dungeon-names                      3.93 kB         110 kB
-├ ○ /orc                                           207 B         103 kB
+├ ○ /orc                                           210 B         103 kB
 ├ ○ /orc-alliance-names                          3.93 kB         110 kB
 ├ ○ /orc-character-name-generator                3.93 kB         110 kB
 ├ ○ /orc-clan-names                              3.93 kB         110 kB
@@ -1164,7 +1164,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /phoenix-order-names                         3.93 kB         110 kB
 ├ ○ /phoenix-realm-names                         3.93 kB         110 kB
 ├ ○ /phoenix-tribe-names                         3.93 kB         110 kB
-├ ○ /pirate                                        207 B         103 kB
+├ ○ /pirate                                        210 B         103 kB
 ├ ○ /pirate-character-name-generator             3.93 kB         110 kB
 ├ ○ /pirate-names                                3.93 kB         110 kB
 ├ ○ /pirate-ship-names                           3.93 kB         110 kB
@@ -1193,7 +1193,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /primal-kingdom-names                        3.93 kB         110 kB
 ├ ○ /primeval-forest-names                       3.93 kB         110 kB
 ├ ○ /prison-dungeon-names                        3.93 kB         110 kB
-├ ○ /privacy-policy                                207 B         103 kB
+├ ○ /privacy-policy                                210 B         103 kB
 ├ ○ /privateer-pirate-names                      3.93 kB         110 kB
 ├ ○ /psychic-dungeon-names                       3.93 kB         110 kB
 ├ ○ /pyromancer-wizard-names                     3.93 kB         110 kB
@@ -1214,7 +1214,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /roadside-tavern-names                       3.93 kB         110 kB
 ├ ○ /roblox-name-generator                       3.93 kB         110 kB
 ├ ○ /robot-character-name-generator              3.93 kB         110 kB
-├ ○ /robots.txt                                    207 B         103 kB
+├ ○ /robots.txt                                    210 B         103 kB
 ├ ○ /rogue-character-name-generator              3.93 kB         110 kB
 ├ ○ /rogue-npc-names                             3.93 kB         110 kB
 ├ ○ /rogue-tavern-names                          3.93 kB         110 kB
@@ -1310,7 +1310,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /shadow-tribe-names                          3.93 kB         110 kB
 ├ ○ /shadow-wizard-names                         3.93 kB         110 kB
 ├ ○ /shadowfell-dungeon-names                    3.93 kB         110 kB
-├ ○ /ship                                          207 B         103 kB
+├ ○ /ship                                          210 B         103 kB
 ├ ○ /ship-names                                  3.93 kB         110 kB
 ├ ○ /shop-npc-names                              3.93 kB         110 kB
 ├ ○ /sidekick-character-name-generator           3.93 kB         110 kB
@@ -1376,12 +1376,13 @@ Route (app)                                         Size  First Load JS
 ├ ○ /superhero-character-name-generator          3.93 kB         110 kB
 ├ ○ /swamp-dungeon-names                         3.93 kB         110 kB
 ├ ○ /swamp-monster-names                         3.93 kB         110 kB
-├ ○ /tavern                                        207 B         103 kB
+├ ○ /tavern                                        210 B         103 kB
 ├ ○ /tavern-names                                3.93 kB         110 kB
 ├ ○ /tavern-npc-names                            3.93 kB         110 kB
 ├ ○ /templar-knight-names                        3.93 kB         110 kB
 ├ ○ /temple-dungeon-names                        3.93 kB         110 kB
-├ ○ /terms                                         207 B         103 kB
+├ ○ /terms                                         210 B         103 kB
+├ ○ /terms-of-service                              210 B         103 kB
 ├ ○ /thief-faction-names                         3.93 kB         110 kB
 ├ ○ /thief-npc-names                             3.93 kB         110 kB
 ├ ○ /thunder-city-names                          3.93 kB         110 kB
@@ -1457,7 +1458,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /unique-tribe-names                          3.93 kB         110 kB
 ├ ○ /urban-fantasy-city-names                    3.93 kB         110 kB
 ├ ○ /valorant-name-generator                     3.93 kB         110 kB
-├ ○ /vampire                                       207 B         103 kB
+├ ○ /vampire                                       210 B         103 kB
 ├ ○ /vampire-alliance-names                      3.93 kB         110 kB
 ├ ○ /vampire-character-name-generator            3.93 kB         110 kB
 ├ ○ /vampire-city-names                          3.93 kB         110 kB
@@ -1539,7 +1540,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /wild-west-character-name-generator          3.93 kB         110 kB
 ├ ○ /winter-guild-names                          3.93 kB         110 kB
 ├ ○ /winter-realm-names                          3.93 kB         110 kB
-├ ○ /wizard                                        207 B         103 kB
+├ ○ /wizard                                        210 B         103 kB
 ├ ○ /wizard-character-name-generator             3.93 kB         110 kB
 ├ ○ /wizard-city-names                           3.93 kB         110 kB
 ├ ○ /wizard-names                                3.93 kB         110 kB
@@ -1585,7 +1586,7 @@ Route (app)                                         Size  First Load JS
   - sitemap-static.xml
   - sitemap.xml
 
-[IndexNow] sitemap-blog.xml                      238 total |   238 for toppicksbase.com
+[IndexNow] sitemap-blog.xml                      243 total |   243 for toppicksbase.com
 [IndexNow] sitemap-generators-1.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-2.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-3.xml              900 total |   900 for toppicksbase.com
@@ -1596,15 +1597,14 @@ Route (app)                                         Size  First Load JS
 [IndexNow] sitemap-static.xml                     11 total |    11 for toppicksbase.com
 [IndexNow] sitemap.xml                             9 total |     9 for toppicksbase.com
 
-[IndexNow] Total unique URLs to submit: 5679
+[IndexNow] Total unique URLs to submit: 5684
 [IndexNow] Batching into 1 request(s) (max 10000 per batch)
 
-[IndexNow] ⚠️  Batch 1/1 (5679 URLs) — HTTP 403 ({"errorCode":"SiteVerificationNotCompleted","message":"Site Verification is not completed. Please wait for some time for the verification to complete and try again.","details":null})
+[IndexNow] ✅ Batch 1/1 (5684 URLs) — HTTP 200
 
 ============================================================
 [IndexNow] Submission complete.
-[IndexNow] ✅ Succeeded: 0 batch(es)
-[IndexNow] ⚠️  Failed:    1 batch(es)
-[IndexNow] 📊 URLs sent: 0
-[IndexNow] 💡 First deploy? Key verification takes ~24h. 403s are expected.
+[IndexNow] ✅ Succeeded: 1 batch(es)
+[IndexNow] ⚠️  Failed:    0 batch(es)
+[IndexNow] 📊 URLs sent: 5684
 ============================================================
