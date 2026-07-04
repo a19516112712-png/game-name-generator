@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-07-03
+# Daily SEO Report — 2026-07-04
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-07-03 |
+| Date | 2026-07-04 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 250 |
+| Total Blog Posts | 255 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- savage horde names
-- celestial faction naming system
-- D&D savage horde names
-- orcish tribe naming
-- mystic order names gaming
+- mystic order names
+- shadow dominion naming system
+- D&D eternal guild names
+- elven guild naming
+- vampire court names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-07-03T04:13:17.083Z*
+*Automated by GitHub Actions — 2026-07-04T04:06:01.902Z*
