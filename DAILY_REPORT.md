@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-07-04
+# Daily SEO Report — 2026-07-05
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-07-04 |
+| Date | 2026-07-05 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 255 |
+| Total Blog Posts | 260 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- mystic order names
-- shadow dominion naming system
-- D&D eternal guild names
-- elven guild naming
-- vampire court names gaming
+- fantasy kingdom names
+- ancient alliance naming system
+- D&D storm clan names
+- dragon clan naming
+- dwarven dynasty names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-07-04T04:06:01.902Z*
+*Automated by GitHub Actions — 2026-07-05T04:24:00.846Z*
