@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (268 URLs)
+✅ sitemap-blog.xml (273 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5702
+📊 Total URLs across all sitemaps: 5707
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 112s
+ ✓ Compiled successfully in 118s
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -47,11 +47,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/6254) ...
-   Generating static pages (1563/6254) 
-   Generating static pages (3126/6254) 
-   Generating static pages (4690/6254) 
- ✓ Generating static pages (6254/6254)
+   Generating static pages (0/6259) ...
+   Generating static pages (1564/6259) 
+   Generating static pages (3129/6259) 
+   Generating static pages (4694/6259) 
+ ✓ Generating static pages (6259/6259)
    Finalizing page optimization ...
    Collecting build traces ...
 
@@ -189,7 +189,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+257 more paths]
+├   └ [+262 more paths]
 ├ ● /blog/category/[slug]                        3.93 kB         110 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
@@ -1586,7 +1586,7 @@ Route (app)                                         Size  First Load JS
   - sitemap-static.xml
   - sitemap.xml
 
-[IndexNow] sitemap-blog.xml                      268 total |   268 for toppicksbase.com
+[IndexNow] sitemap-blog.xml                      273 total |   273 for toppicksbase.com
 [IndexNow] sitemap-generators-1.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-2.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-3.xml              900 total |   900 for toppicksbase.com
@@ -1597,14 +1597,14 @@ Route (app)                                         Size  First Load JS
 [IndexNow] sitemap-static.xml                     11 total |    11 for toppicksbase.com
 [IndexNow] sitemap.xml                             9 total |     9 for toppicksbase.com
 
-[IndexNow] Total unique URLs to submit: 5709
+[IndexNow] Total unique URLs to submit: 5714
 [IndexNow] Batching into 1 request(s) (max 10000 per batch)
 
-[IndexNow] ✅ Batch 1/1 (5709 URLs) — HTTP 200
+[IndexNow] ✅ Batch 1/1 (5714 URLs) — HTTP 200
 
 ============================================================
 [IndexNow] Submission complete.
 [IndexNow] ✅ Succeeded: 1 batch(es)
 [IndexNow] ⚠️  Failed:    0 batch(es)
-[IndexNow] 📊 URLs sent: 5709
+[IndexNow] 📊 URLs sent: 5714
 ============================================================
