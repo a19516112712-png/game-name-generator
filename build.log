@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (318 URLs)
+✅ sitemap-blog.xml (323 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 5752
+📊 Total URLs across all sitemaps: 5757
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -36,7 +36,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.5.19
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 2.4min
+ ✓ Compiled successfully in 2.2min
    Linting and checking validity of types ...
 
 ./app/generators/page.tsx
@@ -47,11 +47,11 @@ https://nextjs.org/telemetry
 
 info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
    Collecting page data ...
-   Generating static pages (0/6303) ...
-   Generating static pages (1575/6303) 
-   Generating static pages (3151/6303) 
-   Generating static pages (4727/6303) 
- ✓ Generating static pages (6303/6303)
+   Generating static pages (0/6308) ...
+   Generating static pages (1577/6308) 
+   Generating static pages (3154/6308) 
+   Generating static pages (4731/6308) 
+ ✓ Generating static pages (6308/6308)
    Finalizing page optimization ...
    Collecting build traces ...
    Exporting (0/2) ...
@@ -191,7 +191,7 @@ Route (app)                                         Size  First Load JS
 ├   ├ /blog/how-to-create-fantasy-kingdom-names
 ├   ├ /blog/best-guild-name-ideas-for-rpg-games
 ├   ├ /blog/dragon-name-generator-guide
-├   └ [+307 more paths]
+├   └ [+312 more paths]
 ├ ● /blog/category/[slug]                        3.93 kB         110 kB
 ├   ├ /blog/category/fantasy
 ├   ├ /blog/category/rpg
@@ -1284,7 +1284,7 @@ Route (app)                                         Size  First Load JS
 ├ ○ /sea-creature-names                          3.93 kB         110 kB
 ├ ○ /sea-monster-names                           3.93 kB         110 kB
 ├ ○ /sea-pirate-names                            3.93 kB         110 kB
-├ ○ /search                                       257 kB         363 kB
+├ ○ /search                                       259 kB         365 kB
 ├ ○ /secret-faction-names                        3.93 kB         110 kB
 ├ ○ /sewer-dungeon-names                         3.93 kB         110 kB
 ├ ○ /shadow-alliance-names                       3.93 kB         110 kB
@@ -1586,7 +1586,7 @@ Route (app)                                         Size  First Load JS
   - sitemap-static.xml
   - sitemap.xml
 
-[IndexNow] sitemap-blog.xml                      318 total |   318 for toppicksbase.com
+[IndexNow] sitemap-blog.xml                      323 total |   323 for toppicksbase.com
 [IndexNow] sitemap-generators-1.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-2.xml              900 total |   900 for toppicksbase.com
 [IndexNow] sitemap-generators-3.xml              900 total |   900 for toppicksbase.com
@@ -1597,14 +1597,14 @@ Route (app)                                         Size  First Load JS
 [IndexNow] sitemap-static.xml                     11 total |    11 for toppicksbase.com
 [IndexNow] sitemap.xml                             9 total |     9 for toppicksbase.com
 
-[IndexNow] Total unique URLs to submit: 5759
+[IndexNow] Total unique URLs to submit: 5764
 [IndexNow] Batching into 1 request(s) (max 10000 per batch)
 
-[IndexNow] ✅ Batch 1/1 (5759 URLs) — HTTP 200
+[IndexNow] ✅ Batch 1/1 (5764 URLs) — HTTP 200
 
 ============================================================
 [IndexNow] Submission complete.
 [IndexNow] ✅ Succeeded: 1 batch(es)
 [IndexNow] ⚠️  Failed:    0 batch(es)
-[IndexNow] 📊 URLs sent: 5759
+[IndexNow] 📊 URLs sent: 5764
 ============================================================
