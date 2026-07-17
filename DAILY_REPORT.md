@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-07-16
+# Daily SEO Report — 2026-07-17
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-07-16 |
+| Date | 2026-07-17 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 315 |
+| Total Blog Posts | 320 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- celestial faction names
-- savage horde naming system
-- D&D orcish tribe names
-- ancient alliance naming
-- crystal empire names gaming
+- elven guild names
+- eternal guild naming system
+- D&D elven guild names
+- mystic order naming
+- frozen kingdom names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-07-16T03:42:23.685Z*
+*Automated by GitHub Actions — 2026-07-17T03:42:06.331Z*
