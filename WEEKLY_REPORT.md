@@ -1,7 +1,7 @@
 # Weekly SEO Report
 
-**Week of**: 2026-07-27
-**Generated**: 2026-07-27T04:06:51.144Z
+**Week of**: 2026-07-28
+**Generated**: 2026-07-28T03:41:12.172Z
 
 ---
 
@@ -10,12 +10,12 @@
 | Metric | Value |
 |--------|-------|
 | **Total Pages** | **1,482** |
-| **Total Blogs** | **370** |
+| **Total Blogs** | **375** |
 | Generator Pages | 4,500 |
 | Landing Pages | 1,320 |
 | Category Hubs | 10 |
 | Intent Pages | 20 |
-| Blog Posts | 370 |
+| Blog Posts | 375 |
 | Growth Limit | ✅ Normal (30/day) |
 
 ## 📈 Weekly Growth
@@ -30,7 +30,7 @@
 
 | Metric | Value |
 |--------|-------|
-| Unique Keywords | 1,054 |
+| Unique Keywords | 1,064 |
 | Priority Categories | Kingdom, Empire, Clan, Guild, Dragon, Angel, Demon, Elf, Vampire |
 | Page Limit | 10,000 |
 | Pages Until Limit | 8,518 |
@@ -39,11 +39,11 @@
 
 | Category | Posts |
 |----------|-------|
-| Gaming | 55 |
-| Worldbuilding | 54 |
-| Naming Guides | 54 |
-| D&D Naming | 52 |
-| Fantasy Worldbuilding | 52 |
+| Gaming | 56 |
+| Worldbuilding | 55 |
+| Naming Guides | 55 |
+| D&D Naming | 53 |
+| Fantasy Worldbuilding | 53 |
 | Kingdom Names | 20 |
 | Clan Names | 11 |
 | Guild Names | 11 |
@@ -67,4 +67,4 @@
 | Growth limit active | ⏳ |
 
 ---
-*Automated weekly report — 2026-07-27*
+*Automated weekly report — 2026-07-28*
