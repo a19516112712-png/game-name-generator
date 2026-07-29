@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-07-28
+# Daily SEO Report — 2026-07-29
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-07-28 |
+| Date | 2026-07-29 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 375 |
+| Total Blog Posts | 380 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- crystal empire names
-- demonic legion naming system
-- D&D shadow dominion names
-- eternal guild naming
-- dragon clan names gaming
+- angelic realm names
+- orcish tribe naming system
+- D&D ancient alliance names
+- storm clan naming
+- dark empire names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-07-28T03:41:11.955Z*
+*Automated by GitHub Actions — 2026-07-29T03:45:51.152Z*
