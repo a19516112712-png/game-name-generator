@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-07-31
+# Daily SEO Report — 2026-08-01
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-07-31 |
+| Date | 2026-08-01 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 390 |
+| Total Blog Posts | 395 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- arcane circle names
-- dark empire naming system
-- D&D dwarven dynasty names
-- infernal house naming
-- savage horde names gaming
+- eternal guild names
+- elven guild naming system
+- D&D mystic order names
+- crystal empire naming
+- fantasy kingdom names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-07-31T03:55:41.988Z*
+*Automated by GitHub Actions — 2026-08-01T03:56:18.001Z*
