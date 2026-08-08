@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-07
+# Daily SEO Report — 2026-08-08
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-07 |
+| Date | 2026-08-08 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 425 |
+| Total Blog Posts | 430 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- elven guild names
-- eternal guild naming system
-- D&D elven guild names
-- mystic order naming
-- frozen kingdom names gaming
+- frozen kingdom names
+- storm clan naming system
+- D&D dragon clan names
+- vampire court naming
+- infernal house names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-07T03:21:26.589Z*
+*Automated by GitHub Actions — 2026-08-08T02:27:47.597Z*
