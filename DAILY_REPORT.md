@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-08
+# Daily SEO Report — 2026-08-09
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-08 |
+| Date | 2026-08-09 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 430 |
+| Total Blog Posts | 435 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- frozen kingdom names
-- storm clan naming system
-- D&D dragon clan names
-- vampire court naming
-- infernal house names gaming
+- demonic legion names
+- crystal empire naming system
+- D&D dark empire names
+- dwarven dynasty naming
+- celestial faction names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-08T02:27:47.597Z*
+*Automated by GitHub Actions — 2026-08-09T02:35:07.367Z*
