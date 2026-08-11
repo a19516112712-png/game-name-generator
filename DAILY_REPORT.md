@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-10
+# Daily SEO Report — 2026-08-11
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-10 |
+| Date | 2026-08-11 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 440 |
+| Total Blog Posts | 445 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- dwarven dynasty names
-- infernal house naming system
-- D&D arcane circle names
-- demonic legion naming
-- ancient alliance names gaming
+- savage horde names
+- celestial faction naming system
+- D&D savage horde names
+- orcish tribe naming
+- mystic order names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-10T02:41:34.107Z*
+*Automated by GitHub Actions — 2026-08-11T02:34:27.165Z*
