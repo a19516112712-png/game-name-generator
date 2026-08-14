@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-13
+# Daily SEO Report — 2026-08-14
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-13 |
+| Date | 2026-08-14 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 455 |
+| Total Blog Posts | 460 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- fantasy kingdom names
-- ancient alliance naming system
-- D&D storm clan names
-- dragon clan naming
-- dwarven dynasty names gaming
+- shadow dominion names
+- mystic order naming system
+- D&D crystal empire names
+- dark empire naming
+- angelic realm names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-13T02:54:00.744Z*
+*Automated by GitHub Actions — 2026-08-14T02:52:47.559Z*
