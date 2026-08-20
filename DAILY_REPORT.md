@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-19
+# Daily SEO Report — 2026-08-20
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-19 |
+| Date | 2026-08-20 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 485 |
+| Total Blog Posts | 490 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- angelic realm names
-- orcish tribe naming system
-- D&D ancient alliance names
-- storm clan naming
-- dark empire names gaming
+- vampire court names
+- dragon clan naming system
+- D&D vampire court names
+- frozen kingdom naming
+- arcane circle names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-19T01:58:17.222Z*
+*Automated by GitHub Actions — 2026-08-20T01:58:35.135Z*
