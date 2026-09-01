@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-08-31
+# Daily SEO Report — 2026-09-01
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-08-31 |
+| Date | 2026-09-01 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 545 |
+| Total Blog Posts | 550 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- fantasy kingdom names
-- ancient alliance naming system
-- D&D storm clan names
-- dragon clan naming
-- dwarven dynasty names gaming
+- savage horde names
+- celestial faction naming system
+- D&D savage horde names
+- orcish tribe naming
+- mystic order names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-08-31T05:42:41.262Z*
+*Automated by GitHub Actions — 2026-09-01T05:17:53.080Z*
