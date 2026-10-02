@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-10-01
+# Daily SEO Report — 2026-10-02
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-10-01 |
+| Date | 2026-10-02 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 700 |
+| Total Blog Posts | 705 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- fantasy kingdom names
-- ancient alliance naming system
-- D&D orcish tribe names
-- savage horde naming
-- infernal house names gaming
+- shadow dominion names
+- shadow dominion naming system
+- D&D demonic legion names
+- arcane circle naming
+- frozen kingdom names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-10-01T06:01:31.135Z*
+*Automated by GitHub Actions — 2026-10-02T05:47:12.175Z*
