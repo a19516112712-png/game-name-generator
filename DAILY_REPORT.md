@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-10-09
+# Daily SEO Report — 2026-10-10
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-10-09 |
+| Date | 2026-10-10 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 740 |
+| Total Blog Posts | 745 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- vampire court names
-- savage horde naming system
-- D&D celestial faction names
-- angelic realm naming
-- dark empire names gaming
+- ancient alliance names
+- fantasy kingdom naming system
+- D&D frozen kingdom names
+- vampire court naming
+- elven guild names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-10-09T06:19:18.652Z*
+*Automated by GitHub Actions — 2026-10-10T06:00:35.054Z*
