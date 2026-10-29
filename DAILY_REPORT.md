@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-10-28
+# Daily SEO Report — 2026-10-29
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-10-28 |
+| Date | 2026-10-29 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 835 |
+| Total Blog Posts | 840 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- arcane circle names
-- arcane circle naming system
-- D&D infernal house names
-- dwarven dynasty naming
-- dragon clan names gaming
+- ancient alliance names
+- fantasy kingdom naming system
+- D&D frozen kingdom names
+- vampire court naming
+- elven guild names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-10-28T05:53:07.800Z*
+*Automated by GitHub Actions — 2026-10-29T05:54:59.931Z*
