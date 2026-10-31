@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-10-30
+# Daily SEO Report — 2026-10-31
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-10-30 |
+| Date | 2026-10-31 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 845 |
+| Total Blog Posts | 850 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- celestial faction names
-- dragon clan naming system
-- D&D storm clan names
-- ancient alliance naming
-- demonic legion names gaming
+- elven guild names
+- elven guild naming system
+- D&D eternal guild names
+- shadow dominion naming
+- angelic realm names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-10-30T05:58:17.759Z*
+*Automated by GitHub Actions — 2026-10-31T05:52:28.003Z*
