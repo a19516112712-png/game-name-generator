@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-10-31
+# Daily SEO Report — 2026-11-01
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-10-31 |
+| Date | 2026-11-01 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 850 |
+| Total Blog Posts | 855 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- elven guild names
-- elven guild naming system
-- D&D eternal guild names
-- shadow dominion naming
-- angelic realm names gaming
+- dark empire names
+- dark empire naming system
+- D&D crystal empire names
+- mystic order naming
+- orcish tribe names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-10-31T05:52:28.003Z*
+*Automated by GitHub Actions — 2026-11-01T06:16:24.358Z*
