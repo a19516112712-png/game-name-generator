@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-05
+# Daily SEO Report — 2026-11-06
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-05 |
+| Date | 2026-11-06 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 875 |
+| Total Blog Posts | 880 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- demonic legion names
-- demonic legion naming system
-- D&D arcane circle names
-- infernal house naming
-- vampire court names gaming
+- storm clan names
+- angelic realm naming system
+- D&D fantasy kingdom names
+- frozen kingdom naming
+- mystic order names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-11-05T06:58:09.668Z*
+*Automated by GitHub Actions — 2026-11-06T06:55:12.588Z*
