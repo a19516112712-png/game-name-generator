@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-07
+# Daily SEO Report — 2026-11-08
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-07 |
+| Date | 2026-11-08 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 885 |
+| Total Blog Posts | 890 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- dwarven dynasty names
-- dwarven dynasty naming system
-- D&D dark empire names
-- crystal empire naming
-- ancient alliance names gaming
+- savage horde names
+- vampire court naming system
+- D&D dragon clan names
+- storm clan naming
+- shadow dominion names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-11-07T06:10:11.188Z*
+*Automated by GitHub Actions — 2026-11-08T06:11:37.333Z*
