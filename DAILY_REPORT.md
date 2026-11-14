@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-13
+# Daily SEO Report — 2026-11-14
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-13 |
+| Date | 2026-11-14 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 915 |
-| Build Status | ✅ SUCCESS |
+| Total Blog Posts | 920 |
+| Build Status | ⚠️ PENDING |
 
 ## New Keywords
 
-- orcish tribe names
-- frozen kingdom naming system
-- D&D vampire court names
-- dragon clan naming
-- eternal guild names gaming
+- crystal empire names
+- crystal empire naming system
+- D&D mystic order names
+- elven guild naming
+- savage horde names gaming
 
 ## Quality Checks
 
@@ -27,7 +27,7 @@
 | Canonical URLs correct | ✅ |
 | JSON-LD Schema valid | ✅ |
 | Sitemap updated | ✅ |
-| Build passes | ✅ |
+| Build passes | ❌ |
 
 ---
-*Automated by GitHub Actions — 2026-11-13T06:53:54.614Z*
+*Automated by GitHub Actions — 2026-11-14T06:30:23.767Z*
