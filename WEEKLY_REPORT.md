@@ -1,7 +1,7 @@
 # Weekly SEO Report
 
-**Week of**: 2026-11-14
-**Generated**: 2026-11-14T06:30:23.934Z
+**Week of**: 2026-11-15
+**Generated**: 2026-11-15T06:38:37.030Z
 
 ---
 
@@ -10,12 +10,12 @@
 | Metric | Value |
 |--------|-------|
 | **Total Pages** | **1,482** |
-| **Total Blogs** | **920** |
+| **Total Blogs** | **925** |
 | Generator Pages | 4,500 |
 | Landing Pages | 1,320 |
 | Category Hubs | 10 |
 | Intent Pages | 20 |
-| Blog Posts | 920 |
+| Blog Posts | 925 |
 | Growth Limit | ✅ Normal (30/day) |
 
 ## 📈 Weekly Growth
@@ -39,11 +39,11 @@
 
 | Category | Posts |
 |----------|-------|
-| Gaming | 165 |
-| Worldbuilding | 164 |
-| Naming Guides | 164 |
-| D&D Naming | 162 |
-| Fantasy Worldbuilding | 162 |
+| Gaming | 166 |
+| Worldbuilding | 165 |
+| Naming Guides | 165 |
+| D&D Naming | 163 |
+| Fantasy Worldbuilding | 163 |
 | Kingdom Names | 20 |
 | Clan Names | 11 |
 | Guild Names | 11 |
@@ -67,4 +67,4 @@
 | Growth limit active | ⏳ |
 
 ---
-*Automated weekly report — 2026-11-14*
+*Automated weekly report — 2026-11-15*
