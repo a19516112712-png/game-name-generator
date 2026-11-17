@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-16
+# Daily SEO Report — 2026-11-17
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-16 |
+| Date | 2026-11-17 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 930 |
+| Total Blog Posts | 935 |
 | Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- eternal guild names
-- eternal guild naming system
-- D&D shadow dominion names
-- demonic legion naming
-- fantasy kingdom names gaming
+- vampire court names
+- savage horde naming system
+- D&D celestial faction names
+- angelic realm naming
+- dark empire names gaming
 
 ## Quality Checks
 
@@ -30,4 +30,4 @@
 | Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-11-16T06:41:31.514Z*
+*Automated by GitHub Actions — 2026-11-17T08:04:56.910Z*
