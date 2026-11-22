@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-21
+# Daily SEO Report — 2026-11-22
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-21 |
+| Date | 2026-11-22 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 955 |
-| Build Status | ✅ SUCCESS |
+| Total Blog Posts | 960 |
+| Build Status | ⚠️ PENDING |
 
 ## New Keywords
 
-- elven guild names
-- elven guild naming system
-- D&D eternal guild names
-- shadow dominion naming
-- angelic realm names gaming
+- frozen kingdom names
+- orcish tribe naming system
+- D&D savage horde names
+- celestial faction naming
+- dwarven dynasty names gaming
 
 ## Quality Checks
 
@@ -27,7 +27,7 @@
 | Canonical URLs correct | ✅ |
 | JSON-LD Schema valid | ✅ |
 | Sitemap updated | ✅ |
-| Build passes | ✅ |
+| Build passes | ❌ |
 
 ---
-*Automated by GitHub Actions — 2026-11-21T07:15:55.991Z*
+*Automated by GitHub Actions — 2026-11-22T06:56:01.817Z*
