@@ -1,23 +1,23 @@
-# Daily SEO Report — 2026-11-22
+# Daily SEO Report — 2026-11-23
 
 ## Summary
 
 | Metric | Value |
 |--------|-------|
-| Date | 2026-11-22 |
+| Date | 2026-11-23 |
 | New Landing Pages | **+0** |
 | New Blog Posts | **+5** |
 | Total App Pages | 1482 |
-| Total Blog Posts | 960 |
-| Build Status | ⚠️ PENDING |
+| Total Blog Posts | 965 |
+| Build Status | ✅ SUCCESS |
 
 ## New Keywords
 
-- frozen kingdom names
-- orcish tribe naming system
-- D&D savage horde names
-- celestial faction naming
-- dwarven dynasty names gaming
+- demonic legion names
+- demonic legion naming system
+- D&D arcane circle names
+- infernal house naming
+- vampire court names gaming
 
 ## Quality Checks
 
@@ -27,7 +27,7 @@
 | Canonical URLs correct | ✅ |
 | JSON-LD Schema valid | ✅ |
 | Sitemap updated | ✅ |
-| Build passes | ❌ |
+| Build passes | ✅ |
 
 ---
-*Automated by GitHub Actions — 2026-11-22T06:56:01.817Z*
+*Automated by GitHub Actions — 2026-11-23T07:49:09.744Z*
