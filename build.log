@@ -9,11 +9,11 @@
 ✅ sitemap-generators-5.xml (900 URLs)
 ✅ sitemap-generators-6.xml (20 URLs)
 ✅ sitemap-landing.xml (903 URLs)
-✅ sitemap-blog.xml (978 URLs)
+✅ sitemap-blog.xml (983 URLs)
 ✅ sitemap-static.xml (11 URLs)
 ✅ sitemap.xml (sitemap index with 9 entries)
 
-📊 Total URLs across all sitemaps: 6412
+📊 Total URLs across all sitemaps: 6417
 📁 Files generated in public/:
    sitemap.xml (index)
    sitemap-generators-1.xml
@@ -39,8 +39,8 @@ https://nextjs.org/telemetry
 
 <--- Last few GCs --->
 
-[2607:0x610f930]    46835 ms: Mark-Compact (reduce) 1798.2 (2081.1) -> 1798.2 (2081.1) MB, 966.94 / 0.00 ms  (average mu = 0.236, current mu = 0.003) last resort; GC in old space requested
-[2607:0x610f930]    47806 ms: Mark-Compact (reduce) 1798.2 (2081.1) -> 1798.1 (2081.1) MB, 971.17 / 0.00 ms  (average mu = 0.137, current mu = 0.000) last resort; GC in old space requested
+[2692:0x1c066930]    50398 ms: Mark-Compact (reduce) 1794.7 (2081.1) -> 1794.6 (2081.1) MB, 1028.89 / 0.00 ms  (average mu = 0.135, current mu = 0.002) last resort; GC in old space requested
+[2692:0x1c066930]    51417 ms: Mark-Compact (reduce) 1794.6 (2081.1) -> 1794.6 (2081.1) MB, 1018.84 / 0.00 ms  (average mu = 0.073, current mu = 0.000) last resort; GC in old space requested
 
 
 <--- JS stacktrace --->
@@ -58,5 +58,5 @@ FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - JavaScript heap out of memo
  8: 0x140ce75 v8::internal::String::SlowFlatten(v8::internal::Isolate*, v8::internal::Handle<v8::internal::ConsString>, v8::internal::AllocationType) [/opt/hostedtoolcache/node/20.20.2/x64/bin/node]
  9: 0xef727d v8::String::Utf8Length(v8::Isolate*) const [/opt/hostedtoolcache/node/20.20.2/x64/bin/node]
 10: 0xc7d182  [/opt/hostedtoolcache/node/20.20.2/x64/bin/node]
-11: 0x7d157de0d546 
+11: 0x7c1b65e0d546 
 Next.js build worker exited with code: null and signal: SIGABRT
